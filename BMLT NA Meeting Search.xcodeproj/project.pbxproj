@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7702A0881E25A87600EE6687 /* BMLTNAMeetingSearchPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4D8871E24494E00CE6783 /* BMLTNAMeetingSearchPrefs.swift */; };
+		770780B41DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770780B31DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift */; };
+		770780B61DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */; };
+		770780B91DF86B6100D339D6 /* BMLTNAMeetingSearchMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770780B71DF86B6100D339D6 /* BMLTNAMeetingSearchMain.storyboard */; };
+		771A3A4D1E2FC8B80091A002 /* BMLTiOSLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DA377B1E2FC35D00DF7F39 /* BMLTiOSLib.framework */; };
+		771A3A4E1E2FC8BA0091A002 /* BMLTiOSLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77DA377B1E2FC35D00DF7F39 /* BMLTiOSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		772BF93F1E26937800228E67 /* BMLTNAMeetingSearchResultsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772BF93D1E26937800228E67 /* BMLTNAMeetingSearchResultsTableCell.xib */; };
+		7750A16D1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */; };
+		77556CF01E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */; };
+		77A5E96C1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A5E96B1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift */; };
+		77AEDD301E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEDD2F1E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift */; };
+		77C5F0C91E2B2E7700A4F205 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EB7DC01E286717004E05E0 /* MapKit.framework */; };
+		77D4F9161E2647390072F260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D4F9151E2647390072F260 /* Assets.xcassets */; };
+		77D692821E26776900785840 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77D692801E26776900785840 /* Localizable.strings */; };
+		77D692861E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D692851E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift */; };
+		77E92E081E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */; };
+		77EB4BE31E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */; };
+		77F7BBDB1E251CB900D5EF1F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F7BBDA1E251CB900D5EF1F /* Default-568h@2x.png */; };
+		77F7BBE01E251CE100D5EF1F /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F7BBDE1E251CE100D5EF1F /* BMLTNAMeetingSearchLaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		770780CE1DF86C2D00D339D6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				771A3A4E1E2FC8BA0091A002 /* BMLTiOSLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		77030EA81E286D40004BFAB6 /* ny.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ny.geojson; sourceTree = "<group>"; };
+		770780B01DF86B6100D339D6 /* NA Meeting Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NA Meeting Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		770780B31DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAppDelegate.swift; sourceTree = "<group>"; };
+		770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchInitialViewController.swift; sourceTree = "<group>"; };
+		770780B81DF86B6100D339D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BMLTNAMeetingSearchMain.storyboard; sourceTree = "<group>"; };
+		770780BF1DF86B6100D339D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		771D010F1E26C76600CE48C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		772BF93E1E26937800228E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BMLTNAMeetingSearchResultsTableCell.xib; sourceTree = "<group>"; };
+		77343B121E2E3A8600F5CEA3 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		773C4BA71E29087A00DFED68 /* HuntingtonNY.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HuntingtonNY.gpx; sourceTree = "<group>"; };
+		7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchMarker.swift; sourceTree = "<group>"; };
+		77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchDirectionsViewController.swift; sourceTree = "<group>"; };
+		77A5E96B1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAnimatedButtonView.swift; sourceTree = "<group>"; };
+		77AEDD2F1E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchSettingsViewController.swift; sourceTree = "<group>"; };
+		77C4D8871E24494E00CE6783 /* BMLTNAMeetingSearchPrefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchPrefs.swift; sourceTree = "<group>"; };
+		77D4F9151E2647390072F260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77D692811E26776900785840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		77D692851E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchResultViewController.swift; sourceTree = "<group>"; };
+		77DA377B1E2FC35D00DF7F39 /* BMLTiOSLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BMLTiOSLib.framework; sourceTree = "<group>"; };
+		77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAddressViewController.swift; sourceTree = "<group>"; };
+		77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAboutViewController.swift; sourceTree = "<group>"; };
+		77EB7DC01E286717004E05E0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		77F7BBDA1E251CB900D5EF1F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		77F7BBDF1E251CE100D5EF1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BMLTNAMeetingSearchLaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		770780AD1DF86B6100D339D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77C5F0C91E2B2E7700A4F205 /* MapKit.framework in Frameworks */,
+				771A3A4D1E2FC8B80091A002 /* BMLTiOSLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		770780A71DF86B6100D339D6 = {
+			isa = PBXGroup;
+			children = (
+				77343B121E2E3A8600F5CEA3 /* LICENSE.txt */,
+				771D010F1E26C76600CE48C0 /* README.md */,
+				770780B21DF86B6100D339D6 /* Main Application */,
+				772137E71DF882AE00EFCFE5 /* Resources and Extra */,
+				770780B11DF86B6100D339D6 /* Products */,
+				77C5F0D91E2B303000A4F205 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		770780B11DF86B6100D339D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				770780B01DF86B6100D339D6 /* NA Meeting Finder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		770780B21DF86B6100D339D6 /* Main Application */ = {
+			isa = PBXGroup;
+			children = (
+				770780B31DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift */,
+				770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */,
+				77D692851E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift */,
+				77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */,
+				77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */,
+				77AEDD2F1E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift */,
+				77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */,
+				772E01B81E256ECC00E69FB0 /* Special Purpose Classes */,
+			);
+			name = "Main Application";
+			path = "NA Meeting Search";
+			sourceTree = "<group>";
+		};
+		772137E71DF882AE00EFCFE5 /* Resources and Extra */ = {
+			isa = PBXGroup;
+			children = (
+				770780B71DF86B6100D339D6 /* BMLTNAMeetingSearchMain.storyboard */,
+				77F7BBDE1E251CE100D5EF1F /* BMLTNAMeetingSearchLaunchScreen.storyboard */,
+				772BF93D1E26937800228E67 /* BMLTNAMeetingSearchResultsTableCell.xib */,
+				77C6C2D01E2AA9B400148B5A /* NY BMLT Variant */,
+			);
+			name = "Resources and Extra";
+			path = "NA Meeting Search";
+			sourceTree = "<group>";
+		};
+		772E01B81E256ECC00E69FB0 /* Special Purpose Classes */ = {
+			isa = PBXGroup;
+			children = (
+				77C4D8871E24494E00CE6783 /* BMLTNAMeetingSearchPrefs.swift */,
+				77A5E96B1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift */,
+				7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */,
+			);
+			name = "Special Purpose Classes";
+			sourceTree = "<group>";
+		};
+		77C5F0D91E2B303000A4F205 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77DA377B1E2FC35D00DF7F39 /* BMLTiOSLib.framework */,
+				77EB7DC01E286717004E05E0 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77C6C2D01E2AA9B400148B5A /* NY BMLT Variant */ = {
+			isa = PBXGroup;
+			children = (
+				77D4F9151E2647390072F260 /* Assets.xcassets */,
+				77F7BBDA1E251CB900D5EF1F /* Default-568h@2x.png */,
+				770780BF1DF86B6100D339D6 /* Info.plist */,
+				77D692801E26776900785840 /* Localizable.strings */,
+				77030EA81E286D40004BFAB6 /* ny.geojson */,
+				773C4BA71E29087A00DFED68 /* HuntingtonNY.gpx */,
+			);
+			name = "NY BMLT Variant";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		770780AF1DF86B6100D339D6 /* NA Meeting Finder (Swift) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 770780C21DF86B6100D339D6 /* Build configuration list for PBXNativeTarget "NA Meeting Finder (Swift)" */;
+			buildPhases = (
+				770780AC1DF86B6100D339D6 /* Sources */,
+				770780AD1DF86B6100D339D6 /* Frameworks */,
+				770780AE1DF86B6100D339D6 /* Resources */,
+				770780CE1DF86C2D00D339D6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NA Meeting Finder (Swift)";
+			productName = "NA Meeting Search";
+			productReference = 770780B01DF86B6100D339D6 /* NA Meeting Finder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		770780A81DF86B6100D339D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = MAGSHARE;
+				TargetAttributes = {
+					770780AF1DF86B6100D339D6 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = P53V4JS928;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 770780AB1DF86B6100D339D6 /* Build configuration list for PBXProject "BMLT NA Meeting Search" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 770780A71DF86B6100D339D6;
+			productRefGroup = 770780B11DF86B6100D339D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				770780AF1DF86B6100D339D6 /* NA Meeting Finder (Swift) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		770780AE1DF86B6100D339D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D692821E26776900785840 /* Localizable.strings in Resources */,
+				772BF93F1E26937800228E67 /* BMLTNAMeetingSearchResultsTableCell.xib in Resources */,
+				77F7BBDB1E251CB900D5EF1F /* Default-568h@2x.png in Resources */,
+				77F7BBE01E251CE100D5EF1F /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */,
+				77D4F9161E2647390072F260 /* Assets.xcassets in Resources */,
+				770780B91DF86B6100D339D6 /* BMLTNAMeetingSearchMain.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		770780AC1DF86B6100D339D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A5E96C1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift in Sources */,
+				7750A16D1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift in Sources */,
+				77556CF01E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift in Sources */,
+				77EB4BE31E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift in Sources */,
+				77D692861E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift in Sources */,
+				77E92E081E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift in Sources */,
+				770780B61DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift in Sources */,
+				77AEDD301E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift in Sources */,
+				770780B41DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift in Sources */,
+				7702A0881E25A87600EE6687 /* BMLTNAMeetingSearchPrefs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		770780B71DF86B6100D339D6 /* BMLTNAMeetingSearchMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				770780B81DF86B6100D339D6 /* Base */,
+			);
+			name = BMLTNAMeetingSearchMain.storyboard;
+			sourceTree = "<group>";
+		};
+		772BF93D1E26937800228E67 /* BMLTNAMeetingSearchResultsTableCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				772BF93E1E26937800228E67 /* Base */,
+			);
+			name = BMLTNAMeetingSearchResultsTableCell.xib;
+			sourceTree = "<group>";
+		};
+		77D692801E26776900785840 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77D692811E26776900785840 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		77F7BBDE1E251CE100D5EF1F /* BMLTNAMeetingSearchLaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77F7BBDF1E251CE100D5EF1F /* Base */,
+			);
+			name = BMLTNAMeetingSearchLaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		770780C01DF86B6100D339D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		770780C11DF86B6100D339D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		770780C31DF86B6100D339D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P53V4JS928;
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "NA Meeting Search/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.magshare.bmlt.NA-Meeting-Finder";
+				PRODUCT_NAME = "NA Meeting Finder";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		770780C41DF86B6100D339D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P53V4JS928;
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "NA Meeting Search/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.magshare.bmlt.NA-Meeting-Finder";
+				PRODUCT_NAME = "NA Meeting Finder";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		770780AB1DF86B6100D339D6 /* Build configuration list for PBXProject "BMLT NA Meeting Search" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				770780C01DF86B6100D339D6 /* Debug */,
+				770780C11DF86B6100D339D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		770780C21DF86B6100D339D6 /* Build configuration list for PBXNativeTarget "NA Meeting Finder (Swift)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				770780C31DF86B6100D339D6 /* Debug */,
+				770780C41DF86B6100D339D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 770780A81DF86B6100D339D6 /* Project object */;
+}
