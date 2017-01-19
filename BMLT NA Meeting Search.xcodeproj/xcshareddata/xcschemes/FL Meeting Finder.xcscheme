@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "770780AF1DF86B6100D339D6"
-               BuildableName = "NA Meeting Finder.app"
-               BlueprintName = "NA Meeting Finder (Swift)"
+               BlueprintIdentifier = "77900BD61E30F86400247B56"
+               BuildableName = "FL Meeting Finder.app"
+               BlueprintName = "FL Meeting Finder"
                ReferencedContainer = "container:BMLT NA Meeting Search.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "770780AF1DF86B6100D339D6"
-            BuildableName = "NA Meeting Finder.app"
-            BlueprintName = "NA Meeting Finder (Swift)"
+            BlueprintIdentifier = "77900BD61E30F86400247B56"
+            BuildableName = "FL Meeting Finder.app"
+            BlueprintName = "FL Meeting Finder"
             ReferencedContainer = "container:BMLT NA Meeting Search.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -50,36 +50,25 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES"
-      showNonLocalizedStrings = "YES">
+      allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "770780AF1DF86B6100D339D6"
-            BuildableName = "NA Meeting Finder.app"
-            BlueprintName = "NA Meeting Finder (Swift)"
+            BlueprintIdentifier = "77900BD61E30F86400247B56"
+            BuildableName = "FL Meeting Finder.app"
+            BlueprintName = "FL Meeting Finder"
             ReferencedContainer = "container:BMLT NA Meeting Search.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
-         <AdditionalOption
-            key = "NSZombieEnabled"
-            value = "YES"
-            isEnabled = "YES">
-         </AdditionalOption>
-         <AdditionalOption
-            key = "MallocScribble"
-            value = ""
-            isEnabled = "YES">
-         </AdditionalOption>
       </AdditionalOptions>
       <LocationScenarioReference
-         identifier = "../NA Meeting Search/NA Meeting Search/HuntingtonNY.gpx"
+         identifier = "../FL Variant/TampaFL.gpx"
          referenceType = "0">
       </LocationScenarioReference>
       <RoutingCoverageFileReference
-         identifier = "../NA Meeting Search/ny.geojson">
+         identifier = "../FL Variant/fl.geojson">
       </RoutingCoverageFileReference>
    </LaunchAction>
    <ProfileAction
@@ -92,9 +81,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "770780AF1DF86B6100D339D6"
-            BuildableName = "NA Meeting Finder.app"
-            BlueprintName = "NA Meeting Finder (Swift)"
+            BlueprintIdentifier = "77900BD61E30F86400247B56"
+            BuildableName = "FL Meeting Finder.app"
+            BlueprintName = "FL Meeting Finder"
             ReferencedContainer = "container:BMLT NA Meeting Search.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
