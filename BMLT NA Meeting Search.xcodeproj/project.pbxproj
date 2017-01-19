@@ -12,6 +12,8 @@
 		770780B61DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */; };
 		771A3A4D1E2FC8B80091A002 /* BMLTiOSLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DA377B1E2FC35D00DF7F39 /* BMLTiOSLib.framework */; };
 		771A3A4E1E2FC8BA0091A002 /* BMLTiOSLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77DA377B1E2FC35D00DF7F39 /* BMLTiOSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		771AAA601E314A0000FDB729 /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771AAA5C1E314A0000FDB729 /* BMLTNAMeetingSearchLaunchScreen.storyboard */; };
+		771AAA611E314A0000FDB729 /* BMLTNAMeetingSearchMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771AAA5E1E314A0000FDB729 /* BMLTNAMeetingSearchMain.storyboard */; };
 		7750A16D1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */; };
 		77556CF01E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */; };
 		77900BD81E30F86400247B56 /* BMLTNAMeetingSearchAnimatedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A5E96B1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift */; };
@@ -26,8 +28,6 @@
 		77900BE11E30F86400247B56 /* BMLTNAMeetingSearchPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4D8871E24494E00CE6783 /* BMLTNAMeetingSearchPrefs.swift */; };
 		77900BE31E30F86400247B56 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EB7DC01E286717004E05E0 /* MapKit.framework */; };
 		77900BE41E30F86400247B56 /* BMLTiOSLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DA377B1E2FC35D00DF7F39 /* BMLTiOSLib.framework */; };
-		77900BE71E30F86400247B56 /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D35C1E30F208001FD28A /* BMLTNAMeetingSearchLaunchScreen.storyboard */; };
-		77900BED1E30F86400247B56 /* BMLTNAMeetingSearchMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D35E1E30F208001FD28A /* BMLTNAMeetingSearchMain.storyboard */; };
 		77900BEE1E30F86400247B56 /* BMLTNAMeetingSearchResultsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D3601E30F208001FD28A /* BMLTNAMeetingSearchResultsTableCell.xib */; };
 		77900BF01E30F86400247B56 /* BMLTiOSLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77DA377B1E2FC35D00DF7F39 /* BMLTiOSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		77900BFE1E30F88A00247B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77900BF71E30F88A00247B56 /* Assets.xcassets */; };
@@ -78,6 +78,8 @@
 		770780B01DF86B6100D339D6 /* NA Meeting Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NA Meeting Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		770780B31DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAppDelegate.swift; sourceTree = "<group>"; };
 		770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchInitialViewController.swift; sourceTree = "<group>"; };
+		771AAA5D1E314A0000FDB729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BMLTNAMeetingSearchLaunchScreen.storyboard; sourceTree = "<group>"; };
+		771AAA5F1E314A0000FDB729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BMLTNAMeetingSearchMain.storyboard; sourceTree = "<group>"; };
 		771D010F1E26C76600CE48C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		77343B121E2E3A8600F5CEA3 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchMarker.swift; sourceTree = "<group>"; };
@@ -192,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				77900BF71E30F88A00247B56 /* Assets.xcassets */,
+				771AAA5C1E314A0000FDB729 /* BMLTNAMeetingSearchLaunchScreen.storyboard */,
+				771AAA5E1E314A0000FDB729 /* BMLTNAMeetingSearchMain.storyboard */,
 				77900BF81E30F88A00247B56 /* Localizable.strings */,
 				77900BFA1E30F88A00247B56 /* Default-568h@2x.png */,
 				77900BFB1E30F88A00247B56 /* fl.geojson */,
@@ -335,13 +339,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77900BE71E30F86400247B56 /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */,
 				77900BFF1E30F88A00247B56 /* Localizable.strings in Resources */,
+				771AAA601E314A0000FDB729 /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */,
 				77900C001E30F88A00247B56 /* Default-568h@2x.png in Resources */,
 				77900C021E30F88A00247B56 /* Info.plist in Resources */,
 				77900BFE1E30F88A00247B56 /* Assets.xcassets in Resources */,
-				77900BED1E30F86400247B56 /* BMLTNAMeetingSearchMain.storyboard in Resources */,
 				77900BEE1E30F86400247B56 /* BMLTNAMeetingSearchResultsTableCell.xib in Resources */,
+				771AAA611E314A0000FDB729 /* BMLTNAMeetingSearchMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +389,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		771AAA5C1E314A0000FDB729 /* BMLTNAMeetingSearchLaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				771AAA5D1E314A0000FDB729 /* Base */,
+			);
+			name = BMLTNAMeetingSearchLaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		771AAA5E1E314A0000FDB729 /* BMLTNAMeetingSearchMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				771AAA5F1E314A0000FDB729 /* Base */,
+			);
+			name = BMLTNAMeetingSearchMain.storyboard;
+			sourceTree = "<group>";
+		};
 		77900BF81E30F88A00247B56 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
