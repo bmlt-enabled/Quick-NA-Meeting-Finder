@@ -10,22 +10,25 @@
 		7702A0881E25A87600EE6687 /* BMLTNAMeetingSearchPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4D8871E24494E00CE6783 /* BMLTNAMeetingSearchPrefs.swift */; };
 		770780B41DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770780B31DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift */; };
 		770780B61DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */; };
-		770780B91DF86B6100D339D6 /* BMLTNAMeetingSearchMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 770780B71DF86B6100D339D6 /* BMLTNAMeetingSearchMain.storyboard */; };
 		771A3A4D1E2FC8B80091A002 /* BMLTiOSLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DA377B1E2FC35D00DF7F39 /* BMLTiOSLib.framework */; };
 		771A3A4E1E2FC8BA0091A002 /* BMLTiOSLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77DA377B1E2FC35D00DF7F39 /* BMLTiOSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		772BF93F1E26937800228E67 /* BMLTNAMeetingSearchResultsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772BF93D1E26937800228E67 /* BMLTNAMeetingSearchResultsTableCell.xib */; };
 		7750A16D1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */; };
 		77556CF01E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */; };
 		77A5E96C1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A5E96B1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift */; };
 		77AEDD301E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEDD2F1E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift */; };
 		77C5F0C91E2B2E7700A4F205 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EB7DC01E286717004E05E0 /* MapKit.framework */; };
-		77D4F9161E2647390072F260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D4F9151E2647390072F260 /* Assets.xcassets */; };
-		77D692821E26776900785840 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77D692801E26776900785840 /* Localizable.strings */; };
+		77D3D3511E30F192001FD28A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D3441E30F192001FD28A /* Assets.xcassets */; };
+		77D3D3561E30F192001FD28A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D34D1E30F192001FD28A /* Default-568h@2x.png */; };
+		77D3D3571E30F192001FD28A /* HuntingtonNY.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D34E1E30F192001FD28A /* HuntingtonNY.gpx */; };
+		77D3D3591E30F192001FD28A /* ny.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D3501E30F192001FD28A /* ny.geojson */; };
+		77D3D3621E30F208001FD28A /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D35C1E30F208001FD28A /* BMLTNAMeetingSearchLaunchScreen.storyboard */; };
+		77D3D3631E30F208001FD28A /* BMLTNAMeetingSearchMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D35E1E30F208001FD28A /* BMLTNAMeetingSearchMain.storyboard */; };
+		77D3D3641E30F208001FD28A /* BMLTNAMeetingSearchResultsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D3601E30F208001FD28A /* BMLTNAMeetingSearchResultsTableCell.xib */; };
+		77D3D3671E30F221001FD28A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D3691E30F221001FD28A /* Localizable.strings */; };
+		77D3D36A1E30F26F001FD28A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D34F1E30F192001FD28A /* Info.plist */; };
 		77D692861E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D692851E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift */; };
 		77E92E081E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */; };
 		77EB4BE31E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */; };
-		77F7BBDB1E251CB900D5EF1F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F7BBDA1E251CB900D5EF1F /* Default-568h@2x.png */; };
-		77F7BBE01E251CE100D5EF1F /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F7BBDE1E251CE100D5EF1F /* BMLTNAMeetingSearchLaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,30 +46,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		77030EA81E286D40004BFAB6 /* ny.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ny.geojson; sourceTree = "<group>"; };
 		770780B01DF86B6100D339D6 /* NA Meeting Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NA Meeting Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		770780B31DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAppDelegate.swift; sourceTree = "<group>"; };
 		770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchInitialViewController.swift; sourceTree = "<group>"; };
-		770780B81DF86B6100D339D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BMLTNAMeetingSearchMain.storyboard; sourceTree = "<group>"; };
-		770780BF1DF86B6100D339D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		771D010F1E26C76600CE48C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		772BF93E1E26937800228E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BMLTNAMeetingSearchResultsTableCell.xib; sourceTree = "<group>"; };
 		77343B121E2E3A8600F5CEA3 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		773C4BA71E29087A00DFED68 /* HuntingtonNY.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HuntingtonNY.gpx; sourceTree = "<group>"; };
 		7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchMarker.swift; sourceTree = "<group>"; };
 		77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchDirectionsViewController.swift; sourceTree = "<group>"; };
 		77A5E96B1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAnimatedButtonView.swift; sourceTree = "<group>"; };
 		77AEDD2F1E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchSettingsViewController.swift; sourceTree = "<group>"; };
 		77C4D8871E24494E00CE6783 /* BMLTNAMeetingSearchPrefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchPrefs.swift; sourceTree = "<group>"; };
-		77D4F9151E2647390072F260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		77D692811E26776900785840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		77D3D3441E30F192001FD28A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77D3D34D1E30F192001FD28A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		77D3D34E1E30F192001FD28A /* HuntingtonNY.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HuntingtonNY.gpx; sourceTree = "<group>"; };
+		77D3D34F1E30F192001FD28A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D3D3501E30F192001FD28A /* ny.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ny.geojson; sourceTree = "<group>"; };
+		77D3D35D1E30F208001FD28A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BMLTNAMeetingSearchLaunchScreen.storyboard; sourceTree = "<group>"; };
+		77D3D35F1E30F208001FD28A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BMLTNAMeetingSearchMain.storyboard; sourceTree = "<group>"; };
+		77D3D3611E30F208001FD28A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = BMLTNAMeetingSearchResultsTableCell.xib; sourceTree = "<group>"; };
+		77D3D3681E30F221001FD28A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		77D692851E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchResultViewController.swift; sourceTree = "<group>"; };
 		77DA377B1E2FC35D00DF7F39 /* BMLTiOSLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BMLTiOSLib.framework; sourceTree = "<group>"; };
 		77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAddressViewController.swift; sourceTree = "<group>"; };
 		77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAboutViewController.swift; sourceTree = "<group>"; };
 		77EB7DC01E286717004E05E0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		77F7BBDA1E251CB900D5EF1F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		77F7BBDF1E251CE100D5EF1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BMLTNAMeetingSearchLaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +124,8 @@
 		772137E71DF882AE00EFCFE5 /* Resources and Extra */ = {
 			isa = PBXGroup;
 			children = (
-				770780B71DF86B6100D339D6 /* BMLTNAMeetingSearchMain.storyboard */,
-				77F7BBDE1E251CE100D5EF1F /* BMLTNAMeetingSearchLaunchScreen.storyboard */,
-				772BF93D1E26937800228E67 /* BMLTNAMeetingSearchResultsTableCell.xib */,
-				77C6C2D01E2AA9B400148B5A /* NY BMLT Variant */,
+				77D3D35A1E30F1C1001FD28A /* Baseline */,
+				77D3D3431E30F192001FD28A /* NY Variant */,
 			);
 			name = "Resources and Extra";
 			path = "NA Meeting Search";
@@ -149,17 +150,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		77C6C2D01E2AA9B400148B5A /* NY BMLT Variant */ = {
+		77D3D3431E30F192001FD28A /* NY Variant */ = {
 			isa = PBXGroup;
 			children = (
-				77D4F9151E2647390072F260 /* Assets.xcassets */,
-				77F7BBDA1E251CB900D5EF1F /* Default-568h@2x.png */,
-				770780BF1DF86B6100D339D6 /* Info.plist */,
-				77D692801E26776900785840 /* Localizable.strings */,
-				77030EA81E286D40004BFAB6 /* ny.geojson */,
-				773C4BA71E29087A00DFED68 /* HuntingtonNY.gpx */,
+				77D3D3691E30F221001FD28A /* Localizable.strings */,
+				77D3D3441E30F192001FD28A /* Assets.xcassets */,
+				77D3D34D1E30F192001FD28A /* Default-568h@2x.png */,
+				77D3D34E1E30F192001FD28A /* HuntingtonNY.gpx */,
+				77D3D34F1E30F192001FD28A /* Info.plist */,
+				77D3D3501E30F192001FD28A /* ny.geojson */,
 			);
-			name = "NY BMLT Variant";
+			path = "NY Variant";
+			sourceTree = SOURCE_ROOT;
+		};
+		77D3D35A1E30F1C1001FD28A /* Baseline */ = {
+			isa = PBXGroup;
+			children = (
+				77D3D35C1E30F208001FD28A /* BMLTNAMeetingSearchLaunchScreen.storyboard */,
+				77D3D35E1E30F208001FD28A /* BMLTNAMeetingSearchMain.storyboard */,
+				77D3D3601E30F208001FD28A /* BMLTNAMeetingSearchResultsTableCell.xib */,
+			);
+			name = Baseline;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,12 +239,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77D692821E26776900785840 /* Localizable.strings in Resources */,
-				772BF93F1E26937800228E67 /* BMLTNAMeetingSearchResultsTableCell.xib in Resources */,
-				77F7BBDB1E251CB900D5EF1F /* Default-568h@2x.png in Resources */,
-				77F7BBE01E251CE100D5EF1F /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */,
-				77D4F9161E2647390072F260 /* Assets.xcassets in Resources */,
-				770780B91DF86B6100D339D6 /* BMLTNAMeetingSearchMain.storyboard in Resources */,
+				77D3D3561E30F192001FD28A /* Default-568h@2x.png in Resources */,
+				77D3D3621E30F208001FD28A /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */,
+				77D3D36A1E30F26F001FD28A /* Info.plist in Resources */,
+				77D3D3591E30F192001FD28A /* ny.geojson in Resources */,
+				77D3D3511E30F192001FD28A /* Assets.xcassets in Resources */,
+				77D3D3671E30F221001FD28A /* Localizable.strings in Resources */,
+				77D3D3571E30F192001FD28A /* HuntingtonNY.gpx in Resources */,
+				77D3D3631E30F208001FD28A /* BMLTNAMeetingSearchMain.storyboard in Resources */,
+				77D3D3641E30F208001FD28A /* BMLTNAMeetingSearchResultsTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,36 +274,39 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		770780B71DF86B6100D339D6 /* BMLTNAMeetingSearchMain.storyboard */ = {
+		77D3D35C1E30F208001FD28A /* BMLTNAMeetingSearchLaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				770780B81DF86B6100D339D6 /* Base */,
-			);
-			name = BMLTNAMeetingSearchMain.storyboard;
-			sourceTree = "<group>";
-		};
-		772BF93D1E26937800228E67 /* BMLTNAMeetingSearchResultsTableCell.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				772BF93E1E26937800228E67 /* Base */,
-			);
-			name = BMLTNAMeetingSearchResultsTableCell.xib;
-			sourceTree = "<group>";
-		};
-		77D692801E26776900785840 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77D692811E26776900785840 /* Base */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		77F7BBDE1E251CE100D5EF1F /* BMLTNAMeetingSearchLaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77F7BBDF1E251CE100D5EF1F /* Base */,
+				77D3D35D1E30F208001FD28A /* Base */,
 			);
 			name = BMLTNAMeetingSearchLaunchScreen.storyboard;
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		77D3D35E1E30F208001FD28A /* BMLTNAMeetingSearchMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77D3D35F1E30F208001FD28A /* Base */,
+			);
+			name = BMLTNAMeetingSearchMain.storyboard;
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		77D3D3601E30F208001FD28A /* BMLTNAMeetingSearchResultsTableCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77D3D3611E30F208001FD28A /* Base */,
+			);
+			name = BMLTNAMeetingSearchResultsTableCell.xib;
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		77D3D3691E30F221001FD28A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77D3D3681E30F221001FD28A /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,7 +430,7 @@
 				DEVELOPMENT_TEAM = P53V4JS928;
 				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				INFOPLIST_FILE = "NA Meeting Search/Info.plist";
+				INFOPLIST_FILE = "${PROJECT_DIR}/NY Variant/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.magshare.bmlt.NA-Meeting-Finder";
 				PRODUCT_NAME = "NA Meeting Finder";
@@ -429,7 +446,7 @@
 				DEVELOPMENT_TEAM = P53V4JS928;
 				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				INFOPLIST_FILE = "NA Meeting Search/Info.plist";
+				INFOPLIST_FILE = "${PROJECT_DIR}/NY Variant/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.magshare.bmlt.NA-Meeting-Finder";
 				PRODUCT_NAME = "NA Meeting Finder";
