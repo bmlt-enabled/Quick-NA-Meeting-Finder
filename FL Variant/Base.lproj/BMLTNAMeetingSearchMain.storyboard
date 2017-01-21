@@ -16,7 +16,7 @@
             <objects>
                 <navigationController id="kew-fC-Z8J" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="AQJ-EZ-QmI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="AQJ-EZ-QmI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

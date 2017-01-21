@@ -164,12 +164,33 @@ import UIKit
      - parameter rect: The rect, in local coordinates, to draw.
      */
     override func draw(_ rect: CGRect) {
-        self._indexedImage.draw(in: rect)
         // We can add a highlight overlay.
         if self.isHighlighted {
             let imageName = "BMLTNAMeetingSearchAnimatedButtonView/Highlight"
             if let image = UIImage(named: imageName) {
                 image.draw(in: rect)
+            } else {
+                self._indexedImage.draw(in: rect)
+            }
+        } else {    // If there is a different "disabled" image, we use that.
+            if !self.isEnabled {
+                let imageName = "BMLTNAMeetingSearchAnimatedButtonView/Disabled"
+                if let image = UIImage(named: imageName) {
+                    image.draw(in: rect)
+                } else {
+                    self._indexedImage.draw(in: rect)
+                }
+            } else { // We may use a different image for "at rest."
+                if !self.isAnimating {
+                    let imageName = "BMLTNAMeetingSearchAnimatedButtonView/Normal"
+                    if let image = UIImage(named: imageName) {
+                        image.draw(in: rect)
+                    } else {
+                        self._indexedImage.draw(in: rect)
+                    }
+                } else {
+                    self._indexedImage.draw(in: rect)
+                }
             }
         }
     }

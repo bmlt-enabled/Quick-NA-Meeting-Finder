@@ -1,3 +1,0 @@
-framework module BMLTiOSLib {
-    header "BMLTiOSLib-Swift.h"
-}
