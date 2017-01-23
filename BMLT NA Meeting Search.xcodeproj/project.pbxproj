@@ -14,10 +14,6 @@
 		771AAA611E314A0000FDB729 /* BMLTNAMeetingSearchMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771AAA5E1E314A0000FDB729 /* BMLTNAMeetingSearchMain.storyboard */; };
 		7750A16D1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */; };
 		77556CF01E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */; };
-		776004F91E33EF7D006C4BB8 /* BMLTiOSLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776004F21E33EF67006C4BB8 /* BMLTiOSLib.framework */; };
-		776004FA1E33EF84006C4BB8 /* BMLTiOSLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 776004F21E33EF67006C4BB8 /* BMLTiOSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		776004FD1E33EF95006C4BB8 /* BMLTiOSLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776004F21E33EF67006C4BB8 /* BMLTiOSLib.framework */; };
-		776004FE1E33EF9B006C4BB8 /* BMLTiOSLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 776004F21E33EF67006C4BB8 /* BMLTiOSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		77900BD81E30F86400247B56 /* BMLTNAMeetingSearchAnimatedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A5E96B1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift */; };
 		77900BD91E30F86400247B56 /* BMLTNAMeetingSearchMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */; };
 		77900BDA1E30F86400247B56 /* BMLTNAMeetingSearchDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */; };
@@ -50,37 +46,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		776004F11E33EF67006C4BB8 /* PBXContainerItemProxy */ = {
+		77C867D91E34552F00C095B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 776004EB1E33EF67006C4BB8 /* BMLTiOSLib.xcodeproj */;
+			containerPortal = 77C867D31E34552E00C095B5 /* BMLTiOSLib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 77368DDB1DF849350066C78E;
 			remoteInfo = BMLTiOSLib;
 		};
-		776004F31E33EF67006C4BB8 /* PBXContainerItemProxy */ = {
+		77C867DB1E34552F00C095B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 776004EB1E33EF67006C4BB8 /* BMLTiOSLib.xcodeproj */;
+			containerPortal = 77C867D31E34552E00C095B5 /* BMLTiOSLib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 772929841D9AEE2A008D333E;
 			remoteInfo = "BMLTiOSLib Tester";
 		};
-		776004F51E33EF67006C4BB8 /* PBXContainerItemProxy */ = {
+		77C867DD1E34552F00C095B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 776004EB1E33EF67006C4BB8 /* BMLTiOSLib.xcodeproj */;
+			containerPortal = 77C867D31E34552E00C095B5 /* BMLTiOSLib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 77368DD11DF846B20066C78E;
 			remoteInfo = "BMLTiOSLib  Framework Tester";
 		};
-		776004F71E33EF71006C4BB8 /* PBXContainerItemProxy */ = {
+		77C867DF1E34563800C095B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 776004EB1E33EF67006C4BB8 /* BMLTiOSLib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 77368DDA1DF849350066C78E;
-			remoteInfo = BMLTiOSLib;
-		};
-		776004FB1E33EF90006C4BB8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 776004EB1E33EF67006C4BB8 /* BMLTiOSLib.xcodeproj */;
+			containerPortal = 77C867D31E34552E00C095B5 /* BMLTiOSLib.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 77368DDA1DF849350066C78E;
 			remoteInfo = BMLTiOSLib;
@@ -94,7 +83,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				776004FA1E33EF84006C4BB8 /* BMLTiOSLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,7 +93,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				776004FE1E33EF9B006C4BB8 /* BMLTiOSLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,7 +109,6 @@
 		77343B121E2E3A8600F5CEA3 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchMarker.swift; sourceTree = "<group>"; };
 		77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchDirectionsViewController.swift; sourceTree = "<group>"; };
-		776004EB1E33EF67006C4BB8 /* BMLTiOSLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BMLTiOSLib.xcodeproj; path = BMLTiOSLib/BMLTiOSLib.xcodeproj; sourceTree = "<group>"; };
 		77900BF41E30F86400247B56 /* Florida NA Meeting Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Florida NA Meeting Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77900BF71E30F88A00247B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77900BF91E30F88A00247B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -133,6 +119,7 @@
 		77A5E96B1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAnimatedButtonView.swift; sourceTree = "<group>"; };
 		77AEDD2F1E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchSettingsViewController.swift; sourceTree = "<group>"; };
 		77C4D8871E24494E00CE6783 /* BMLTNAMeetingSearchPrefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchPrefs.swift; sourceTree = "<group>"; };
+		77C867D31E34552E00C095B5 /* BMLTiOSLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BMLTiOSLib.xcodeproj; path = BMLTiOSLib/BMLTiOSLib.xcodeproj; sourceTree = "<group>"; };
 		77D3D3441E30F192001FD28A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77D3D34D1E30F192001FD28A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		77D3D34E1E30F192001FD28A /* HuntingtonNY.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HuntingtonNY.gpx; sourceTree = "<group>"; };
@@ -153,7 +140,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				776004F91E33EF7D006C4BB8 /* BMLTiOSLib.framework in Frameworks */,
 				77C5F0C91E2B2E7700A4F205 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,7 +148,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				776004FD1E33EF95006C4BB8 /* BMLTiOSLib.framework in Frameworks */,
 				77900BE31E30F86400247B56 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,7 +158,6 @@
 		770780A71DF86B6100D339D6 = {
 			isa = PBXGroup;
 			children = (
-				776004EB1E33EF67006C4BB8 /* BMLTiOSLib.xcodeproj */,
 				77343B121E2E3A8600F5CEA3 /* LICENSE.txt */,
 				771D010F1E26C76600CE48C0 /* README.md */,
 				770780B21DF86B6100D339D6 /* Main Application */,
@@ -229,16 +213,6 @@
 			name = "Special Purpose Classes";
 			sourceTree = "<group>";
 		};
-		776004EC1E33EF67006C4BB8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				776004F21E33EF67006C4BB8 /* BMLTiOSLib.framework */,
-				776004F41E33EF67006C4BB8 /* BMLTiOSLib Tester.app */,
-				776004F61E33EF67006C4BB8 /* BMLTiOSLib  Framework Tester.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		77900BF61E30F88A00247B56 /* FL Variant */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,9 +231,20 @@
 		77C5F0D91E2B303000A4F205 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77C867D31E34552E00C095B5 /* BMLTiOSLib.xcodeproj */,
 				77EB7DC01E286717004E05E0 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77C867D41E34552E00C095B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77C867DA1E34552F00C095B5 /* BMLTiOSLib.framework */,
+				77C867DC1E34552F00C095B5 /* BMLTiOSLib Tester.app */,
+				77C867DE1E34552F00C095B5 /* BMLTiOSLib  Framework Tester.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		77D3D3431E30F192001FD28A /* NY Variant */ = {
@@ -300,7 +285,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				776004F81E33EF71006C4BB8 /* PBXTargetDependency */,
+				77C867E01E34563800C095B5 /* PBXTargetDependency */,
 			);
 			name = "NA Meeting Finder (Swift)";
 			productName = "NA Meeting Search";
@@ -319,7 +304,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				776004FC1E33EF90006C4BB8 /* PBXTargetDependency */,
 			);
 			name = "FL Meeting Finder";
 			productName = "NA Meeting Search";
@@ -365,8 +349,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 776004EC1E33EF67006C4BB8 /* Products */;
-					ProjectRef = 776004EB1E33EF67006C4BB8 /* BMLTiOSLib.xcodeproj */;
+					ProductGroup = 77C867D41E34552E00C095B5 /* Products */;
+					ProjectRef = 77C867D31E34552E00C095B5 /* BMLTiOSLib.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -378,25 +362,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		776004F21E33EF67006C4BB8 /* BMLTiOSLib.framework */ = {
+		77C867DA1E34552F00C095B5 /* BMLTiOSLib.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = BMLTiOSLib.framework;
-			remoteRef = 776004F11E33EF67006C4BB8 /* PBXContainerItemProxy */;
+			remoteRef = 77C867D91E34552F00C095B5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		776004F41E33EF67006C4BB8 /* BMLTiOSLib Tester.app */ = {
+		77C867DC1E34552F00C095B5 /* BMLTiOSLib Tester.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "BMLTiOSLib Tester.app";
-			remoteRef = 776004F31E33EF67006C4BB8 /* PBXContainerItemProxy */;
+			remoteRef = 77C867DB1E34552F00C095B5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		776004F61E33EF67006C4BB8 /* BMLTiOSLib  Framework Tester.app */ = {
+		77C867DE1E34552F00C095B5 /* BMLTiOSLib  Framework Tester.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "BMLTiOSLib  Framework Tester.app";
-			remoteRef = 776004F51E33EF67006C4BB8 /* PBXContainerItemProxy */;
+			remoteRef = 77C867DD1E34552F00C095B5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -470,15 +454,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		776004F81E33EF71006C4BB8 /* PBXTargetDependency */ = {
+		77C867E01E34563800C095B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BMLTiOSLib;
-			targetProxy = 776004F71E33EF71006C4BB8 /* PBXContainerItemProxy */;
-		};
-		776004FC1E33EF90006C4BB8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BMLTiOSLib;
-			targetProxy = 776004FB1E33EF90006C4BB8 /* PBXContainerItemProxy */;
+			targetProxy = 77C867DF1E34563800C095B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
