@@ -61,6 +61,10 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
     private var _searchCenterCoords: CLLocationCoordinate2D = CLLocationCoordinate2D()
     
     /* ################################################################## */
+    /** This is a flag that tells us to run the app upon first load. */
+    private var _firstLoad: Bool = true
+    
+    /* ################################################################## */
     // MARK: Internal Instance IB Properties
     /* ################################################################## */
     /** This is the big fat button that the user presses. */
@@ -175,6 +179,10 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
         self.commObject = nil
         self.navigationController?.isNavigationBarHidden = true;
         super.viewWillAppear(animated)
+        if self._firstLoad {
+            self._firstLoad = false
+            self.bigAssButtonWasHit(self.theBigSearchButton)
+        }
     }
     
     /* ################################################################## */

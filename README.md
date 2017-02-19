@@ -12,8 +12,9 @@ CHANGELIST
 ***Version 1.0.1.1000* ** *- TBD*
 
 - Uses the new deliverable format of the BMLTiOSLib
+- Now automatically starts a search if the main window is shown.
 
-***Version 1.0.0.3000* ** *- January16, 2017*
+***Version 1.0.0.3000* ** *- January 16, 2017*
 
 - First release to app store.
 - Turned the development system error-checking to "11".
