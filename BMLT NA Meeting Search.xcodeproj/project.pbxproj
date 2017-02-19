@@ -29,8 +29,6 @@
 		77900BFE1E30F88A00247B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77900BF71E30F88A00247B56 /* Assets.xcassets */; };
 		77900BFF1E30F88A00247B56 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77900BF81E30F88A00247B56 /* Localizable.strings */; };
 		77900C001E30F88A00247B56 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77900BFA1E30F88A00247B56 /* Default-568h@2x.png */; };
-		77900C021E30F88A00247B56 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77900BFC1E30F88A00247B56 /* Info.plist */; };
-		77900C051E30F8AB00247B56 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D34F1E30F192001FD28A /* Info.plist */; };
 		77A5E96C1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A5E96B1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift */; };
 		77AEDD301E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEDD2F1E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift */; };
 		77C5F0C91E2B2E7700A4F205 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EB7DC01E286717004E05E0 /* MapKit.framework */; };
@@ -41,6 +39,8 @@
 		77D3D3641E30F208001FD28A /* BMLTNAMeetingSearchResultsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D3601E30F208001FD28A /* BMLTNAMeetingSearchResultsTableCell.xib */; };
 		77D3D3671E30F221001FD28A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D3691E30F221001FD28A /* Localizable.strings */; };
 		77D692861E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D692851E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift */; };
+		77E0CC091E594CE100D1A85D /* BMLTiOSLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77C867DA1E34552F00C095B5 /* BMLTiOSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		77E0CC0A1E594DF100D1A85D /* BMLTiOSLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77C867DA1E34552F00C095B5 /* BMLTiOSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		77E92E081E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */; };
 		77EB4BE31E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */; };
 /* End PBXBuildFile section */
@@ -74,6 +74,13 @@
 			remoteGlobalIDString = 77368DDA1DF849350066C78E;
 			remoteInfo = BMLTiOSLib;
 		};
+		77E0CC0B1E594E3F00D1A85D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77C867D31E34552E00C095B5 /* BMLTiOSLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 77368DDA1DF849350066C78E;
+			remoteInfo = BMLTiOSLib;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,6 +90,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				77E0CC091E594CE100D1A85D /* BMLTiOSLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +101,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				77E0CC0A1E594DF100D1A85D /* BMLTiOSLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +313,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				77E0CC0C1E594E3F00D1A85D /* PBXTargetDependency */,
 			);
 			name = "FL Meeting Finder";
 			productName = "NA Meeting Search";
@@ -390,7 +400,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77900C051E30F8AB00247B56 /* Info.plist in Resources */,
 				77D3D3561E30F192001FD28A /* Default-568h@2x.png in Resources */,
 				77D3D3621E30F208001FD28A /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */,
 				77D3D3511E30F192001FD28A /* Assets.xcassets in Resources */,
@@ -407,7 +416,6 @@
 				77900BFF1E30F88A00247B56 /* Localizable.strings in Resources */,
 				771AAA601E314A0000FDB729 /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */,
 				77900C001E30F88A00247B56 /* Default-568h@2x.png in Resources */,
-				77900C021E30F88A00247B56 /* Info.plist in Resources */,
 				77900BFE1E30F88A00247B56 /* Assets.xcassets in Resources */,
 				77900BEE1E30F86400247B56 /* BMLTNAMeetingSearchResultsTableCell.xib in Resources */,
 				771AAA611E314A0000FDB729 /* BMLTNAMeetingSearchMain.storyboard in Resources */,
@@ -458,6 +466,11 @@
 			isa = PBXTargetDependency;
 			name = BMLTiOSLib;
 			targetProxy = 77C867DF1E34563800C095B5 /* PBXContainerItemProxy */;
+		};
+		77E0CC0C1E594E3F00D1A85D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BMLTiOSLib;
+			targetProxy = 77E0CC0B1E594E3F00D1A85D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
