@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kew-fC-Z8J">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kew-fC-Z8J">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,7 +37,7 @@
         <!--FIND MEETINGS-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="FIND MEETINGS" customClass="BMLTNAMeetingSearchInitialViewController" customModule="FL_Meeting_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="FIND MEETINGS" customClass="BMLTNAMeetingSearchInitialViewController" customModule="Florida_NA_Meeting_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -49,7 +49,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundGradient" translatesAutoresizingMaskIntoConstraints="NO" id="tsZ-es-xqw">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LO-Ng-31j" customClass="BMLTNAMeetingSearchAnimatedButtonView" customModule="FL_Meeting_Finder" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LO-Ng-31j" customClass="BMLTNAMeetingSearchAnimatedButtonView" customModule="Florida_NA_Meeting_Finder" customModuleProvider="target">
                                 <rect key="frame" x="67" y="213" width="240" height="240"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -110,7 +110,7 @@
         <!--SEARCHRESULTSTITLE-->
         <scene sceneID="7gg-gl-3eA">
             <objects>
-                <viewController id="J5c-i9-s0w" customClass="BMLTNAMeetingSearchResultViewController" customModule="FL_Meeting_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="J5c-i9-s0w" customClass="BMLTNAMeetingSearchResultViewController" customModule="Florida_NA_Meeting_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QL0-i2-WZU"/>
                         <viewControllerLayoutGuide type="bottom" id="sNl-Ne-5Db"/>
@@ -180,7 +180,7 @@
         <!--SETTINGS-SCREEN-->
         <scene sceneID="beq-4k-Ad5">
             <objects>
-                <viewController id="Ddt-Yr-9yP" customClass="BMLTNAMeetingSearchSettingsViewController" customModule="FL_Meeting_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ddt-Yr-9yP" customClass="BMLTNAMeetingSearchSettingsViewController" customModule="Florida_NA_Meeting_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xie-Nj-6Qc"/>
                         <viewControllerLayoutGuide type="bottom" id="2K9-iz-5cl"/>
@@ -302,7 +302,7 @@
         <!--ABOUT-US-->
         <scene sceneID="vFm-Tt-zG7">
             <objects>
-                <viewController id="DkX-fq-x7a" customClass="BMLTNAMeetingSearchAboutViewController" customModule="FL_Meeting_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DkX-fq-x7a" customClass="BMLTNAMeetingSearchAboutViewController" customModule="Florida_NA_Meeting_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VmY-Dt-a62"/>
                         <viewControllerLayoutGuide type="bottom" id="T60-hv-I8G"/>
@@ -388,7 +388,7 @@
         <!--ADDRESS-AND-DIRECTIONS-->
         <scene sceneID="2ua-JK-Rad">
             <objects>
-                <viewController title="ADDRESS-AND-DIRECTIONS" id="GkY-JL-yPd" customClass="BMLTNAMeetingSearchAddressViewController" customModule="FL_Meeting_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ADDRESS-AND-DIRECTIONS" id="GkY-JL-yPd" customClass="BMLTNAMeetingSearchAddressViewController" customModule="Florida_NA_Meeting_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CuD-JA-MI4"/>
                         <viewControllerLayoutGuide type="bottom" id="xir-rq-Fbd"/>
@@ -516,7 +516,7 @@
         <!--DIRECTIONS-->
         <scene sceneID="xe8-yA-gxS">
             <objects>
-                <viewController id="Jvi-Ji-3SK" customClass="BMLTNAMeetingSearchDirectionsViewController" customModule="FL_Meeting_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jvi-Ji-3SK" customClass="BMLTNAMeetingSearchDirectionsViewController" customModule="Florida_NA_Meeting_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fgQ-xA-ppE"/>
                         <viewControllerLayoutGuide type="bottom" id="N89-cR-QVR"/>
@@ -598,7 +598,7 @@
     </scenes>
     <resources>
         <image name="BackgroundGradient" width="1" height="2732"/>
-        <image name="Beanie" width="128" height="131"/>
+        <image name="Beanie" width="522" height="522"/>
         <image name="HighlightedGear" width="25" height="25"/>
         <image name="InfoIcon" width="22" height="22"/>
         <image name="NormalGear" width="25" height="25"/>
