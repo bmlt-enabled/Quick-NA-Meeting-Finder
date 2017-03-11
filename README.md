@@ -9,10 +9,11 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
-***Version 1.0.1.1000* ** *- TBD*
+***Version 1.0.1.1000* ** *- March 10, 2017*
 
 - Uses the new deliverable format of the BMLTiOSLib
 - Now automatically starts a search if the main window is shown.
+- Formal release.
 
 ***Version 1.0.0.3000* ** *- January 16, 2017*
 
