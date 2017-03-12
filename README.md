@@ -9,7 +9,11 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
-***Version 1.0.1.1000* ** *- March 10, 2017*
+***Version 1.1.0.1000* ** *- March 10, 2017*
+
+- Added the new BMLT Aggregator as the Root Server URI.
+
+***Version 1.0.1.3000* ** *- March 10, 2017*
 
 - Uses the new deliverable format of the BMLTiOSLib
 - Now automatically starts a search if the main window is shown.
