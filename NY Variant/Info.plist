@@ -5,7 +5,7 @@
 	<key>BMLTButtonURL</key>
 	<string>https://bmlt.magshare.net</string>
 	<key>BMLTRootServerURI</key>
-	<string>https://bmlt.newyorkna.org/main_server</string>
+	<string>https://bmlt-aggregator.archsearch.org/eccbc87e4b5ce2fe28308fd9f2a7baf3/bmltfed/main_server</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDocumentTypes</key>
@@ -30,9 +30,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.1</string>
+	<string>1.1.0</string>
 	<key>CFBundleVersion</key>
-	<string>3000</string>
+	<string>2000</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
