@@ -118,6 +118,7 @@
 		77343B121E2E3A8600F5CEA3 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchMarker.swift; sourceTree = "<group>"; };
 		77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchDirectionsViewController.swift; sourceTree = "<group>"; };
+		777884BC1E83E016004D4F09 /* SanDiegoCA.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SanDiegoCA.gpx; sourceTree = "<group>"; };
 		77900BF41E30F86400247B56 /* Florida NA Meeting Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Florida NA Meeting Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77900BF71E30F88A00247B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77900BF91E30F88A00247B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -269,6 +270,7 @@
 				77AF47FA1E7EB92D00230F74 /* global.geojson */,
 				77CA577B1E82917300FA439B /* Dublin.gpx */,
 				77D3D3501E30F192001FD28A /* ny.geojson */,
+				777884BC1E83E016004D4F09 /* SanDiegoCA.gpx */,
 			);
 			path = "NY Variant";
 			sourceTree = SOURCE_ROOT;
