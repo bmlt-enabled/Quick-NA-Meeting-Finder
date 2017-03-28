@@ -94,7 +94,7 @@ class BMLTNAMeetingSearchAboutViewController : UIViewController {
     @IBAction func beanieBanged(_ sender: UIButton) {
         if !self.buttonURI.isEmpty {
             let openLink = NSURL(string : self.buttonURI)
-            UIApplication.shared.open(openLink as! URL, options: [:], completionHandler: nil)
+            UIApplication.shared.open(openLink! as URL, options: [:], completionHandler: nil)
         }
     }
 }
