@@ -9,6 +9,22 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.1.0.2003* ** *- April 4, 2017*
+
+- Fixed a bug that forced distance units to always be miles.
+
+***Version 1.1.0.2002* ** *- March 27, 2017*
+
+- Made the Service Body Read even more robust.
+
+***Version 1.1.0.2001* ** *- March 22, 2017*
+
+- Made the Service Body Read more robust.
+
+***Version 1.1.0.2000* ** *- March 22, 2017*
+
+- First worldwide beta.
+
 ***Version 1.1.0.1000* ** *- March 10, 2017*
 
 - Added the new BMLT Aggregator as the Root Server URI.

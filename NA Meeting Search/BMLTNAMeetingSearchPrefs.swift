@@ -134,6 +134,17 @@ class BMLTNAMeetingSearchPrefs {
     }
     
     /* ################################################################## */
+    /**
+     This tells us whether or not the device is set for kilometers.
+     */
+    static var usingKilometeres: Bool {
+        get {
+            let locale = NSLocale.current
+            return locale.usesMetricSystem
+        }
+    }
+    
+    /* ################################################################## */
     // MARK: Instance Static Methods
     /* ################################################################## */
     /**
@@ -182,7 +193,7 @@ class BMLTNAMeetingSearchPrefs {
      */
     var distanceUnits: String {
         get {
-            var ret: String = "BMLTNAMeetingSearch-DistanceUnitsMiles" // Default is miles
+            var ret: String = type(of: self).usingKilometeres ? "BMLTNAMeetingSearch-DistanceUnitsKm" : "BMLTNAMeetingSearch-DistanceUnitsMiles"
             
             if self._loadPrefs() {
                 if let temp = self._loadedPrefs.object(forKey: PrefsKeys.DistanceUnits.rawValue) as? String {

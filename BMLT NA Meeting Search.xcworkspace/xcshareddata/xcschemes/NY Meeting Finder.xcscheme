@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "770780AF1DF86B6100D339D6"
                BuildableName = "NA Meeting Finder.app"
-               BlueprintName = "NA Meeting Finder (Swift)"
+               BlueprintName = "NA Meeting Finder"
                ReferencedContainer = "container:BMLT NA Meeting Search.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,7 +34,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "770780AF1DF86B6100D339D6"
             BuildableName = "NA Meeting Finder.app"
-            BlueprintName = "NA Meeting Finder (Swift)"
+            BlueprintName = "NA Meeting Finder"
             ReferencedContainer = "container:BMLT NA Meeting Search.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -58,7 +58,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "770780AF1DF86B6100D339D6"
             BuildableName = "NA Meeting Finder.app"
-            BlueprintName = "NA Meeting Finder (Swift)"
+            BlueprintName = "NA Meeting Finder"
             ReferencedContainer = "container:BMLT NA Meeting Search.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -84,7 +84,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "770780AF1DF86B6100D339D6"
             BuildableName = "NA Meeting Finder.app"
-            BlueprintName = "NA Meeting Finder (Swift)"
+            BlueprintName = "NA Meeting Finder"
             ReferencedContainer = "container:BMLT NA Meeting Search.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

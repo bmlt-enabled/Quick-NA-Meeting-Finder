@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -288,9 +288,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		770780AF1DF86B6100D339D6 /* NA Meeting Finder (Swift) */ = {
+		770780AF1DF86B6100D339D6 /* NA Meeting Finder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 770780C21DF86B6100D339D6 /* Build configuration list for PBXNativeTarget "NA Meeting Finder (Swift)" */;
+			buildConfigurationList = 770780C21DF86B6100D339D6 /* Build configuration list for PBXNativeTarget "NA Meeting Finder" */;
 			buildPhases = (
 				770780AC1DF86B6100D339D6 /* Sources */,
 				770780AD1DF86B6100D339D6 /* Frameworks */,
@@ -302,7 +302,7 @@
 			dependencies = (
 				77C867E01E34563800C095B5 /* PBXTargetDependency */,
 			);
-			name = "NA Meeting Finder (Swift)";
+			name = "NA Meeting Finder";
 			productName = "NA Meeting Search";
 			productReference = 770780B01DF86B6100D339D6 /* NA Meeting Finder.app */;
 			productType = "com.apple.product-type.application";
@@ -353,7 +353,7 @@
 				};
 			};
 			buildConfigurationList = 770780AB1DF86B6100D339D6 /* Build configuration list for PBXProject "BMLT NA Meeting Search" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -371,7 +371,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				770780AF1DF86B6100D339D6 /* NA Meeting Finder (Swift) */,
+				770780AF1DF86B6100D339D6 /* NA Meeting Finder */,
 				77900BD61E30F86400247B56 /* FL Meeting Finder */,
 			);
 		};
@@ -738,7 +738,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		770780C21DF86B6100D339D6 /* Build configuration list for PBXNativeTarget "NA Meeting Finder (Swift)" */ = {
+		770780C21DF86B6100D339D6 /* Build configuration list for PBXNativeTarget "NA Meeting Finder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				770780C31DF86B6100D339D6 /* Debug */,
