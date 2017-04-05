@@ -92,7 +92,7 @@
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-02"        =   "15";
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-02"         =   "Won't start for at least fifteen minutes";
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-03"        =   "0";
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-03"         =   "Start now, later today, or tomorrow";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-03"         =   "Start now or later";
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-04"        =   "-15";
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-04"         =   "May already be running for fifteen minutes";
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-05"        =   "-30";
@@ -104,7 +104,7 @@
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Default-Value"   =   "-15";
 
 /** THis is the "Tutorial" text in the "Settings" screen. */
-"SETTINGS-EXPLAIN"                                              =   "This app works by simply touching the big button in the middle of the main screen. It then figures out where you are, and finds nearby meetings (in New York), in the next couple of days (later today and tomorrow). You can look at the meetings in a list, or touch a meeting in the list to examine it individually for further details.";
+"SETTINGS-EXPLAIN"                                              =   "This app works by simply touching the big button in the middle of the main screen. It then figures out where you are, and finds nearby meetings in the next couple of days (later today and tomorrow). You can look at the meetings in a list, or touch a meeting in the list to examine it individually for further details.";
 
 /** The title for the "About" screen */
 "ABOUT-US"                                                      =   "About %@";

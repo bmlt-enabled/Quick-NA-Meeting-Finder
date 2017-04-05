@@ -9,6 +9,10 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.1.0.2004* ** *- TBD*
+
+- Changed some of the text in the Settings and About dialogs to be a bit more usable and relevant.
+
 ***Version 1.1.0.2003* ** *- April 4, 2017*
 
 - Fixed a bug that forced distance units to always be miles.

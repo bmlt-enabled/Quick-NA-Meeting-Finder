@@ -208,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				77D3D35A1E30F1C1001FD28A /* Baseline */,
-				77D3D3431E30F192001FD28A /* NY Variant */,
+				77D3D3431E30F192001FD28A /* Main Variant */,
 				77900BF61E30F88A00247B56 /* FL Variant */,
 			);
 			name = "Resources and Extra";
@@ -259,7 +259,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		77D3D3431E30F192001FD28A /* NY Variant */ = {
+		77D3D3431E30F192001FD28A /* Main Variant */ = {
 			isa = PBXGroup;
 			children = (
 				77D3D3691E30F221001FD28A /* Localizable.strings */,
@@ -272,6 +272,7 @@
 				77D3D3501E30F192001FD28A /* ny.geojson */,
 				777884BC1E83E016004D4F09 /* SanDiegoCA.gpx */,
 			);
+			name = "Main Variant";
 			path = "NY Variant";
 			sourceTree = SOURCE_ROOT;
 		};
