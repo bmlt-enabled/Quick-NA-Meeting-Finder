@@ -9,6 +9,10 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.1.0.2005* ** *- April 9, 2017*
+
+- Fixed an issue where older datasets caused a parse failure.
+
 ***Version 1.1.0.2004* ** *- April 8, 2017*
 
 - Changed some of the text in the Settings and About dialogs to be a bit more usable and relevant.

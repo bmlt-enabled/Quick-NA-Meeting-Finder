@@ -118,6 +118,7 @@
 		77343B121E2E3A8600F5CEA3 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchMarker.swift; sourceTree = "<group>"; };
 		77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchDirectionsViewController.swift; sourceTree = "<group>"; };
+		775EDFC11E9A6C6E007B7DE6 /* NorthportNY.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NorthportNY.gpx; sourceTree = "<group>"; };
 		777884BC1E83E016004D4F09 /* SanDiegoCA.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SanDiegoCA.gpx; sourceTree = "<group>"; };
 		77900BF41E30F86400247B56 /* Florida NA Meeting Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Florida NA Meeting Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77900BF71E30F88A00247B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -266,6 +267,7 @@
 				77D3D3441E30F192001FD28A /* Assets.xcassets */,
 				77D3D34D1E30F192001FD28A /* Default-568h@2x.png */,
 				77D3D34E1E30F192001FD28A /* HuntingtonNY.gpx */,
+				775EDFC11E9A6C6E007B7DE6 /* NorthportNY.gpx */,
 				77D3D34F1E30F192001FD28A /* Info.plist */,
 				77AF47FA1E7EB92D00230F74 /* global.geojson */,
 				77CA577B1E82917300FA439B /* Dublin.gpx */,
