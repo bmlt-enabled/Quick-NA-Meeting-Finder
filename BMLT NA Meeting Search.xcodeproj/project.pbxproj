@@ -133,6 +133,7 @@
 		77C4D8871E24494E00CE6783 /* BMLTNAMeetingSearchPrefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchPrefs.swift; sourceTree = "<group>"; };
 		77C867D31E34552E00C095B5 /* BMLTiOSLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BMLTiOSLib.xcodeproj; path = BMLTiOSLib/BMLTiOSLib.xcodeproj; sourceTree = "<group>"; };
 		77CA577B1E82917300FA439B /* Dublin.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Dublin.gpx; sourceTree = "<group>"; };
+		77D04FF21E9BE15400531ADC /* RichmondVA.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RichmondVA.gpx; sourceTree = "<group>"; };
 		77D3D3441E30F192001FD28A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77D3D34D1E30F192001FD28A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		77D3D34E1E30F192001FD28A /* HuntingtonNY.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HuntingtonNY.gpx; sourceTree = "<group>"; };
@@ -272,6 +273,7 @@
 				77AF47FA1E7EB92D00230F74 /* global.geojson */,
 				77CA577B1E82917300FA439B /* Dublin.gpx */,
 				77D3D3501E30F192001FD28A /* ny.geojson */,
+				77D04FF21E9BE15400531ADC /* RichmondVA.gpx */,
 				777884BC1E83E016004D4F09 /* SanDiegoCA.gpx */,
 			);
 			name = "Main Variant";
