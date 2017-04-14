@@ -81,10 +81,30 @@ class BMLTNAMeetingSearchAppDelegate: UIResponder, UIApplicationDelegate {
     /* ################################################################## */
     /**
      */
+    func applicationWillResignActive(_ application: UIApplication) {
+        if let viewController = type(of: self).getCurrentViewController() as? BMLTNAMeetingSearchInitialViewController {
+            viewController.dontDisplayErrorMessage = true
+            viewController.terminateConnection()
+        }
+    }
+    
+    /* ################################################################## */
+    /**
+     */
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        if let viewController = type(of: self).getCurrentViewController() as? BMLTNAMeetingSearchInitialViewController {
+            viewController.dontDisplayErrorMessage = true
+            viewController.terminateConnection()
+        }
+    }
+    
+    /* ################################################################## */
+    /**
+     */
     func applicationWillEnterForeground(_ application: UIApplication) {
         if let viewController = type(of: self).getCurrentViewController() as? BMLTNAMeetingSearchInitialViewController {
+            viewController.dontDisplayErrorMessage = true
             viewController.terminateConnection()
-            viewController.theBigSearchButton.stopAnimation()
             viewController.bigAssButtonWasHit(viewController.theBigSearchButton)
         }
     }

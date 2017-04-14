@@ -65,6 +65,10 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
     private var _firstLoad: Bool = true
     
     /* ################################################################## */
+    /** This is a flag that tells the error display not to yell at us (for now). */
+    var dontDisplayErrorMessage: Bool = false
+    
+    /* ################################################################## */
     // MARK: Internal Instance IB Properties
     /* ################################################################## */
     /** This is the big fat button that the user presses. */
@@ -155,6 +159,13 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
      - parameter inMessage: a string to be displayed as the message of the alert. It is localized by this method.
      */
     class func _displayErrorAlert(_ inTitle: String, inMessage: String, presentedBy inPresentingViewController: UIViewController ) {
+        if let presentingController = inPresentingViewController as? BMLTNAMeetingSearchInitialViewController {
+            if presentingController.dontDisplayErrorMessage {
+                presentingController.dontDisplayErrorMessage = false
+                return
+            }
+        }
+        
         let alertController = UIAlertController(title: NSLocalizedString(inTitle, comment: ""), message: NSLocalizedString(inMessage, comment: ""), preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: NSLocalizedString("BMLTNAMeetingSearchError-OKButtonText", comment: ""), style: UIAlertActionStyle.cancel, handler: nil)
@@ -317,7 +328,9 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
         if 0 < finalResults.count {
             self.performSegue(withIdentifier: type(of: self)._sSearchResultsSegueID, sender: finalResults)
         } else {
-            type(of: self)._displayErrorAlert("BMLTNAMeetingSearchError-NoResultsHeader", inMessage: "BMLTNAMeetingSearchError-NoResultsText", presentedBy: self)
+            if !self.dontDisplayErrorMessage {
+                type(of: self)._displayErrorAlert("BMLTNAMeetingSearchError-NoResultsHeader", inMessage: "BMLTNAMeetingSearchError-NoResultsText", presentedBy: self)
+            }
         }
     }
     
@@ -339,7 +352,9 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
         }
         self.terminateConnection()
         self.theBigSearchButton.stopAnimation() // This makes sure the button is reset.
-        type(of: self)._displayErrorAlert("BMLTNAMeetingSearchError-CommErrorHeader", inMessage: "BMLTNAMeetingSearchError-CommErrorText", presentedBy: self)
+        if !self.dontDisplayErrorMessage {
+            type(of: self)._displayErrorAlert("BMLTNAMeetingSearchError-CommErrorHeader", inMessage: "BMLTNAMeetingSearchError-CommErrorText", presentedBy: self)
+        }
     }
     
     /* ################################################################## */
@@ -358,7 +373,9 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
             self.theBigSearchButton.stopAnimation()
             self._locationFailedOnce = false
             self._handlingLocationUpdate = false
-            type(of: self)._displayErrorAlert("BMLTNAMeetingSearchError-LocationFailHeader", inMessage: "BMLTNAMeetingSearchError-LocationFailText", presentedBy: self)
+            if !self.dontDisplayErrorMessage {
+                type(of: self)._displayErrorAlert("BMLTNAMeetingSearchError-LocationFailHeader", inMessage: "BMLTNAMeetingSearchError-LocationFailText", presentedBy: self)
+            }
         } else {    // We try two times.
             self._locationFailedOnce = true
             self.startNewConnection()
