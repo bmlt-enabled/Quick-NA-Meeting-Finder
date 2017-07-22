@@ -17,20 +17,27 @@
   You should have received a copy of the GNU General Public License
   along with this code.  If not, see <http://www.gnu.org/licenses/>.
 */
-/** General communication error text. */
-"BMLTNAMeetingSearchError-CommErrorHeader"                      =   "Communication error";
-"BMLTNAMeetingSearchError-CommErrorText"                        =   "There was a problem communicating with the meeting list server.";
+/*
+     LOCALIZATION INSTRUCTIONS
+ 
+     You should leave the text on the left side of the "=" alone.
+     You should change the text on the right side of the "=" to your preferred language.
+     Leave the quotes ("..."), and the semicolon (;) at the end of the line.
+ */
+/** General communication error text. This is displayed in an alert, if there was a communication problem. */
+"BMLTNAMeetingSearchError-CommErrorHeader"                      =   "Communication error";  // This is the header text.
+"BMLTNAMeetingSearchError-CommErrorText"                        =   "There was a problem communicating with the meeting list server.";  // This is the error description text.
 
-/** Location Failure text. */
-"BMLTNAMeetingSearchError-LocationFailHeader"                   =   "Location Error";
-"BMLTNAMeetingSearchError-LocationFailText"                     =   "The app is unable to figure out where you are right now, so can't deliver results.";
+/** Location Failure text. This is displayed in an alert, if there was a location/search problem */
+"BMLTNAMeetingSearchError-LocationFailHeader"                   =   "Location Error";   // This is the header text.
+"BMLTNAMeetingSearchError-LocationFailText"                     =   "The app is unable to figure out where you are right now, so can't deliver results.";   // This is the detailed explanation text.
 
-/** No meetings found text. */
-"BMLTNAMeetingSearchError-NoResultsHeader"                      =   "No Meetings Found";
-"BMLTNAMeetingSearchError-NoResultsText"                        =   "No nearby meetings were found that meet later today or tomorrow.";
+/** No meetings found text. This is displayed in an alert, if there were no eligible meetings found. */
+"BMLTNAMeetingSearchError-NoResultsHeader"                      =   "No Meetings Found";    // This is the header text.
+"BMLTNAMeetingSearchError-NoResultsText"                        =   "No nearby meetings were found that meet later today or tomorrow."; // This is the detailed explanation text.
 
 /** Alert OK Button. */
-"BMLTNAMeetingSearchError-OKButtonText"                         =   "OK";
+"BMLTNAMeetingSearchError-OKButtonText"                         =   "OK";   // This is the "OK" button in the alerts, above.
 
 /** The title of the Search Results Screen. */
 "SEARCHRESULTSTITLE"                                            =   "Search Results";
@@ -48,15 +55,15 @@
 /** The title of the Details Screen */
 "DETAILS-SCREEN"                                                =   "Details";
 /** This format is for the meeting time display in the Details View. */
-"DETAILS-SCREEN-MEETING-TIME-FORMAT"                            =   "Meets Every %@, at %@";
+"DETAILS-SCREEN-MEETING-TIME-FORMAT"                            =   "Meets Every %@, at %@";    // The "%@" are "placeholders" that are filled with the weekday (text) and start time (time format).
 /** Strings for noon and midnight */
-"DETAILS-SCREEN-NOON"                                           =   "noon";
-"DETAILS-SCREEN-MIDNIGHT"                                       =   "midnight";
-/** These two are for the map marker callouts. */
+"DETAILS-SCREEN-NOON"                                           =   "noon";     // If the time is 12:00 PM, we make it "Noon".
+"DETAILS-SCREEN-MIDNIGHT"                                       =   "midnight"; // If the time is 24:00/00:00, we make it "Midnight".
+/** These two are for the map marker callouts. They appear in a small window when you touch a map marker. */
 "DETAILS-SCREEN-MAP-INFO-TEXT"                                  =   "Meeting Location";
 "DETAILS-SCREEN-MAP-YAH-INFO-TEXT"                              =   "You Are Here";
 /** This is the text for the More Info NavBar button */
-"DETAILS-MORE-INFO"                                             =   "More Info";
+"DETAILS-MORE-INFO"                                             =   "More Info";    // This is a link for more info for the meeting.
 
 /** The title of the Address and Directions Screen. */
 "ADDRESS-AND-DIRECTIONS"                                        =   "More Info";
@@ -84,7 +91,7 @@
 /** The title label for the "Grace Time" Picker View, itself */
 "GRACE-TIME-PICKER-LABEL"                                       =   "Only Include Meetings that:";
 
-/** These are values for the picker. */
+/** These are values for the "grace time" picker in the settings screen. */
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-00"        =   "60";
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-00"         =   "Won't start for at least an hour";
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-01"        =   "30";
@@ -100,10 +107,7 @@
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-06"        =   "-60";
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-06"         =   "May already be running for an hour";
 
-/** The default value. */
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Default-Value"   =   "-15";
-
-/** THis is the "Tutorial" text in the "Settings" screen. */
+/** This is the "Tutorial" text in the "Settings" screen. */
 "SETTINGS-EXPLAIN"                                              =   "This app works by simply touching the big button in the middle of the main screen. It then figures out where you are, and finds nearby meetings in the next couple of days (later today and tomorrow). You can look at the meetings in a list, or touch a meeting in the list to examine it individually for further details.";
 
 /** The title for the "About" screen */
@@ -118,3 +122,7 @@
 /** This is the main text for the "About US" screen. */
 "ABOUT-US-TEXT"                                                 =   "This app was originally created as a demonstrator for the BMLTiOSLib project, but has proven to be popular enough to release on its own merits.\nLike all MAGSHARE projects, it is 100% open-source (GPLv3 license), and its source can be found at:\n\nhttps://bitbucket.org/bmlt/bmlt-na-meeting-search\n\nPress the logo button above, to be taken to the support site for this app.\n\nBMLT and MAGSHARE are expressions of Gratitude and Service to NA for gifts beyond price.\n\nConsider this a tiny down payment. It barely covers the interest.";
 
+/* DON'T CHANGE THESE VALUES. */
+
+/** The default value of the "grace time" picker. The picker will be set initially to this value (usually, you should not change this for localization). */
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Default-Value"   =   "-15";

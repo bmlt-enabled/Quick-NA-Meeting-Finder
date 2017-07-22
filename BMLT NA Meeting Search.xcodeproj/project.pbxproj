@@ -10,25 +10,8 @@
 		7702A0881E25A87600EE6687 /* BMLTNAMeetingSearchPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4D8871E24494E00CE6783 /* BMLTNAMeetingSearchPrefs.swift */; };
 		770780B41DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770780B31DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift */; };
 		770780B61DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */; };
-		771AAA601E314A0000FDB729 /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771AAA5C1E314A0000FDB729 /* BMLTNAMeetingSearchLaunchScreen.storyboard */; };
-		771AAA611E314A0000FDB729 /* BMLTNAMeetingSearchMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771AAA5E1E314A0000FDB729 /* BMLTNAMeetingSearchMain.storyboard */; };
 		7750A16D1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */; };
 		77556CF01E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */; };
-		77900BD81E30F86400247B56 /* BMLTNAMeetingSearchAnimatedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A5E96B1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift */; };
-		77900BD91E30F86400247B56 /* BMLTNAMeetingSearchMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */; };
-		77900BDA1E30F86400247B56 /* BMLTNAMeetingSearchDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */; };
-		77900BDB1E30F86400247B56 /* BMLTNAMeetingSearchAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */; };
-		77900BDC1E30F86400247B56 /* BMLTNAMeetingSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D692851E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift */; };
-		77900BDD1E30F86400247B56 /* BMLTNAMeetingSearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */; };
-		77900BDE1E30F86400247B56 /* BMLTNAMeetingSearchInitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */; };
-		77900BDF1E30F86400247B56 /* BMLTNAMeetingSearchSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEDD2F1E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift */; };
-		77900BE01E30F86400247B56 /* BMLTNAMeetingSearchAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770780B31DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift */; };
-		77900BE11E30F86400247B56 /* BMLTNAMeetingSearchPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4D8871E24494E00CE6783 /* BMLTNAMeetingSearchPrefs.swift */; };
-		77900BE31E30F86400247B56 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EB7DC01E286717004E05E0 /* MapKit.framework */; };
-		77900BEE1E30F86400247B56 /* BMLTNAMeetingSearchResultsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D3601E30F208001FD28A /* BMLTNAMeetingSearchResultsTableCell.xib */; };
-		77900BFE1E30F88A00247B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77900BF71E30F88A00247B56 /* Assets.xcassets */; };
-		77900BFF1E30F88A00247B56 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77900BF81E30F88A00247B56 /* Localizable.strings */; };
-		77900C001E30F88A00247B56 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77900BFA1E30F88A00247B56 /* Default-568h@2x.png */; };
 		77A5E96C1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A5E96B1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift */; };
 		77AEDD301E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEDD2F1E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift */; };
 		77C5F0C91E2B2E7700A4F205 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EB7DC01E286717004E05E0 /* MapKit.framework */; };
@@ -40,7 +23,6 @@
 		77D3D3671E30F221001FD28A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D3691E30F221001FD28A /* Localizable.strings */; };
 		77D692861E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D692851E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift */; };
 		77E0CC091E594CE100D1A85D /* BMLTiOSLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77C867DA1E34552F00C095B5 /* BMLTiOSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		77E0CC0A1E594DF100D1A85D /* BMLTiOSLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77C867DA1E34552F00C095B5 /* BMLTiOSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		77E92E081E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */; };
 		77EB4BE31E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */; };
 /* End PBXBuildFile section */
@@ -74,13 +56,6 @@
 			remoteGlobalIDString = 77368DDA1DF849350066C78E;
 			remoteInfo = BMLTiOSLib;
 		};
-		77E0CC0B1E594E3F00D1A85D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 77C867D31E34552E00C095B5 /* BMLTiOSLib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 77368DDA1DF849350066C78E;
-			remoteInfo = BMLTiOSLib;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -95,38 +70,18 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77900BEF1E30F86400247B56 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				77E0CC0A1E594DF100D1A85D /* BMLTiOSLib.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		770780B01DF86B6100D339D6 /* NA Meeting Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NA Meeting Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		770780B31DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAppDelegate.swift; sourceTree = "<group>"; };
 		770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchInitialViewController.swift; sourceTree = "<group>"; };
-		771AAA5D1E314A0000FDB729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BMLTNAMeetingSearchLaunchScreen.storyboard; sourceTree = "<group>"; };
-		771AAA5F1E314A0000FDB729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BMLTNAMeetingSearchMain.storyboard; sourceTree = "<group>"; };
 		771D010F1E26C76600CE48C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		77343B121E2E3A8600F5CEA3 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchMarker.swift; sourceTree = "<group>"; };
 		77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchDirectionsViewController.swift; sourceTree = "<group>"; };
 		775EDFC11E9A6C6E007B7DE6 /* NorthportNY.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NorthportNY.gpx; sourceTree = "<group>"; };
 		777884BC1E83E016004D4F09 /* SanDiegoCA.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SanDiegoCA.gpx; sourceTree = "<group>"; };
-		77900BF41E30F86400247B56 /* Florida NA Meeting Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Florida NA Meeting Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		77900BF71E30F88A00247B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		77900BF91E30F88A00247B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		77900BFA1E30F88A00247B56 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		77900BFB1E30F88A00247B56 /* fl.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fl.geojson; sourceTree = "<group>"; };
-		77900BFC1E30F88A00247B56 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77900BFD1E30F88A00247B56 /* TampaFL.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TampaFL.gpx; sourceTree = "<group>"; };
 		77A5E96B1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAnimatedButtonView.swift; sourceTree = "<group>"; };
 		77AEDD2F1E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchSettingsViewController.swift; sourceTree = "<group>"; };
 		77AF47FA1E7EB92D00230F74 /* global.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = global.geojson; sourceTree = "<group>"; };
@@ -147,6 +102,7 @@
 		77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAddressViewController.swift; sourceTree = "<group>"; };
 		77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAboutViewController.swift; sourceTree = "<group>"; };
 		77EB7DC01E286717004E05E0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		77F4F47B1F23B9D3009749B9 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,14 +111,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				77C5F0C91E2B2E7700A4F205 /* MapKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		77900BE21E30F86400247B56 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				77900BE31E30F86400247B56 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				770780B01DF86B6100D339D6 /* NA Meeting Finder.app */,
-				77900BF41E30F86400247B56 /* Florida NA Meeting Finder.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,7 +158,6 @@
 			children = (
 				77D3D35A1E30F1C1001FD28A /* Baseline */,
 				77D3D3431E30F192001FD28A /* Main Variant */,
-				77900BF61E30F88A00247B56 /* FL Variant */,
 			);
 			name = "Resources and Extra";
 			path = "NA Meeting Search";
@@ -226,21 +172,6 @@
 			);
 			name = "Special Purpose Classes";
 			sourceTree = "<group>";
-		};
-		77900BF61E30F88A00247B56 /* FL Variant */ = {
-			isa = PBXGroup;
-			children = (
-				77900BF71E30F88A00247B56 /* Assets.xcassets */,
-				771AAA5C1E314A0000FDB729 /* BMLTNAMeetingSearchLaunchScreen.storyboard */,
-				771AAA5E1E314A0000FDB729 /* BMLTNAMeetingSearchMain.storyboard */,
-				77900BF81E30F88A00247B56 /* Localizable.strings */,
-				77900BFA1E30F88A00247B56 /* Default-568h@2x.png */,
-				77900BFB1E30F88A00247B56 /* fl.geojson */,
-				77900BFC1E30F88A00247B56 /* Info.plist */,
-				77900BFD1E30F88A00247B56 /* TampaFL.gpx */,
-			);
-			path = "FL Variant";
-			sourceTree = SOURCE_ROOT;
 		};
 		77C5F0D91E2B303000A4F205 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -312,25 +243,6 @@
 			productReference = 770780B01DF86B6100D339D6 /* NA Meeting Finder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		77900BD61E30F86400247B56 /* FL Meeting Finder */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 77900BF11E30F86400247B56 /* Build configuration list for PBXNativeTarget "FL Meeting Finder" */;
-			buildPhases = (
-				77900BD71E30F86400247B56 /* Sources */,
-				77900BE21E30F86400247B56 /* Frameworks */,
-				77900BE51E30F86400247B56 /* Resources */,
-				77900BEF1E30F86400247B56 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				77E0CC0C1E594E3F00D1A85D /* PBXTargetDependency */,
-			);
-			name = "FL Meeting Finder";
-			productName = "NA Meeting Search";
-			productReference = 77900BF41E30F86400247B56 /* Florida NA Meeting Finder.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -351,10 +263,6 @@
 							};
 						};
 					};
-					77900BD61E30F86400247B56 = {
-						DevelopmentTeam = P53V4JS928;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = 770780AB1DF86B6100D339D6 /* Build configuration list for PBXProject "BMLT NA Meeting Search" */;
@@ -364,6 +272,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 770780A71DF86B6100D339D6;
 			productRefGroup = 770780B11DF86B6100D339D6 /* Products */;
@@ -377,7 +286,6 @@
 			projectRoot = "";
 			targets = (
 				770780AF1DF86B6100D339D6 /* NA Meeting Finder */,
-				77900BD61E30F86400247B56 /* FL Meeting Finder */,
 			);
 		};
 /* End PBXProject section */
@@ -420,19 +328,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77900BE51E30F86400247B56 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				77900BFF1E30F88A00247B56 /* Localizable.strings in Resources */,
-				771AAA601E314A0000FDB729 /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */,
-				77900C001E30F88A00247B56 /* Default-568h@2x.png in Resources */,
-				77900BFE1E30F88A00247B56 /* Assets.xcassets in Resources */,
-				77900BEE1E30F86400247B56 /* BMLTNAMeetingSearchResultsTableCell.xib in Resources */,
-				771AAA611E314A0000FDB729 /* BMLTNAMeetingSearchMain.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -453,23 +348,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77900BD71E30F86400247B56 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				77900BD81E30F86400247B56 /* BMLTNAMeetingSearchAnimatedButtonView.swift in Sources */,
-				77900BD91E30F86400247B56 /* BMLTNAMeetingSearchMarker.swift in Sources */,
-				77900BDA1E30F86400247B56 /* BMLTNAMeetingSearchDirectionsViewController.swift in Sources */,
-				77900BDB1E30F86400247B56 /* BMLTNAMeetingSearchAboutViewController.swift in Sources */,
-				77900BDC1E30F86400247B56 /* BMLTNAMeetingSearchResultViewController.swift in Sources */,
-				77900BDD1E30F86400247B56 /* BMLTNAMeetingSearchAddressViewController.swift in Sources */,
-				77900BDE1E30F86400247B56 /* BMLTNAMeetingSearchInitialViewController.swift in Sources */,
-				77900BDF1E30F86400247B56 /* BMLTNAMeetingSearchSettingsViewController.swift in Sources */,
-				77900BE01E30F86400247B56 /* BMLTNAMeetingSearchAppDelegate.swift in Sources */,
-				77900BE11E30F86400247B56 /* BMLTNAMeetingSearchPrefs.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -478,38 +356,9 @@
 			name = BMLTiOSLib;
 			targetProxy = 77C867DF1E34563800C095B5 /* PBXContainerItemProxy */;
 		};
-		77E0CC0C1E594E3F00D1A85D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BMLTiOSLib;
-			targetProxy = 77E0CC0B1E594E3F00D1A85D /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		771AAA5C1E314A0000FDB729 /* BMLTNAMeetingSearchLaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				771AAA5D1E314A0000FDB729 /* Base */,
-			);
-			name = BMLTNAMeetingSearchLaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		771AAA5E1E314A0000FDB729 /* BMLTNAMeetingSearchMain.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				771AAA5F1E314A0000FDB729 /* Base */,
-			);
-			name = BMLTNAMeetingSearchMain.storyboard;
-			sourceTree = "<group>";
-		};
-		77900BF81E30F88A00247B56 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77900BF91E30F88A00247B56 /* Base */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
 		77D3D35C1E30F208001FD28A /* BMLTNAMeetingSearchLaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -541,6 +390,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				77D3D3681E30F221001FD28A /* Base */,
+				77F4F47B1F23B9D3009749B9 /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -552,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -611,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -691,46 +543,6 @@
 			};
 			name = Release;
 		};
-		77900BF21E30F86400247B56 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P53V4JS928;
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}";
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				INFOPLIST_FILE = "${PROJECT_DIR}/FL Variant/info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.magshare.bmlt.FL-NA-Meeting-Finder";
-				PRODUCT_NAME = "Florida NA Meeting Finder";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		77900BF31E30F86400247B56 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P53V4JS928;
-				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}";
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				INFOPLIST_FILE = "${PROJECT_DIR}/FL Variant/info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.magshare.bmlt.FL-NA-Meeting-Finder";
-				PRODUCT_NAME = "Florida NA Meeting Finder";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -748,15 +560,6 @@
 			buildConfigurations = (
 				770780C31DF86B6100D339D6 /* Debug */,
 				770780C41DF86B6100D339D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		77900BF11E30F86400247B56 /* Build configuration list for PBXNativeTarget "FL Meeting Finder" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				77900BF21E30F86400247B56 /* Debug */,
-				77900BF31E30F86400247B56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
