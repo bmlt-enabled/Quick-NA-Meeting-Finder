@@ -166,11 +166,10 @@ import UIKit
     override func draw(_ rect: CGRect) {
         // We can add a highlight overlay.
         if self.isHighlighted {
+            self._indexedImage.draw(in: rect)
             let imageName = "BMLTNAMeetingSearchAnimatedButtonView/Highlight"
             if let image = UIImage(named: imageName) {
                 image.draw(in: rect)
-            } else {
-                self._indexedImage.draw(in: rect)
             }
         } else {    // If there is a different "disabled" image, we use that.
             if !self.isEnabled {
