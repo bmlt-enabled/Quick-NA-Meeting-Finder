@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kew-fC-Z8J">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kew-fC-Z8J">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -43,14 +43,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundGradient" translatesAutoresizingMaskIntoConstraints="NO" id="tsZ-es-xqw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LO-Ng-31j" customClass="BMLTNAMeetingSearchAnimatedButtonView" customModule="NA_Meeting_Finder" customModuleProvider="target">
-                                <rect key="frame" x="67" y="213" width="240" height="240"/>
+                                <rect key="frame" x="67" y="181.5" width="240" height="240"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4LO-Ng-31j" secondAttribute="height" multiplier="1:1" id="Bjw-u7-MIo"/>
@@ -69,7 +69,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvG-R2-DS3">
-                                <rect key="frame" x="334" y="634" width="25" height="25"/>
+                                <rect key="frame" x="334" y="570" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZvG-R2-DS3" secondAttribute="height" multiplier="1:1" id="I3p-2R-iSV"/>
                                     <constraint firstAttribute="height" constant="25" id="Oeb-Ak-9Zo"/>
@@ -116,7 +116,7 @@
                         <viewControllerLayoutGuide type="bottom" id="sNl-Ne-5Db"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8Oe-q9-kr5">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundGradient" translatesAutoresizingMaskIntoConstraints="NO" id="Kg2-Al-Fx3">
@@ -186,7 +186,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2K9-iz-5cl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hiW-TZ-5ny">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundGradient" translatesAutoresizingMaskIntoConstraints="NO" id="Dh6-OA-azm">
@@ -308,7 +308,7 @@
                         <viewControllerLayoutGuide type="bottom" id="T60-hv-I8G"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nzH-xT-V3A">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundGradient" translatesAutoresizingMaskIntoConstraints="NO" id="JEB-25-zgv">
@@ -394,7 +394,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xir-rq-Fbd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8vv-zI-mpc">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundGradient" translatesAutoresizingMaskIntoConstraints="NO" id="GBE-ET-caX">
@@ -472,18 +472,18 @@
                             <constraint firstItem="JC6-h9-ode" firstAttribute="leading" secondItem="8vv-zI-mpc" secondAttribute="leadingMargin" id="90q-dZ-3IC"/>
                             <constraint firstItem="80w-Ke-MkQ" firstAttribute="leading" secondItem="8vv-zI-mpc" secondAttribute="leadingMargin" id="9ou-o3-tEP"/>
                             <constraint firstItem="Y5X-p5-toZ" firstAttribute="leading" secondItem="8vv-zI-mpc" secondAttribute="leadingMargin" id="BZm-aD-klg"/>
-                            <constraint firstItem="xir-rq-Fbd" firstAttribute="top" secondItem="6IA-vY-W5E" secondAttribute="bottom" id="DRC-gy-qHm"/>
-                            <constraint firstItem="Y5X-p5-toZ" firstAttribute="top" secondItem="CuD-JA-MI4" secondAttribute="bottom" id="F6Y-n5-e3D"/>
+                            <constraint firstItem="Y5X-p5-toZ" firstAttribute="top" secondItem="CuD-JA-MI4" secondAttribute="bottom" id="Gpg-To-Xmp"/>
                             <constraint firstItem="JC6-h9-ode" firstAttribute="top" secondItem="80w-Ke-MkQ" secondAttribute="bottom" id="Khj-Nu-704"/>
                             <constraint firstItem="6IA-vY-W5E" firstAttribute="top" secondItem="hl1-ym-yRb" secondAttribute="bottom" id="MVG-O7-oEs"/>
+                            <constraint firstItem="xir-rq-Fbd" firstAttribute="top" secondItem="6IA-vY-W5E" secondAttribute="bottom" id="Oh0-FF-HXB"/>
                             <constraint firstAttribute="trailing" secondItem="GBE-ET-caX" secondAttribute="trailing" id="TOa-bB-Fmv"/>
                             <constraint firstItem="hl1-ym-yRb" firstAttribute="leading" secondItem="8vv-zI-mpc" secondAttribute="leading" id="X50-eS-beu"/>
-                            <constraint firstItem="GBE-ET-caX" firstAttribute="top" secondItem="CuD-JA-MI4" secondAttribute="bottom" id="lF8-bH-AyR"/>
+                            <constraint firstItem="xir-rq-Fbd" firstAttribute="top" secondItem="GBE-ET-caX" secondAttribute="bottom" id="e70-aj-oGI"/>
                             <constraint firstItem="c3E-Fk-O77" firstAttribute="trailing" secondItem="8vv-zI-mpc" secondAttribute="trailingMargin" id="lRq-EO-wq8"/>
                             <constraint firstItem="JC6-h9-ode" firstAttribute="trailing" secondItem="8vv-zI-mpc" secondAttribute="trailingMargin" id="lie-z7-PqM"/>
                             <constraint firstItem="c3E-Fk-O77" firstAttribute="top" secondItem="Y5X-p5-toZ" secondAttribute="bottom" id="nhM-wJ-dlS"/>
+                            <constraint firstItem="GBE-ET-caX" firstAttribute="top" secondItem="CuD-JA-MI4" secondAttribute="bottom" id="noC-Bj-eqT"/>
                             <constraint firstItem="c3E-Fk-O77" firstAttribute="leading" secondItem="8vv-zI-mpc" secondAttribute="leadingMargin" id="oSg-IW-m1S"/>
-                            <constraint firstItem="xir-rq-Fbd" firstAttribute="top" secondItem="GBE-ET-caX" secondAttribute="bottom" id="qKr-d8-9sb"/>
                             <constraint firstItem="Y5X-p5-toZ" firstAttribute="trailing" secondItem="8vv-zI-mpc" secondAttribute="trailingMargin" id="sZv-O6-a16"/>
                             <constraint firstItem="80w-Ke-MkQ" firstAttribute="top" secondItem="c3E-Fk-O77" secondAttribute="bottom" id="tLS-aA-lZR"/>
                             <constraint firstItem="6IA-vY-W5E" firstAttribute="leading" secondItem="8vv-zI-mpc" secondAttribute="leading" constant="-4" id="vUa-Ht-OPT"/>
@@ -522,7 +522,7 @@
                         <viewControllerLayoutGuide type="bottom" id="N89-cR-QVR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CDP-TV-93U">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundGradient" translatesAutoresizingMaskIntoConstraints="NO" id="fPn-bD-iIy">
@@ -598,7 +598,7 @@
     </scenes>
     <resources>
         <image name="BackgroundGradient" width="1" height="2732"/>
-        <image name="Beanie" width="522" height="522"/>
+        <image name="Beanie" width="128" height="131"/>
         <image name="HighlightedGear" width="25" height="25"/>
         <image name="InfoIcon" width="22" height="22"/>
         <image name="NormalGear" width="25" height="25"/>
