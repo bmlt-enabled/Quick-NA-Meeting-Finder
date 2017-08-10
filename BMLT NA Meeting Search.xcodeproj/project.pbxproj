@@ -10,11 +10,12 @@
 		7702A0881E25A87600EE6687 /* BMLTNAMeetingSearchPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4D8871E24494E00CE6783 /* BMLTNAMeetingSearchPrefs.swift */; };
 		770780B41DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770780B31DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift */; };
 		770780B61DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */; };
+		770B04EE1F3CB6AC009F0A7C /* BMLTiOSLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C867DA1E34552F00C095B5 /* BMLTiOSLib.framework */; };
+		770B04F21F3CB6CE009F0A7C /* BMLTiOSLib.framework in Embed BMLTiOSLib */ = {isa = PBXBuildFile; fileRef = 77C867DA1E34552F00C095B5 /* BMLTiOSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7750A16D1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */; };
 		77556CF01E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */; };
 		77A5E96C1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A5E96B1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift */; };
 		77AEDD301E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEDD2F1E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift */; };
-		77C5F0C91E2B2E7700A4F205 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EB7DC01E286717004E05E0 /* MapKit.framework */; };
 		77D3D3511E30F192001FD28A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D3441E30F192001FD28A /* Assets.xcassets */; };
 		77D3D3561E30F192001FD28A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D34D1E30F192001FD28A /* Default-568h@2x.png */; };
 		77D3D3621E30F208001FD28A /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D35C1E30F208001FD28A /* BMLTNAMeetingSearchLaunchScreen.storyboard */; };
@@ -22,12 +23,18 @@
 		77D3D3641E30F208001FD28A /* BMLTNAMeetingSearchResultsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D3601E30F208001FD28A /* BMLTNAMeetingSearchResultsTableCell.xib */; };
 		77D3D3671E30F221001FD28A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77D3D3691E30F221001FD28A /* Localizable.strings */; };
 		77D692861E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D692851E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift */; };
-		77E0CC091E594CE100D1A85D /* BMLTiOSLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77C867DA1E34552F00C095B5 /* BMLTiOSLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		77E92E081E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */; };
 		77EB4BE31E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		770B04EF1F3CB6B5009F0A7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77C867D31E34552E00C095B5 /* BMLTiOSLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 77368DDA1DF849350066C78E;
+			remoteInfo = BMLTiOSLib;
+		};
 		77C867D91E34552F00C095B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 77C867D31E34552E00C095B5 /* BMLTiOSLib.xcodeproj */;
@@ -49,25 +56,18 @@
 			remoteGlobalIDString = 77368DD11DF846B20066C78E;
 			remoteInfo = "BMLTiOSLib  Framework Tester";
 		};
-		77C867DF1E34563800C095B5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 77C867D31E34552E00C095B5 /* BMLTiOSLib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 77368DDA1DF849350066C78E;
-			remoteInfo = BMLTiOSLib;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		770780CE1DF86C2D00D339D6 /* Embed Frameworks */ = {
+		770B04F11F3CB6BA009F0A7C /* Embed BMLTiOSLib */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				77E0CC091E594CE100D1A85D /* BMLTiOSLib.framework in Embed Frameworks */,
+				770B04F21F3CB6CE009F0A7C /* BMLTiOSLib.framework in Embed BMLTiOSLib */,
 			);
-			name = "Embed Frameworks";
+			name = "Embed BMLTiOSLib";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -93,7 +93,6 @@
 		77D3D34D1E30F192001FD28A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		77D3D34E1E30F192001FD28A /* HuntingtonNY.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HuntingtonNY.gpx; sourceTree = "<group>"; };
 		77D3D34F1E30F192001FD28A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77D3D3501E30F192001FD28A /* ny.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ny.geojson; sourceTree = "<group>"; };
 		77D3D35D1E30F208001FD28A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BMLTNAMeetingSearchLaunchScreen.storyboard; sourceTree = "<group>"; };
 		77D3D35F1E30F208001FD28A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BMLTNAMeetingSearchMain.storyboard; sourceTree = "<group>"; };
 		77D3D3611E30F208001FD28A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = BMLTNAMeetingSearchResultsTableCell.xib; sourceTree = "<group>"; };
@@ -101,7 +100,6 @@
 		77D692851E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchResultViewController.swift; sourceTree = "<group>"; };
 		77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAddressViewController.swift; sourceTree = "<group>"; };
 		77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAboutViewController.swift; sourceTree = "<group>"; };
-		77EB7DC01E286717004E05E0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		77F4F47B1F23B9D3009749B9 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77C5F0C91E2B2E7700A4F205 /* MapKit.framework in Frameworks */,
+				770B04EE1F3CB6AC009F0A7C /* BMLTiOSLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				77C867D31E34552E00C095B5 /* BMLTiOSLib.xcodeproj */,
-				77EB7DC01E286717004E05E0 /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,12 +195,11 @@
 				77D3D3691E30F221001FD28A /* Localizable.strings */,
 				77D3D3441E30F192001FD28A /* Assets.xcassets */,
 				77D3D34D1E30F192001FD28A /* Default-568h@2x.png */,
-				77D3D34E1E30F192001FD28A /* HuntingtonNY.gpx */,
-				775EDFC11E9A6C6E007B7DE6 /* NorthportNY.gpx */,
 				77D3D34F1E30F192001FD28A /* Info.plist */,
 				77AF47FA1E7EB92D00230F74 /* global.geojson */,
+				77D3D34E1E30F192001FD28A /* HuntingtonNY.gpx */,
+				775EDFC11E9A6C6E007B7DE6 /* NorthportNY.gpx */,
 				77CA577B1E82917300FA439B /* Dublin.gpx */,
-				77D3D3501E30F192001FD28A /* ny.geojson */,
 				77D04FF21E9BE15400531ADC /* RichmondVA.gpx */,
 				777884BC1E83E016004D4F09 /* SanDiegoCA.gpx */,
 			);
@@ -231,12 +227,12 @@
 				770780AC1DF86B6100D339D6 /* Sources */,
 				770780AD1DF86B6100D339D6 /* Frameworks */,
 				770780AE1DF86B6100D339D6 /* Resources */,
-				770780CE1DF86C2D00D339D6 /* Embed Frameworks */,
+				770B04F11F3CB6BA009F0A7C /* Embed BMLTiOSLib */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				77C867E01E34563800C095B5 /* PBXTargetDependency */,
+				770B04F01F3CB6B5009F0A7C /* PBXTargetDependency */,
 			);
 			name = "NA Meeting Finder";
 			productName = "NA Meeting Search";
@@ -250,7 +246,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = MAGSHARE;
 				TargetAttributes = {
 					770780AF1DF86B6100D339D6 = {
@@ -351,10 +347,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		77C867E01E34563800C095B5 /* PBXTargetDependency */ = {
+		770B04F01F3CB6B5009F0A7C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BMLTiOSLib;
-			targetProxy = 77C867DF1E34563800C095B5 /* PBXContainerItemProxy */;
+			targetProxy = 770B04EF1F3CB6B5009F0A7C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -409,7 +405,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -418,6 +416,8 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
@@ -453,7 +453,9 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -469,7 +471,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -478,6 +482,8 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
@@ -505,7 +511,9 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -523,7 +531,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.magshare.bmlt.NA-Meeting-Finder";
 				PRODUCT_NAME = "NA Meeting Finder";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -539,7 +548,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.magshare.bmlt.NA-Meeting-Finder";
 				PRODUCT_NAME = "NA Meeting Finder";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

@@ -49,10 +49,6 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
     private var _locationManager: CLLocationManager! = nil
 
     /* ################################################################## */
-    /** Set to true while we are looking up a location. */
-    private var _handlingLocationUpdate: Bool = false
-
-    /* ################################################################## */
     /** We can do two tries to determine location. This is set to true after the first one. */
     private var _locationFailedOnce: Bool = false
     
@@ -128,7 +124,6 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
      */
     private func _startSearch(_ coordinate: CLLocationCoordinate2D) {
         self._searchCenterCoords = coordinate
-        self._handlingLocationUpdate = false
         self._locationFailedOnce = false
         if nil != self.criteriaObject {
             self.criteriaObject.clearAll()
@@ -242,7 +237,6 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
      */
     func startNewConnection() {
         self.theBigSearchButton.startAnimation()
-        self._handlingLocationUpdate = false
         self.commObject = BMLTiOSLib(inRootServerURI: BMLTNAMeetingSearchPrefs.prefs.rootURI , inDelegate: self)
     }
     
@@ -255,9 +249,7 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
      */
     func terminateConnection() {
         if nil != self._locationManager {
-            self._locationManager.delegate = nil
             self._locationManager.stopUpdatingLocation()
-            self._locationManager = nil
         }
         self.theBigSearchButton.stopAnimation(endAnimation: false)
         self.commObject = nil
@@ -277,11 +269,10 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
             self.terminateConnection()
             self.theBigSearchButton.stopAnimation() // This makes sure the button is reset.
         } else {    // If we did, w00t! We start a "Find out where I am" geolocation, and we'll do a search from there.
-            self._handlingLocationUpdate = false
             self._locationManager = CLLocationManager()
-            self._locationManager.requestWhenInUseAuthorization()
             self._locationManager.delegate = self
             self._locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            self._locationManager.requestWhenInUseAuthorization()
             self._locationManager.startUpdatingLocation()
         }
     }
@@ -294,13 +285,10 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
      - parameter meetingSearchResults: An array of meeting objects, representing the results of a search.
      */
     func bmltLibInstance(_ inLibInstance: BMLTiOSLib, meetingSearchResults: [BMLTiOSLibMeetingNode]) {
-        self._handlingLocationUpdate = false
         self.terminateConnection()
         self.theBigSearchButton.stopAnimation() // This makes sure the button is reset.
         if nil != self._locationManager {
             self._locationManager.stopUpdatingLocation()
-            self._locationManager.delegate = nil
-            self._locationManager = nil
         }
         
         self.theBigSearchButton.stopAnimation()
@@ -344,11 +332,8 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
      - parameter errorOccurred: The error that occurred.
      */
     func bmltLibInstance(_ inLibInstance: BMLTiOSLib, errorOccurred error: Error) {
-        self._handlingLocationUpdate = false
         if nil != self._locationManager {
             self._locationManager.stopUpdatingLocation()
-            self._locationManager.delegate = nil
-            self._locationManager = nil
         }
         self.terminateConnection()
         self.theBigSearchButton.stopAnimation() // This makes sure the button is reset.
@@ -372,7 +357,6 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
         if self._locationFailedOnce {   // If at first, you don't succeed...
             self.theBigSearchButton.stopAnimation()
             self._locationFailedOnce = false
-            self._handlingLocationUpdate = false
             if !self.dontDisplayErrorMessage {
                 type(of: self)._displayErrorAlert("BMLTNAMeetingSearchError-LocationFailHeader", inMessage: "BMLTNAMeetingSearchError-LocationFailText", presentedBy: self)
             }
@@ -390,17 +374,16 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
      - parameter didUpdateLocations: an array of updated locations.
      */
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if !self._handlingLocationUpdate {
-            self._locationFailedOnce = false
-            self._locationManager.stopUpdatingLocation()
-            self._locationManager.delegate = nil
-            self._locationManager = nil
-            if 0 < locations.count {
-                let coordinate = locations[0].coordinate
+        self._locationFailedOnce = false
+        self._locationManager.stopUpdatingLocation()
+        for location in locations {
+            if 2 > location.timestamp.timeIntervalSinceNow {
+                let coordinate = location.coordinate
                 DispatchQueue.main.async(execute: {
-                    self._handlingLocationUpdate = false
                     self._startSearch(coordinate)
                 })
+                
+                break
             }
         }
     }

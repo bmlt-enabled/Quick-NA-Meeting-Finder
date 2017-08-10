@@ -125,8 +125,10 @@ import UIKit
      Start animating.
      */
     func startAnimation() {
-        self.isAnimating = true
-        self._incrementImage()
+        if !self.isAnimating {
+            self.isAnimating = true
+            self._incrementImage()
+        }
     }
     
     /* ################################################################## */
