@@ -220,7 +220,7 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
      */
     @IBAction func bigAssButtonWasHit(_ sender: BMLTNAMeetingSearchAnimatedButtonView) {
         self._locationFailedOnce = false
-        if nil == self.commObject {
+        if !self.theBigSearchButton.isAnimating {
             self.startNewConnection()
         } else {
             self.terminateConnection()
@@ -236,6 +236,7 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
      This starts the animation.
      */
     func startNewConnection() {
+        self.terminateConnection()
         self.theBigSearchButton.startAnimation()
         self.commObject = BMLTiOSLib(inRootServerURI: BMLTNAMeetingSearchPrefs.prefs.rootURI , inDelegate: self)
     }
@@ -265,6 +266,7 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
      - parameter inServerIsValid: A Bool, true, if the server was successfully connected.
      */
     func bmltLibInstance(_ inLibInstance: BMLTiOSLib, serverIsValid: Bool) {
+        self._locationFailedOnce = false
         if !serverIsValid { // If we didn't make it, then we terminate the attempt.
             self.terminateConnection()
             self.theBigSearchButton.stopAnimation() // This makes sure the button is reset.
@@ -374,8 +376,8 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
      - parameter didUpdateLocations: an array of updated locations.
      */
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        self._locationFailedOnce = false
         self._locationManager.stopUpdatingLocation()
+        self._locationFailedOnce = false
         for location in locations {
             if 2 > location.timestamp.timeIntervalSinceNow {
                 let coordinate = location.coordinate
