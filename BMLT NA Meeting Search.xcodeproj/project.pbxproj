@@ -73,7 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		770780B01DF86B6100D339D6 /* NA Meeting Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NA Meeting Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		770780B01DF86B6100D339D6 /* Quick NA Meeting Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick NA Meeting Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		770780B31DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAppDelegate.swift; sourceTree = "<group>"; };
 		770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchInitialViewController.swift; sourceTree = "<group>"; };
 		771D010F1E26C76600CE48C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		770780B11DF86B6100D339D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				770780B01DF86B6100D339D6 /* NA Meeting Finder.app */,
+				770780B01DF86B6100D339D6 /* Quick NA Meeting Finder.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,9 +220,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		770780AF1DF86B6100D339D6 /* NA Meeting Finder */ = {
+		770780AF1DF86B6100D339D6 /* Quick NA Meeting Finder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 770780C21DF86B6100D339D6 /* Build configuration list for PBXNativeTarget "NA Meeting Finder" */;
+			buildConfigurationList = 770780C21DF86B6100D339D6 /* Build configuration list for PBXNativeTarget "Quick NA Meeting Finder" */;
 			buildPhases = (
 				770780AC1DF86B6100D339D6 /* Sources */,
 				770780AD1DF86B6100D339D6 /* Frameworks */,
@@ -234,9 +234,9 @@
 			dependencies = (
 				770B04F01F3CB6B5009F0A7C /* PBXTargetDependency */,
 			);
-			name = "NA Meeting Finder";
+			name = "Quick NA Meeting Finder";
 			productName = "NA Meeting Search";
-			productReference = 770780B01DF86B6100D339D6 /* NA Meeting Finder.app */;
+			productReference = 770780B01DF86B6100D339D6 /* Quick NA Meeting Finder.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -281,7 +281,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				770780AF1DF86B6100D339D6 /* NA Meeting Finder */,
+				770780AF1DF86B6100D339D6 /* Quick NA Meeting Finder */,
 			);
 		};
 /* End PBXProject section */
@@ -529,7 +529,7 @@
 				INFOPLIST_FILE = "${PROJECT_DIR}/NY Variant/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.magshare.bmlt.NA-Meeting-Finder";
-				PRODUCT_NAME = "NA Meeting Finder";
+				PRODUCT_NAME = "Quick NA Meeting Finder";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -546,7 +546,7 @@
 				INFOPLIST_FILE = "${PROJECT_DIR}/NY Variant/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.magshare.bmlt.NA-Meeting-Finder";
-				PRODUCT_NAME = "NA Meeting Finder";
+				PRODUCT_NAME = "Quick NA Meeting Finder";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -565,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		770780C21DF86B6100D339D6 /* Build configuration list for PBXNativeTarget "NA Meeting Finder" */ = {
+		770780C21DF86B6100D339D6 /* Build configuration list for PBXNativeTarget "Quick NA Meeting Finder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				770780C31DF86B6100D339D6 /* Debug */,

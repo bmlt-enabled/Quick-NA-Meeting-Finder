@@ -94,12 +94,8 @@ import UIKit
     @objc private func _incrementImage() {
         _ = self._nextIndexedImage
         self.setNeedsDisplay()
-        
-        if self.isAnimating {
-            self._timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(type(of: self)._incrementImage), userInfo: nil, repeats: false)
-        }
     }
-    
+
     /* ################################################################## */
     /**
      Initial image load.
@@ -127,7 +123,7 @@ import UIKit
     func startAnimation() {
         if !self.isAnimating {
             self.isAnimating = true
-            self._incrementImage()
+            self.timerCallback()
         }
     }
     
@@ -147,6 +143,17 @@ import UIKit
         self.setNeedsDisplay()
     }
     
+    /* ################################################################## */
+    /**
+     Increment the current image.
+     */
+    @objc func timerCallback(_ inTimer: Timer! = nil) {
+        if self.isAnimating {
+            self._incrementImage()
+            self._timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(type(of: self).timerCallback), userInfo: nil, repeats: false)
+        }
+    }
+
     /* ################################################################## */
     // MARK: Overridden Methods
     /* ################################################################## */

@@ -287,13 +287,11 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
      - parameter meetingSearchResults: An array of meeting objects, representing the results of a search.
      */
     func bmltLibInstance(_ inLibInstance: BMLTiOSLib, meetingSearchResults: [BMLTiOSLibMeetingNode]) {
-        self.terminateConnection()
-        self.theBigSearchButton.stopAnimation() // This makes sure the button is reset.
         if nil != self._locationManager {
             self._locationManager.stopUpdatingLocation()
         }
-        
-        self.theBigSearchButton.stopAnimation()
+        self.terminateConnection()
+        self.theBigSearchButton.stopAnimation() // This makes sure the button is reset.
         
         // After we fetch all the results, we then sort through them, and remove ones that have already passed today (We leave tomorrow alone).
         var finalResults: [BMLTiOSLibMeetingNode] = []
