@@ -14,6 +14,7 @@ CHANGELIST
 - French localization.
 - Added some basic fixes to make the app more responsive.
 - Compiled for iOS 11.
+- Added a link to the new instructions page.
 
 ***Version 1.1.0.3000* ** *- June 19, 2017*
 

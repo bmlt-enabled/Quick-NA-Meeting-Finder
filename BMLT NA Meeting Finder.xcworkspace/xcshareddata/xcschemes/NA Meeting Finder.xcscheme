@@ -36,7 +36,7 @@
             BlueprintIdentifier = "770780AF1DF86B6100D339D6"
             BuildableName = "Quick NA Meeting Finder.app"
             BlueprintName = "Quick NA Meeting Finder"
-            ReferencedContainer = "container:BMLT NA Meeting Search.xcodeproj">
+            ReferencedContainer = "container:BMLT NA Meeting Finder.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -60,7 +60,7 @@
             BlueprintIdentifier = "770780AF1DF86B6100D339D6"
             BuildableName = "Quick NA Meeting Finder.app"
             BlueprintName = "Quick NA Meeting Finder"
-            ReferencedContainer = "container:BMLT NA Meeting Search.xcodeproj">
+            ReferencedContainer = "container:BMLT NA Meeting Finder.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
