@@ -9,7 +9,7 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
-***Version 1.2.0.1000* ** *- August 27, 2017*
+***Version 1.2.0.1000* ** *-TBD*
 
 - French localization.
 - Added some basic fixes to make the app more responsive.

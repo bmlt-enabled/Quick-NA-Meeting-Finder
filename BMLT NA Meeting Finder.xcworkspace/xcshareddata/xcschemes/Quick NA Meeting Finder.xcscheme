@@ -65,6 +65,9 @@
       </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
+      <RoutingCoverageFileReference
+         identifier = "../NY Variant/global.geojson">
+      </RoutingCoverageFileReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
