@@ -9,12 +9,13 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
-***Version 1.2.0.1000* ** *-TBD*
+***Version 1.2.0.2000* ** *- September 13, 2017*
 
 - French localization.
 - Added some basic fixes to make the app more responsive.
 - Compiled for iOS 11.
 - Added a link to the new instructions page.
+- First App Store beta release.
 
 ***Version 1.1.0.3000* ** *- June 19, 2017*
 
