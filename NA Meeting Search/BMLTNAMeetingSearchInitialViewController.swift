@@ -219,12 +219,28 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
      - parameter sender: The big button of Search.
      */
     @IBAction func bigAssButtonWasHit(_ sender: BMLTNAMeetingSearchAnimatedButtonView) {
-        self._locationFailedOnce = false
-        if !self.theBigSearchButton.isAnimating {
-            self.startNewConnection()
+        var goodLoc: Bool = false
+        
+        if CLLocationManager.locationServicesEnabled() {
+            switch(CLLocationManager.authorizationStatus()) {
+            case .notDetermined, .restricted, .denied:
+                break
+                
+            case .authorizedAlways, .authorizedWhenInUse:
+                goodLoc = true
+            }
+        }
+        
+        if !goodLoc {
+            type(of: self)._displayErrorAlert("BMLTNAMeetingSearchError-LocationFailHeader", inMessage: "BMLTNAMeetingSearchError-LocationOffText", presentedBy: self)
         } else {
-            self.terminateConnection()
-            self.theBigSearchButton.stopAnimation() // This makes sure the button is reset.
+            self._locationFailedOnce = false
+            if !self.theBigSearchButton.isAnimating {
+                self.startNewConnection()
+            } else {
+                self.terminateConnection()
+                self.theBigSearchButton.stopAnimation() // This makes sure the button is reset.
+            }
         }
     }
     

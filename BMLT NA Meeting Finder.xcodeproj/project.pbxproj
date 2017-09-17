@@ -100,7 +100,6 @@
 		77D692851E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchResultViewController.swift; sourceTree = "<group>"; };
 		77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAddressViewController.swift; sourceTree = "<group>"; };
 		77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAboutViewController.swift; sourceTree = "<group>"; };
-		77F4F47B1F23B9D3009749B9 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,7 +260,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 770780AB1DF86B6100D339D6 /* Build configuration list for PBXProject "BMLT NA Meeting Search" */;
+			buildConfigurationList = 770780AB1DF86B6100D339D6 /* Build configuration list for PBXProject "BMLT NA Meeting Finder" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -386,7 +385,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				77D3D3681E30F221001FD28A /* Base */,
-				77F4F47B1F23B9D3009749B9 /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -556,7 +554,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		770780AB1DF86B6100D339D6 /* Build configuration list for PBXProject "BMLT NA Meeting Search" */ = {
+		770780AB1DF86B6100D339D6 /* Build configuration list for PBXProject "BMLT NA Meeting Finder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				770780C01DF86B6100D339D6 /* Debug */,

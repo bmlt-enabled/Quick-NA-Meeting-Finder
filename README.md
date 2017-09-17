@@ -9,9 +9,12 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.2.0.2001* ** *- September 13, 2017*
+
+- Added a check to see if the app has localization enabled before starting.
+
 ***Version 1.2.0.2000* ** *- September 13, 2017*
 
-- French localization.
 - Added some basic fixes to make the app more responsive.
 - Compiled for iOS 11.
 - Added a link to the new instructions page.

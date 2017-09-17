@@ -70,6 +70,25 @@ class BMLTNAMeetingSearchAppDelegate: UIResponder, UIApplicationDelegate {
         
         return nil
     }
+    
+    /* ################################################################## */
+    /**
+     Displays the given error in an alert with an "OK" button.
+     
+     - parameter inTitle: a string to be displayed as the title of the alert. It is localized by this method.
+     - parameter inMessage: a string to be displayed as the message of the alert. It is localized by this method.
+     */
+    class func displayErrorAlert(_ inTitle: String, inMessage: String) {
+        if let topController = self.getNavigationController()?.topViewController {
+            let alertController = UIAlertController(title: NSLocalizedString(inTitle, comment: ""), message: NSLocalizedString(inMessage, comment: ""), preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: UIAlertActionStyle.cancel, handler: nil)
+            
+            alertController.addAction(okAction)
+            
+            topController.present(alertController, animated: true, completion: nil)
+        }
+    }
 
     /* ################################################################## */
     /**

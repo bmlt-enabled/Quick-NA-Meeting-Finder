@@ -31,6 +31,7 @@
 /** Location Failure text. This is displayed in an alert, if there was a location/search problem */
 "BMLTNAMeetingSearchError-LocationFailHeader"                   =   "Location Error";   // This is the header text.
 "BMLTNAMeetingSearchError-LocationFailText"                     =   "The app is unable to figure out where you are right now, so can't deliver results.";   // This is the detailed explanation text.
+"BMLTNAMeetingSearchError-LocationOffText"                      =   "The app needs to have Location Services enabled. This is in the \"Privacy\" section of your Settings app.";   // This is the detailed explanation text.
 
 /** No meetings found text. This is displayed in an alert, if there were no eligible meetings found. */
 "BMLTNAMeetingSearchError-NoResultsHeader"                      =   "No Meetings Found";    // This is the header text.
