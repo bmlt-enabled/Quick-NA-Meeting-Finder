@@ -9,6 +9,10 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.2.0.3001* ** *- September 21, 2017*
+
+- App Store Submission (Fixed location bug).
+
 ***Version 1.2.0.3000* ** *- September 20, 2017*
 
 - App Store Submission.

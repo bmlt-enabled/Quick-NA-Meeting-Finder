@@ -223,10 +223,10 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
         
         if CLLocationManager.locationServicesEnabled() {
             switch(CLLocationManager.authorizationStatus()) {
-            case .notDetermined, .restricted, .denied:
+            case .restricted, .denied:
                 break
                 
-            case .authorizedAlways, .authorizedWhenInUse:
+            case .notDetermined, .authorizedAlways, .authorizedWhenInUse:
                 goodLoc = true
             }
         }
