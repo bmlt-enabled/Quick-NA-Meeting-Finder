@@ -9,6 +9,10 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.2.1.2000* ** *- December 8, 2017*
+
+- Modified to use the BMLTiOSLib as a CocoaPod, instead of a Git submodule.
+
 ***Version 1.2.0.3001* ** *- September 21, 2017*
 
 - App Store Submission (Fixed location bug).
