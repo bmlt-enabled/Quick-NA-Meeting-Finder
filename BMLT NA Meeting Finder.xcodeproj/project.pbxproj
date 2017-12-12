@@ -189,6 +189,7 @@
 			buildConfigurationList = 770780C21DF86B6100D339D6 /* Build configuration list for PBXNativeTarget "Quick NA Meeting Finder" */;
 			buildPhases = (
 				C3274847EC85A7E5A54E2932 /* [CP] Check Pods Manifest.lock */,
+				778F41CA1FE01101005682E8 /* SwiftLint */,
 				770780AC1DF86B6100D339D6 /* Sources */,
 				770780AD1DF86B6100D339D6 /* Frameworks */,
 				770780AE1DF86B6100D339D6 /* Resources */,
@@ -262,6 +263,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		778F41CA1FE01101005682E8 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/Pods/SwiftLint/swiftlint\"\n";
+		};
 		C3274847EC85A7E5A54E2932 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

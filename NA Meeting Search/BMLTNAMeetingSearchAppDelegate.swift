@@ -50,7 +50,7 @@ class BMLTNAMeetingSearchAppDelegate: UIResponder, UIApplicationDelegate {
             
             // Each ViewController keeps track of the view it has presented, so we
             // can move from the head to the tail, which will always be the current view
-            while( currentController.presentedViewController != nil ) {
+            while currentController.presentedViewController != nil {
                 currentController = currentController.presentedViewController
             }
             
@@ -64,7 +64,7 @@ class BMLTNAMeetingSearchAppDelegate: UIResponder, UIApplicationDelegate {
         - returns: the navigation controller if it exists
      */
     class func getNavigationController() -> UINavigationController? {
-        if let navigationController = UIApplication.shared.keyWindow?.rootViewController  {
+        if let navigationController = UIApplication.shared.keyWindow?.rootViewController {
             return navigationController as? UINavigationController
         }
         

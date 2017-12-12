@@ -27,7 +27,7 @@ import BMLTiOSLib
 /**
  This class will display the name of the meeting, and a large map object that will display the directions.
  */
-class BMLTNAMeetingSearchDirectionsViewController : UIViewController, MKMapViewDelegate {
+class BMLTNAMeetingSearchDirectionsViewController: UIViewController, MKMapViewDelegate {
     /* ################################################################## */
     // MARK: IB Instance Properties
     /* ################################################################## */
@@ -74,33 +74,31 @@ class BMLTNAMeetingSearchDirectionsViewController : UIViewController, MKMapViewD
      - returns: A region that should fit both.
      */
     var regionThatFitsBothUserLocationAndMeetingLocation: MKCoordinateRegion {
-        get {
-            if let meetingCoords = self.meetingObject.locationCoords {
-                let myCoords = self.searchCenterCoords
-                // First, describe a rectangle that contains our two points.
-                let maxLong = max(meetingCoords.longitude, myCoords.longitude)
-                let minLong = min(meetingCoords.longitude, myCoords.longitude)
-                let maxLat = max(meetingCoords.latitude, myCoords.latitude)
-                let minLat = min(meetingCoords.latitude, myCoords.latitude)
-                
-                let topLeft: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: maxLat, longitude: minLong)
-                let bottomRight: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: minLat, longitude: maxLong)
-                
-                var region: MKCoordinateRegion = MKCoordinateRegion()
-                
-                // Simple average to get the center.
-                region.center.latitude = (topLeft.latitude + bottomRight.latitude) / 2.0
-                region.center.longitude = (topLeft.longitude + bottomRight.longitude) / 2.0
-                // We multiply by 2.5, because that gives us enough slop.
-                region.span.latitudeDelta = fabs(topLeft.latitude - bottomRight.latitude) * 2.5
-                region.span.longitudeDelta = fabs(bottomRight.longitude - topLeft.longitude) * 2.5
-                
-                return self.directionsMapView.regionThatFits(region)
-            }
+        if let meetingCoords = self.meetingObject.locationCoords {
+            let myCoords = self.searchCenterCoords
+            // First, describe a rectangle that contains our two points.
+            let maxLong = max(meetingCoords.longitude, myCoords.longitude)
+            let minLong = min(meetingCoords.longitude, myCoords.longitude)
+            let maxLat = max(meetingCoords.latitude, myCoords.latitude)
+            let minLat = min(meetingCoords.latitude, myCoords.latitude)
             
-            // If the above fails, we just return the map region.
-            return self.directionsMapView.region
+            let topLeft: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: maxLat, longitude: minLong)
+            let bottomRight: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: minLat, longitude: maxLong)
+            
+            var region: MKCoordinateRegion = MKCoordinateRegion()
+            
+            // Simple average to get the center.
+            region.center.latitude = (topLeft.latitude + bottomRight.latitude) / 2.0
+            region.center.longitude = (topLeft.longitude + bottomRight.longitude) / 2.0
+            // We multiply by 2.5, because that gives us enough slop.
+            region.span.latitudeDelta = fabs(topLeft.latitude - bottomRight.latitude) * 2.5
+            region.span.longitudeDelta = fabs(bottomRight.longitude - topLeft.longitude) * 2.5
+            
+            return self.directionsMapView.regionThatFits(region)
         }
+        
+        // If the above fails, we just return the map region.
+        return self.directionsMapView.region
     }
     
     /* ################################################################## */
@@ -165,9 +163,10 @@ class BMLTNAMeetingSearchDirectionsViewController : UIViewController, MKMapViewD
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation.isKind(of: BMLTNAMeetingSearchAnnotation.self) {
             let reuseID = ""
-            let myAnnotation = annotation as! BMLTNAMeetingSearchAnnotation
-            let markerView = BMLTNAMeetingSearchMarker(annotation: myAnnotation, draggable: false, reuseID: reuseID)
-            return markerView
+            if let myAnnotation = annotation as? BMLTNAMeetingSearchAnnotation {
+                let markerView = BMLTNAMeetingSearchMarker(annotation: myAnnotation, draggable: false, reuseID: reuseID)
+                return markerView
+            }
         }
         
         return nil
@@ -193,4 +192,3 @@ class BMLTNAMeetingSearchDirectionsViewController : UIViewController, MKMapViewD
         return MKOverlayRenderer()
     }
 }
-

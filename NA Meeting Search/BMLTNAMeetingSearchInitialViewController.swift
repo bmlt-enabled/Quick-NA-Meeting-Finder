@@ -75,15 +75,13 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
     /* ################################################################## */
     /** Tells us whether or not we have an active, valid session (read-only) */
     var isSessionValid: Bool {
-        get {
-            var ret: Bool = false
-            
-            if nil != type(of: self)._svCommunicationObject {
-                ret = type(of: self)._svCommunicationObject.isConnected
-            }
-            
-            return ret
+        var ret: Bool = false
+        
+        if nil != type(of: self)._svCommunicationObject {
+            ret = type(of: self)._svCommunicationObject.isConnected
         }
+        
+        return ret
     }
     
     /* ################################################################## */
@@ -102,15 +100,13 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
     /* ################################################################## */
     /** Quick access to the search Criteria (read-only) */
     var criteriaObject: BMLTiOSLibSearchCriteria! {
-        get {
-            var ret: BMLTiOSLibSearchCriteria! = nil
-            
-            if nil != self.commObject {
-                ret = self.commObject.searchCriteria
-            }
-            
-            return ret
+        var ret: BMLTiOSLibSearchCriteria! = nil
+        
+        if nil != self.commObject {
+            ret = self.commObject.searchCriteria
         }
+        
+        return ret
     }
     
     /* ################################################################## */
@@ -183,7 +179,7 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
     override func viewWillAppear(_ animated: Bool) {
         self._locationFailedOnce = false
         self.commObject = nil
-        self.navigationController?.isNavigationBarHidden = true;
+        self.navigationController?.isNavigationBarHidden = true
         super.viewWillAppear(animated)
         if self._firstLoad {
             self._firstLoad = false
@@ -222,7 +218,7 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
         var goodLoc: Bool = false
         
         if CLLocationManager.locationServicesEnabled() {
-            switch(CLLocationManager.authorizationStatus()) {
+            switch CLLocationManager.authorizationStatus() {
             case .restricted, .denied:
                 break
                 
@@ -254,7 +250,7 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
     func startNewConnection() {
         self.terminateConnection()
         self.theBigSearchButton.startAnimation()
-        self.commObject = BMLTiOSLib(inRootServerURI: BMLTNAMeetingSearchPrefs.prefs.rootURI , inDelegate: self)
+        self.commObject = BMLTiOSLib(inRootServerURI: BMLTNAMeetingSearchPrefs.prefs.rootURI, inDelegate: self)
     }
     
     /* ################################################################## */
@@ -392,16 +388,10 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         self._locationManager.stopUpdatingLocation()
         self._locationFailedOnce = false
-        for location in locations {
-            if 2 > location.timestamp.timeIntervalSinceNow {
-                let coordinate = location.coordinate
-                DispatchQueue.main.async(execute: {
-                    self._startSearch(coordinate)
-                })
-                
-                break
-            }
+        for location in locations where 2 > location.timestamp.timeIntervalSinceNow {
+            let coordinate = location.coordinate
+            DispatchQueue.main.async(execute: { self._startSearch(coordinate) })
+            break
         }
     }
 }
-

@@ -26,7 +26,7 @@ import BMLTiOSLib
 /* ###################################################################################################################################### */
 /**
  */
-class BMLTNAMeetingSearchResultViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
+class BMLTNAMeetingSearchResultViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     // MARK: Private Static Class Constant Properties
     /* ################################################################## */
     /** The Search Results Segue ID */
@@ -85,7 +85,7 @@ class BMLTNAMeetingSearchResultViewController : UIViewController, UITableViewDat
      - parameter animated: True, if the appearance is animated.
      */
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = false;
+        self.navigationController?.isNavigationBarHidden = false
         // Unhighlight any highlighted rows.
         for row in 0..<self._resultsTable.numberOfRows(inSection: 0) {
             let indexPath = IndexPath(row: row, section: 0)
@@ -263,4 +263,3 @@ class BMLTNAMeetingSearchResultsTableCellView: UIView {
     @IBOutlet weak var meetingDescriptionTextView: UITextView!
     @IBOutlet weak var distanceLabel: UILabel!
 }
-

@@ -1,3 +1,7 @@
+NOTE: This license only applies to the NA Meeting List Administrator files.
+It does not apply to thelibraries in the "Pods" directory, which
+each have their own license.
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 

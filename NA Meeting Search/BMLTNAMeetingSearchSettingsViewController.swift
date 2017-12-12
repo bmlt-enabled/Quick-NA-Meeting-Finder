@@ -25,7 +25,7 @@ import BMLTiOSLib
 /* ###################################################################################################################################### */
 /**
  */
-class BMLTNAMeetingSearchSettingsViewController : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class BMLTNAMeetingSearchSettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     /** This is the overall section label for the "Grace Period" Setting. */
     @IBOutlet weak var graceTimeSectionLabel: UILabel!
     /** This is the textual dexcription of that section. */
@@ -146,7 +146,7 @@ class BMLTNAMeetingSearchSettingsViewController : UIViewController, UIPickerView
      - parameter animated: True, if the appearance is animated.
      */
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = false;
+        self.navigationController?.isNavigationBarHidden = false
         super.viewWillAppear(animated)
     }
     
@@ -216,7 +216,7 @@ class BMLTNAMeetingSearchSettingsViewController : UIViewController, UIPickerView
             pickerValue = "ERROR"
         }
         
-        let ret:UIView = UIView(frame: frame)
+        let ret = UIView(frame: frame)
         
         ret.backgroundColor = UIColor.clear
         
@@ -248,4 +248,3 @@ class BMLTNAMeetingSearchSettingsViewController : UIViewController, UIPickerView
         BMLTNAMeetingSearchPrefs.prefs.gracePeriodInMinutes = self._getPickerValueForRow(row)
     }
 }
-

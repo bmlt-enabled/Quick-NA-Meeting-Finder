@@ -33,14 +33,14 @@ typealias BMLTNAMeetingSearchMeetingList = [BMLTiOSLibMeetingNode]
 /**
  This handles the marker annotation.
  */
-class BMLTNAMeetingSearchAnnotation : NSObject, MKAnnotation, NSCoding {
+class BMLTNAMeetingSearchAnnotation: NSObject, MKAnnotation, NSCoding {
     let sCoordinateObjectKey: String = "BMLTNAMeetingSearchAnnotation_Coordinate"
     let sMeetingsObjectKey: String = "BMLTNAMeetingSearchAnnotation_Meetings"
     let sTitleObjectKey: String = "BMLTNAMeetingSearchAnnotation_Title"
     
     @objc var coordinate: CLLocationCoordinate2D = kCLLocationCoordinate2DInvalid
     @objc var meetings: BMLTNAMeetingSearchMeetingList = []
-    @objc var title: String? = nil
+    @objc var title: String?
     
     /* ################################################################## */
     /**
@@ -77,8 +77,8 @@ class BMLTNAMeetingSearchAnnotation : NSObject, MKAnnotation, NSCoding {
         } else {
             self.title = nil
         }
-        self.meetings = aDecoder.decodeObject(forKey: self.sMeetingsObjectKey) as! BMLTNAMeetingSearchMeetingList
-        if let tempCoordinate = aDecoder.decodeObject(forKey: self.sCoordinateObjectKey) as! [NSNumber]! {
+        self.meetings = (aDecoder.decodeObject(forKey: self.sMeetingsObjectKey) as? BMLTNAMeetingSearchMeetingList)!
+        if let tempCoordinate = aDecoder.decodeObject(forKey: self.sCoordinateObjectKey) as? [NSNumber]! {
             self.coordinate.longitude = tempCoordinate[0].doubleValue
             self.coordinate.latitude = tempCoordinate[1].doubleValue
         }
@@ -107,16 +107,16 @@ class BMLTNAMeetingSearchAnnotation : NSObject, MKAnnotation, NSCoding {
 /**
  This handles our map marker.
  */
-class BMLTNAMeetingSearchMarker : MKAnnotationView {
+class BMLTNAMeetingSearchMarker: MKAnnotationView {
     /* ################################################################## */
     // MARK: Internal Static Properties
     /* ################################################################## */
     /** The coder key */
     let sAnnotationObjectKey: String = "BMLTNAMeetingSearchMarker_Annotation"
     /** This is how many display units to shift the annotation view up. */
-    let sRegularAnnotationOffsetUp: CGFloat     = 24;
+    let sRegularAnnotationOffsetUp: CGFloat     = 24
     /** This is how many display units to shift the annotation view right. */
-    let sRegularAnnotationOffsetRight: CGFloat  = 5;
+    let sRegularAnnotationOffsetRight: CGFloat  = 5
 
     /* ################################################################## */
     // MARK: Internal Instance Properties
@@ -160,9 +160,7 @@ class BMLTNAMeetingSearchMarker : MKAnnotationView {
      This gives us a shortcut to the annotation prpoerty.
      */
     var coordinate: CLLocationCoordinate2D {
-        get {
-            return (self.annotation?.coordinate)!
-        }
+        return (self.annotation?.coordinate)!
     }
     
     /* ################################################################## */
@@ -170,9 +168,7 @@ class BMLTNAMeetingSearchMarker : MKAnnotationView {
      This gives us a shortcut to the annotation prpoerty.
      */
     var meetings: BMLTNAMeetingSearchMeetingList {
-        get {
-            return ((self.annotation as! BMLTNAMeetingSearchAnnotation).meetings)
-        }
+        return ((self.annotation as? BMLTNAMeetingSearchAnnotation)!.meetings)
     }
     
     /* ################################################################## */
@@ -185,7 +181,7 @@ class BMLTNAMeetingSearchMarker : MKAnnotationView {
      - parameter draggable: If true, then this will be draggable (ignored if the annotation has more than one meeting).
      - parameter reuseID: The reuse ID of the annotation.
      */
-    init(annotation: MKAnnotation?, draggable : Bool, reuseID: String?) {
+    init(annotation: MKAnnotation?, draggable: Bool, reuseID: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseID)
         if nil != annotation?.title {
             self.canShowCallout = true
@@ -306,7 +302,7 @@ class BMLTNAMeetingSearchMarker : MKAnnotationView {
      */
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.annotation = aDecoder.decodeObject(forKey: self.sAnnotationObjectKey) as! BMLTNAMeetingSearchAnnotation
+        self.annotation = aDecoder.decodeObject(forKey: self.sAnnotationObjectKey) as? BMLTNAMeetingSearchAnnotation
     }
     
     /* ################################################################## */

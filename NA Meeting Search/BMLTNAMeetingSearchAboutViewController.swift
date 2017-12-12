@@ -24,7 +24,7 @@ import UIKit
 /* ###################################################################################################################################### */
 /**
  */
-class BMLTNAMeetingSearchAboutViewController : UIViewController {
+class BMLTNAMeetingSearchAboutViewController: UIViewController {
     /* ################################################################## */
     // MARK: IB Properties
     /* ################################################################## */
@@ -76,10 +76,10 @@ class BMLTNAMeetingSearchAboutViewController : UIViewController {
         }
 
         if let barTitle = self.navigationItem.title {
-            self.navigationItem.title = String(format:NSLocalizedString(barTitle, comment: ""), appName)
+            self.navigationItem.title = String(format: NSLocalizedString(barTitle, comment: ""), appName)
         }
         self.goMeLabel.text = NSLocalizedString(self.goMeLabel.text!, comment: "")
-        self.versionLabel.text = String(format:NSLocalizedString(self.versionLabel.text!, comment: ""), appVersion)
+        self.versionLabel.text = String(format: NSLocalizedString(self.versionLabel.text!, comment: ""), appVersion)
         self.aboutUsTextItem.text = NSLocalizedString(self.aboutUsTextItem.text!, comment: "")
         
         self.beanieButton!.isEnabled = !self.buttonURI.isEmpty
@@ -93,9 +93,8 @@ class BMLTNAMeetingSearchAboutViewController : UIViewController {
      */
     @IBAction func beanieBanged(_ sender: UIButton) {
         if !self.buttonURI.isEmpty {
-            let openLink = NSURL(string : self.buttonURI)
+            let openLink = NSURL(string: self.buttonURI)
             UIApplication.shared.open(openLink! as URL, options: [:], completionHandler: nil)
         }
     }
 }
-

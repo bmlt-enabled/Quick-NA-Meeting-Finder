@@ -26,7 +26,7 @@ import BMLTiOSLib
 /* ###################################################################################################################################### */
 /**
  */
-class BMLTNAMeetingSearchAddressViewController : UIViewController, MKMapViewDelegate {
+class BMLTNAMeetingSearchAddressViewController: UIViewController, MKMapViewDelegate {
     /* ################################################################## */
     // MARK: IB Instance Properties
     /* ################################################################## */
@@ -83,9 +83,7 @@ class BMLTNAMeetingSearchAddressViewController : UIViewController, MKMapViewDele
         }
         
         self.directionsButton.title = NSLocalizedString(self.directionsButton.title!, comment: "")
-        
-        // Set the meeting name.
-        self.meetingNameLabel.text = self.meetingObject.name
+        self.meetingNameLabel.text = self.meetingObject.name // Set the meeting name.
         
         // Set the time, day and format text.
         if var hour = self.meetingObject.startTimeAndDay.hour {
@@ -94,34 +92,30 @@ class BMLTNAMeetingSearchAddressViewController : UIViewController, MKMapViewDele
                 
                 if ((23 == hour) && (55 <= minute)) || ((0 == hour) && (0 == minute)) || (24 == hour) {
                     time = NSLocalizedString("DETAILS-SCREEN-MIDNIGHT", comment: "")
+                } else if (12 == hour) && (0 == minute) {
+                    time = NSLocalizedString("DETAILS-SCREEN-NOON", comment: "")
                 } else {
-                    if (12 == hour) && (0 == minute) {
-                        time = NSLocalizedString("DETAILS-SCREEN-NOON", comment: "")
-                    } else {
-                        let formatter = DateFormatter()
-                        formatter.locale = Locale.current
-                        formatter.dateStyle = .none
-                        formatter.timeStyle = .short
+                    let formatter = DateFormatter()
+                    formatter.locale = Locale.current
+                    formatter.dateStyle = .none
+                    formatter.timeStyle = .short
+                    
+                    let dateString = formatter.string(from: Date())
+                    let amRange = dateString.range(of: formatter.amSymbol)
+                    let pmRange = dateString.range(of: formatter.pmSymbol)
+                    
+                    if !(pmRange == nil && amRange == nil) {
+                        var amPm = formatter.amSymbol
                         
-                        let dateString = formatter.string(from: Date())
-                        let amRange = dateString.range(of: formatter.amSymbol)
-                        let pmRange = dateString.range(of: formatter.pmSymbol)
-                        
-                        if !(pmRange == nil && amRange == nil) {
-                            var amPm = formatter.amSymbol
-                            
-                            if 12 < hour {
-                                hour -= 12
-                                amPm = formatter.pmSymbol
-                            } else {
-                                if 12 == hour {
-                                    amPm = formatter.pmSymbol
-                                }
-                            }
-                            time = String(format: "%d:%02d %@", hour, minute, amPm!)
-                        } else {
-                            time = String(format: "%d:%02d", hour, minute)
+                        if 12 < hour {
+                            hour -= 12
+                            amPm = formatter.pmSymbol
+                        } else if 12 == hour {
+                            amPm = formatter.pmSymbol
                         }
+                        time = String(format: "%d:%02d %@", hour, minute, amPm!)
+                    } else {
+                        time = String(format: "%d:%02d", hour, minute)
                     }
                 }
                 
@@ -132,21 +126,15 @@ class BMLTNAMeetingSearchAddressViewController : UIViewController, MKMapViewDele
             }
         }
         
-        // Add the address information to that field.
-        self.addressTextView.text = self.meetingObject.basicAddress
-        if !self.meetingObject.comments.isEmpty {
-            self.commentsTextField.text = self.meetingObject.comments
-        }
+        self.addressTextView.text = self.meetingObject.basicAddress // Add the address information to that field.
+        if !self.meetingObject.comments.isEmpty { self.commentsTextField.text = self.meetingObject.comments }
         
         // Set up localized names for the map type control.
         for i in 0..<self.mapTypeSegmentedControl.numberOfSegments {
-            if let segmentTitle = self.mapTypeSegmentedControl.titleForSegment(at: i) {
-                self.mapTypeSegmentedControl.setTitle(NSLocalizedString(segmentTitle, comment: ""), forSegmentAt: i)
-            }
+            if let segmentTitle = self.mapTypeSegmentedControl.titleForSegment(at: i) { self.mapTypeSegmentedControl.setTitle(NSLocalizedString(segmentTitle, comment: ""), forSegmentAt: i) }
         }
         
         self.setUpMap()
-        
         self.mapTypeSegmentedControl.selectedSegmentIndex = BMLTNAMeetingSearchPrefs.prefs.mapTypeIndex
     }
     
@@ -213,12 +201,12 @@ class BMLTNAMeetingSearchAddressViewController : UIViewController, MKMapViewDele
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation.isKind(of: BMLTNAMeetingSearchAnnotation.self) {
             let reuseID = ""
-            let myAnnotation = annotation as! BMLTNAMeetingSearchAnnotation
-            let markerView = BMLTNAMeetingSearchMarker(annotation: myAnnotation, draggable: false, reuseID: reuseID)
-            return markerView
+            if let myAnnotation = annotation as? BMLTNAMeetingSearchAnnotation {
+                let markerView = BMLTNAMeetingSearchMarker(annotation: myAnnotation, draggable: false, reuseID: reuseID)
+                return markerView
+            }
         }
         
         return nil
     }
 }
-

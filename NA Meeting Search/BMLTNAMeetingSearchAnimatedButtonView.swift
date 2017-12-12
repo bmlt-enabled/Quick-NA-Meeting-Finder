@@ -27,7 +27,7 @@ import UIKit
  
  It can be initialized in Interface Builder with a frame prefix (we add a no-leading-zero integer between 0 and 99), and an initial index.
  */
-@IBDesignable final class BMLTNAMeetingSearchAnimatedButtonView : UIButton {
+@IBDesignable final class BMLTNAMeetingSearchAnimatedButtonView: UIButton {
     /* ################################################################## */
     // MARK: Private Properties
     /* ################################################################## */
@@ -51,14 +51,12 @@ import UIKit
      This returns the currently indexed image.
      */
     private var _indexedImage: UIImage {
-        get {
-            if 0 < self._animationFrames.count {
-                self.currentFrameIndex = max(0, min(self._animationFrames.count - 1, self.currentFrameIndex))
-                return self._animationFrames[self.currentFrameIndex]
-            } else {    // This is special for Interface Builder, so you see an image.
-                let imageName = self.imageNamePrefix + "0"
-                return UIImage(named: imageName, in: Bundle(for: type(of: self)), compatibleWith: nil)!
-            }
+        if 0 < self._animationFrames.count {
+            self.currentFrameIndex = max(0, min(self._animationFrames.count - 1, self.currentFrameIndex))
+            return self._animationFrames[self.currentFrameIndex]
+        } else {    // This is special for Interface Builder, so you see an image.
+            let imageName = self.imageNamePrefix + "0"
+            return UIImage(named: imageName, in: Bundle(for: type(of: self)), compatibleWith: nil)!
         }
     }
     
@@ -67,14 +65,12 @@ import UIKit
      This increments the index, looping it, if necessary, then returns the image at the new index.
      */
     private var _nextIndexedImage: UIImage {
-        get {
-            self.currentFrameIndex += 1
-            if self._animationFrames.count == self.currentFrameIndex {
-                self.currentFrameIndex = 0
-            }
-            
-            return self._indexedImage
+        self.currentFrameIndex += 1
+        if self._animationFrames.count == self.currentFrameIndex {
+            self.currentFrameIndex = 0
         }
+        
+        return self._indexedImage
     }
     
     /* ################################################################## */

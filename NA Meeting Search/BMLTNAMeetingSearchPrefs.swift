@@ -64,7 +64,7 @@ class BMLTNAMeetingSearchPrefs {
     // MARK: Private Initializer
     /* ################################################################## */
     /** We do this to prevent the class from being instantiated in a different context than our controlled one. */
-    private init(){/* Sergeant Schultz says: "I do nut'ing. Nut-ING!" */}
+    private init() { /* Sergeant Schultz says: "I do nut'ing. Nut-ING!" */ }
 
     /* ################################################################## */
     // MARK: Private Instance Methods
@@ -105,13 +105,11 @@ class BMLTNAMeetingSearchPrefs {
          let myPrefs = BMLTNAMeetingSearchPrefs.prefs
      */
     static var prefs: BMLTNAMeetingSearchPrefs {
-        get {
-            if nil == self._sSingletonPrefs {
-                self._sSingletonPrefs = BMLTNAMeetingSearchPrefs()
-            }
-            
-            return self._sSingletonPrefs
+        if nil == self._sSingletonPrefs {
+            self._sSingletonPrefs = BMLTNAMeetingSearchPrefs()
         }
+        
+        return self._sSingletonPrefs
     }
     
     /* ################################################################## */
@@ -119,18 +117,16 @@ class BMLTNAMeetingSearchPrefs {
      This tells us whether or not the device is set for military time.
      */
     static var using12hClockFormat: Bool {
-        get {
-            let formatter = DateFormatter()
-            formatter.locale = Locale.current
-            formatter.dateStyle = .none
-            formatter.timeStyle = .short
-            
-            let dateString = formatter.string(from: Date())
-            let amRange = dateString.range(of: formatter.amSymbol)
-            let pmRange = dateString.range(of: formatter.pmSymbol)
-            
-            return !(pmRange == nil && amRange == nil)
-        }
+        let formatter = DateFormatter()
+        formatter.locale = Locale.current
+        formatter.dateStyle = .none
+        formatter.timeStyle = .short
+        
+        let dateString = formatter.string(from: Date())
+        let amRange = dateString.range(of: formatter.amSymbol)
+        let pmRange = dateString.range(of: formatter.pmSymbol)
+        
+        return !(pmRange == nil && amRange == nil)
     }
     
     /* ################################################################## */
@@ -138,10 +134,8 @@ class BMLTNAMeetingSearchPrefs {
      This tells us whether or not the device is set for kilometers.
      */
     static var usingKilometeres: Bool {
-        get {
-            let locale = NSLocale.current
-            return locale.usesMetricSystem
-        }
+        let locale = NSLocale.current
+        return locale.usesMetricSystem
     }
     
     /* ################################################################## */
@@ -174,17 +168,15 @@ class BMLTNAMeetingSearchPrefs {
      - returns: the selected Root Server URI, as a String.
      */
     var rootURI: String {
-        get {
-            if let plistPath = Bundle.main.path(forResource: "Info", ofType: "plist") {
-                if let plistDictionary = NSDictionary(contentsOfFile: plistPath) as? [String: Any] {
-                    if let uri = plistDictionary["BMLTRootServerURI"] as? NSString {
-                        return uri as String
-                    }
+        if let plistPath = Bundle.main.path(forResource: "Info", ofType: "plist") {
+            if let plistDictionary = NSDictionary(contentsOfFile: plistPath) as? [String: Any] {
+                if let uri = plistDictionary["BMLTRootServerURI"] as? NSString {
+                    return uri as String
                 }
             }
-            
-            return ""
         }
+        
+        return ""
     }
     
     /* ################################################################## */
