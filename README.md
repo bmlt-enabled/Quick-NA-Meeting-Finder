@@ -9,6 +9,10 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.3.0.2001* ** *- December 13, 2017*
+
+- This simply updates to the latest BMLTiOSLib.
+
 ***Version 1.3.0.2000* ** *- December 12, 2017*
 
 - This cleans up the code via SwiftLint, and includes the new "clean" BMLTiOSLib.
