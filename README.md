@@ -9,9 +9,10 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
-***Version 1.3.0.2001* ** *- December 13, 2017*
+***Version 1.3.0.2001* ** *- December 26, 2017*
 
 - This simply updates to the latest BMLTiOSLib.
+- Added the Reveal Framework.
 
 ***Version 1.3.0.2000* ** *- December 12, 2017*
 
