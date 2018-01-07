@@ -9,6 +9,11 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.3.0.2004* ** *- January 7, 2018*
+
+- Updated to the latest BMLTiOSLib.
+- Tweaked the sort for weeks that begin on days other than Sunday.
+
 ***Version 1.3.0.2003* ** *- January 7, 2018*
 
 - Added the basic Swedish localization.

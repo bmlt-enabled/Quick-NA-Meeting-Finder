@@ -142,25 +142,7 @@ class BMLTNAMeetingSearchResultViewController: UIViewController, UITableViewData
             if inByDistance {
                 return $0.distanceInKm < $1.distanceInKm
             } else {
-                let aDay = $0.startTimeAndDay.weekday!
-                let bDay = $1.startTimeAndDay.weekday!
-                
-                if aDay == bDay {
-                    let aTime = ($0.startTimeAndDay.hour! * 60) + $0.startTimeAndDay.minute!
-                    let bTime = ($1.startTimeAndDay.hour! * 60) + $1.startTimeAndDay.minute!
-                    
-                    return aTime < bTime
-                } else {
-                    if (7 == aDay) && (1 == bDay) {
-                        return true
-                    } else {
-                        if (7 == bDay) && (1 == aDay) {
-                            return false
-                        } else {
-                            return aDay < bDay
-                        }
-                    }
-                }
+                return $0.timeDayAsInteger < $1.timeDayAsInteger
             }
         })
         
