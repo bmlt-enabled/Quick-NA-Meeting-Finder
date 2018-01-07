@@ -44,6 +44,7 @@
 		770780B01DF86B6100D339D6 /* Quick NA Meeting Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick NA Meeting Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		770780B31DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAppDelegate.swift; sourceTree = "<group>"; };
 		770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchInitialViewController.swift; sourceTree = "<group>"; };
+		7733FE6120029B78008B6E5F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchMarker.swift; sourceTree = "<group>"; };
 		77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchDirectionsViewController.swift; sourceTree = "<group>"; };
 		775EDFC11E9A6C6E007B7DE6 /* NorthportNY.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NorthportNY.gpx; sourceTree = "<group>"; };
@@ -384,6 +385,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				77D3D3681E30F221001FD28A /* Base */,
+				7733FE6120029B78008B6E5F /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
