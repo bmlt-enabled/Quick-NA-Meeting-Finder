@@ -45,6 +45,7 @@
 		770780B31DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAppDelegate.swift; sourceTree = "<group>"; };
 		770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchInitialViewController.swift; sourceTree = "<group>"; };
 		7733FE6120029B78008B6E5F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7733FE6220029F21008B6E5F /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchMarker.swift; sourceTree = "<group>"; };
 		77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchDirectionsViewController.swift; sourceTree = "<group>"; };
 		775EDFC11E9A6C6E007B7DE6 /* NorthportNY.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NorthportNY.gpx; sourceTree = "<group>"; };
@@ -236,6 +237,7 @@
 				en,
 				Base,
 				fr,
+				sv,
 			);
 			mainGroup = 770780A71DF86B6100D339D6;
 			productRefGroup = 770780B11DF86B6100D339D6 /* Products */;
@@ -386,6 +388,7 @@
 			children = (
 				77D3D3681E30F221001FD28A /* Base */,
 				7733FE6120029B78008B6E5F /* fr */,
+				7733FE6220029F21008B6E5F /* sv */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

@@ -1,0 +1,130 @@
+/*
+ Localizable.strings
+ NA Meeting Search
+ 
+ Created by MAGSHARE
+ 
+ This is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ BMLT is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this code.  If not, see <http://www.gnu.org/licenses/>.
+ */
+/*
+ LOCALIZATION INSTRUCTIONS
+ 
+ You should leave the text on the left side of the "=" alone.
+ You should change the text on the right side of the "=" to your preferred language.
+ Leave the quotes ("..."), and the semicolon (;) at the end of the line.
+ */
+/** General communication error text. This is displayed in an alert, if there was a communication problem. */
+"BMLTNAMeetingSearchError-CommErrorHeader"                      =   "Kommunikationsfel";  // This is the header text.
+"BMLTNAMeetingSearchError-CommErrorText"                        =   "Det uppstod ett problem i kommunikationen med servern.";  // This is the error description text.
+
+/** Location Failure text. This is displayed in an alert, if there was a location/search problem */
+"BMLTNAMeetingSearchError-LocationFailHeader"                   =   "Platsfel";   // This is the header text.
+"BMLTNAMeetingSearchError-LocationFailText"                     =   "Appen kan inte räkna ut var du är just nu så några resultat kan inte visas.";   // This is the detailed explanation text.
+"BMLTNAMeetingSearchError-LocationOffText"                      =   "Appen behöver platstjänster aktiverade. Detta hittar du i \"Privacy\" sektionen under inställningar.";   // This is the detailed explanation text.
+
+/** No meetings found text. This is displayed in an alert, if there were no eligible meetings found. */
+"BMLTNAMeetingSearchError-NoResultsHeader"                      =   "Inga möten funna";    // This is the header text.
+"BMLTNAMeetingSearchError-NoResultsText"                        =   "Inga möten hittades nära dig idag eller imorgon."; // This is the detailed explanation text.
+
+/** Alert OK Button. */
+"BMLTNAMeetingSearchError-OKButtonText"                         =   "OK";   // This is the "OK" button in the alerts, above.
+
+/** The title of the Search Results Screen. */
+"SEARCHRESULTSTITLE"                                            =   "Sökresultat";
+/** The format used to create the distance number. */
+"BMLTNAMeetingSearch-DistanceFormat"                            =   "Avstånd: %0.2f";
+/** The units as miles. */
+"BMLTNAMeetingSearch-DistanceUnitsMiles"                        =   " Miles";
+/** The units as kilometers. */
+"BMLTNAMeetingSearch-DistanceUnitsKm"                           =   " Kilometers";
+/** Sort By Time Title. */
+"SORTBYTIME"                                                    =   "Sortera på dag & tid";
+/** Sort By Distance Title. */
+"SORTBYDISTANCE"                                                =   "Sortera på avstånd";
+
+/** The title of the Details Screen */
+"DETAILS-SCREEN"                                                =   "Detaljer";
+/** This format is for the meeting time display in the Details View. */
+"DETAILS-SCREEN-MEETING-TIME-FORMAT"                            =   "Möten varje %@, at %@";    // The "%@" are "placeholders" that are filled with the weekday (text) and start time (time format).
+/** Strings for noon and midnight */
+"DETAILS-SCREEN-NOON"                                           =   "middag";     // If the time is 12:00 PM, we make it "Noon".
+"DETAILS-SCREEN-MIDNIGHT"                                       =   "midnatt"; // If the time is 24:00/00:00, we make it "Midnight".
+/** These two are for the map marker callouts. They appear in a small window when you touch a map marker. */
+"DETAILS-SCREEN-MAP-INFO-TEXT"                                  =   "Mötesplats";
+"DETAILS-SCREEN-MAP-YAH-INFO-TEXT"                              =   "Du är här";
+/** This is the text for the More Info NavBar button */
+"DETAILS-MORE-INFO"                                             =   "Mer information";    // This is a link for more info for the meeting.
+
+/** The title of the Address and Directions Screen. */
+"ADDRESS-AND-DIRECTIONS"                                        =   "Mer information";
+/** These are the three types of maps in the segmented control. */
+"ADDRESS-AND-DIRECTIONS-MAP-TYPE-STANDARD"                      =   "Standardkarta";
+"ADDRESS-AND-DIRECTIONS-MAP-TYPE-HYBRID"                        =   "Hybridkarta";
+"ADDRESS-AND-DIRECTIONS-MAP-TYPE-SATELLITE"                     =   "Satellitkarta";
+
+/** The title of the Directions Screen */
+"DIRECTIONS"                                                    =   "Vägbeskrivningar";
+
+/** Possible directions error header. */
+"BMLTNAMeetingSearchError-FailedDirectionsHeader"               =   "Kan inte visa vägbeskrivning";
+
+/** The text that explains it a bit better. */
+"BMLTNAMeetingSearchError-NoDirectionsResultsText"              =   "Appen kan inte hitta detaljerade väganvinsningar till denna plats.";
+
+/** The title of the Settings Screen */
+"SETTINGS-SCREEN"                                               =   "Inställningar";
+
+/** The title label for the "Grace Time" Picker View section */
+"GRACE-TIME-LABEL"                                              =   "\"Grace Time\" för möten";
+/** More Descriptive text for the "Grace Time" Picker View */
+"BMLTNAMeetingSearch-Settings-GraceTimeText"                    =   "Dette låter dig ange om ett möte som inte startat ännu, eller har pågått en stund skall antingen visas eller inte visas i resultatet.";
+/** The title label for the "Grace Time" Picker View, itself */
+"GRACE-TIME-PICKER-LABEL"                                       =   "Visa abara möten som:";
+
+/** These are values for the "grace time" picker in the settings screen. */
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-00"        =   "60";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-00"         =   "Inte startar förrän om minst en timma";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-01"        =   "30";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-01"         =   "Inte startar på minst en halvtimma";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-02"        =   "15";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-02"         =   "Inte startar på minst 15 minuter";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-03"        =   "0";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-03"         =   "Startar nu eller senare";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-04"        =   "-15";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-04"         =   "Har startat för mer än 15 minuter sedan";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-05"        =   "-30";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-05"         =   "Har startat för mer än en halvtimma sedan";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-06"        =   "-60";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-06"         =   "Har startat för mer än en timma sedan";
+
+/** This is the "Tutorial" text in the "Settings" screen. */
+"SETTINGS-EXPLAIN"                                              =   "Den här appen fungerar genom att endast trycka på knappen på huvudskärmen. Den räknar sen ut vart du är, och tittar möten inom de närmaste dagarna (senare idag eller imorgon). Du kan visa mötena i en lista, eller klicka på ett möte och visa mer detaljer.";
+
+/** The title for the "About" screen */
+"ABOUT-US"                                                      =   "Om %@";
+
+/** The MAGSHARE Label Text */
+"GO-ME-GO-ME"                                                   =   "Ännu ett lyckat MAGSHARE projekt";
+
+/** The version label text */
+"VERSION"                                                       =   "Version %@";
+
+/** This is the main text for the "About US" screen. */
+"ABOUT-US-TEXT"                                                 =   "TDen här appen skapades ursprungligen som en demo för BMLTiOSLib projektet, men har visat sig tillräckligt populär för att släppas på egna meriter.\nLiksom alla MAGSHARE projekt, är den 100% open-source (GPLv3 license), och källkoden hittas på:\n\nhttps://bitbucket.org/bmltios/bmlt-na-meeting-search\n\n Tryck på Logoknappen ovanför, så kommer du till appens supportsida.\n\nBMLT och MAGSHARE är yttryck för tacksamhet och service till NA för gåvor som int kan mätas i pengar.\n\nBetrakta detta som ett litet frivilligt bidrag.";
+
+/* DON'T CHANGE THESE VALUES. */
+
+/** The default value of the "grace time" picker. The picker will be set initially to this value (usually, you should not change this for localization). */
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Default-Value"   =   "-15";
+
