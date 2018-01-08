@@ -9,6 +9,10 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.3.0.2005* ** *- January 8, 2018*
+
+- Fixed an issue where the scroller wouldn't respond correctly.
+
 ***Version 1.3.0.2004* ** *- January 7, 2018*
 
 - Updated to the latest BMLTiOSLib.
