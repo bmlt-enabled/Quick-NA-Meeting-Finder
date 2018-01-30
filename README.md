@@ -9,6 +9,10 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.3.0.2007* ** *- January 30, 2018*
+
+- Corrected Italian localization.
+
 ***Version 1.3.0.2006* ** *- January 23, 2018*
 
 - Added Italian localization.
