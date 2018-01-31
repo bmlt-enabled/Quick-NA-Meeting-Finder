@@ -153,9 +153,8 @@ class BMLTNAMeetingSearchPrefs {
     class func weekdayNameFromWeekdayNumber(_ weekdayNumber: Int) -> String {
         let calendar = Calendar.current
         let weekdaySymbols = calendar.weekdaySymbols
-        let firstWeekday = calendar.firstWeekday - 1
         let weekdayIndex = weekdayNumber - 1
-        let index = weekdayIndex + firstWeekday
+        let index = weekdayIndex
         return weekdaySymbols[index]
     }
 

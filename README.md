@@ -9,6 +9,10 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.3.0.2008* ** *- January 31, 2018*
+
+- Fixed a bug, where the weekday displayed in the details page was different from the one displayed in the list for areas where the week starts on Monday.
+
 ***Version 1.3.0.2007* ** *- January 30, 2018*
 
 - Corrected Italian localization.
