@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+  version="1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.topografix.com/GPX/1/0"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<time>2012-04-22T17:32:54Z</time>
+<bounds minlat="44.6641641" minlon="10.4735892" maxlat="44.6641641" maxlon="10.4735892"/>
+<wpt lat="44.6641641" lon="10.4735892">
+  <ele>0.000000</ele>
+  <name>Bibbiano, Italy</name>
+  <cmt>Bibbiano, Italy</cmt>
+  <desc>Bibbiano, Italy</desc>
+</wpt>
+</gpx>

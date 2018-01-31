@@ -49,7 +49,9 @@
 		7750A16C1E281AB600A0CE62 /* BMLTNAMeetingSearchMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchMarker.swift; sourceTree = "<group>"; };
 		77556CEF1E2BD30200C1E69B /* BMLTNAMeetingSearchDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchDirectionsViewController.swift; sourceTree = "<group>"; };
 		775EDFC11E9A6C6E007B7DE6 /* NorthportNY.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NorthportNY.gpx; sourceTree = "<group>"; };
+		77666BA62020E41900D65572 /* Rome.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Rome.gpx; sourceTree = "<group>"; };
 		777884BC1E83E016004D4F09 /* SanDiegoCA.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SanDiegoCA.gpx; sourceTree = "<group>"; };
+		778E2CD72021D304009F63FD /* BibbianoItaly.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BibbianoItaly.gpx; sourceTree = "<group>"; };
 		77A5E96B1E2529D500266BC6 /* BMLTNAMeetingSearchAnimatedButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAnimatedButtonView.swift; sourceTree = "<group>"; };
 		77AEDD2F1E26D51900F27EB4 /* BMLTNAMeetingSearchSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchSettingsViewController.swift; sourceTree = "<group>"; };
 		77AF47FA1E7EB92D00230F74 /* global.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = global.geojson; sourceTree = "<group>"; };
@@ -158,6 +160,8 @@
 				77D3D34E1E30F192001FD28A /* HuntingtonNY.gpx */,
 				775EDFC11E9A6C6E007B7DE6 /* NorthportNY.gpx */,
 				77CA577B1E82917300FA439B /* Dublin.gpx */,
+				77666BA62020E41900D65572 /* Rome.gpx */,
+				778E2CD72021D304009F63FD /* BibbianoItaly.gpx */,
 				77D04FF21E9BE15400531ADC /* RichmondVA.gpx */,
 				777884BC1E83E016004D4F09 /* SanDiegoCA.gpx */,
 			);

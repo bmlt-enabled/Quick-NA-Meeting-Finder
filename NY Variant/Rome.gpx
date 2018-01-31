@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+  version="1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.topografix.com/GPX/1/0"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<time>2012-04-22T17:32:54Z</time>
+<bounds minlat="41.9028" minlon="12.4964" maxlat="41.9028" maxlon="12.4964"/>
+<wpt lat="41.9028" lon="12.4964">
+  <ele>0.000000</ele>
+  <name>Rome, Italy</name>
+  <cmt>Rome, Italy</cmt>
+  <desc>Rome, Italy</desc>
+</wpt>
+</gpx>
