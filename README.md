@@ -9,6 +9,10 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.3.1.2000* ** *- TBD*
+
+- Adds the new "Tomato" server.
+
 ***Version 1.3.0.3000* ** *- February 12, 2018*
 
 - App Store Release
