@@ -9,7 +9,12 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
-***Version 1.3.1.2000* ** *- TBD*
+***Version 1.3.1.2001* ** *- March 15, 2018*
+
+- Tweaked the Italian localization.
+- Make sure the first letter of each weekday is uppercased. Italian localization forced all lowercase.
+
+***Version 1.3.1.2000* ** *- March 13, 2018*
 
 - Adds the new "Tomato" server.
 

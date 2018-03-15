@@ -21,6 +21,20 @@
 import Foundation
 
 /* ###################################################################################################################################### */
+// MARK: - String Extension for Uppercasing -
+/* ###################################################################################################################################### */
+/**
+ This extension lets us uppercase only the first letter of the string (used for weekdays).
+ From here: https://stackoverflow.com/a/28288340/879365
+ */
+extension String {
+    var firstUppercased: String {
+        guard let first = first else { return "" }
+        return String(first).uppercased() + dropFirst()
+    }
+}
+
+/* ###################################################################################################################################### */
 // MARK: - Prefs Class -
 /* ###################################################################################################################################### */
 /**
@@ -155,7 +169,7 @@ class BMLTNAMeetingSearchPrefs {
         let weekdaySymbols = calendar.weekdaySymbols
         let weekdayIndex = weekdayNumber - 1
         let index = weekdayIndex
-        return weekdaySymbols[index]
+        return weekdaySymbols[index].firstUppercased
     }
 
     /* ################################################################## */

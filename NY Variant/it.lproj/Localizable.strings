@@ -87,28 +87,28 @@
 /** The title label for the "Grace Time" Picker View section */
 "GRACE-TIME-LABEL"                                              =   "Periodo di grazia"; // "\"Grace Time\" for Meetings"
 /** More Descriptive text for the "Grace Time" Picker View */
-"BMLTNAMeetingSearch-Settings-GraceTimeText"                    =   "Serve a impostare un margine di tempo per specificare se una riunione non è ancora iniziata o se è già in corso prima di essere inclusa o esclusa dai risultati della ricerca."; /* "This allows you to specify that a meeting either hasn't started yet, or has been going on for some time before being included or excluded from your search results."*/
+"BMLTNAMeetingSearch-Settings-GraceTimeText"                    =   "Serve a impostare un margine di tempo e specificare se una riunione non è ancora iniziata o se è già in corso prima di essere inclusa o esclusa dai risultati della ricerca."; /* "This allows you to specify that a meeting either hasn't started yet, or has been going on for some time before being included or excluded from your search results."*/
 /** The title label for the "Grace Time" Picker View, itself */
-"GRACE-TIME-PICKER-LABEL"                                       =   "Includi soltanto riunioni che:"; // "Only Include Meetings that:"
+"GRACE-TIME-PICKER-LABEL"                                       =   "Includi soltanto riunioni:"; // "Only Include Meetings that:"
 
 /** These are values for the "grace time" picker in the settings screen. */
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-00"        =   "60"; // "60"
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-00"         =   "non iniziano prima di un\'ora"; // "Won't start for at least an hour"
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-00"         =   "che non iniziano prima di un\'ora"; // "Won't start for at least an hour"
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-01"        =   "30"; // "30"
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-01"         =   "non iniziano prima di mezz\'ora"; // "Won't start for at least half an hour"
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-01"         =   "che non iniziano prima di mezz\'ora"; // "Won't start for at least half an hour"
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-02"        =   "15"; // "15"
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-02"         =   "non iniziano prima di quindici minuti"; // "Won't start for at least fifteen minutes"
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-02"         =   "che non iniziano prima di 15 minuti"; // "Won't start for at least fifteen minutes"
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-03"        =   "0"; // "0"
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-03"         =   "iniziano adesso o più tardi"; // "Start now or later"
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-03"         =   "che iniziano adesso o più tardi"; // "Start now or later"
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-04"        =   "-15"; // "-15"
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-04"         =   "sono già iniziate da quindici minuti al massimo"; // "May already be running for fifteen minutes"
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-04"         =   "già iniziate da 15 minuti al massimo"; // "May already be running for fifteen minutes"
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-05"        =   "-30"; // "-30"
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-05"         =   "sono già iniziate da mezz\'ora al massimo"; // "May already be running for half an hour"
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-05"         =   "già iniziate da mezz\'ora al massimo"; // "May already be running for half an hour"
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-06"        =   "-60"; // "-60"
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-06"         =   "sono già iniziate da un\'ora al massimo"; // "May already be running for an hour"
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-06"         =   "già iniziate da un\'ora al massimo"; // "May already be running for an hour"
 
 /** This is the "Tutorial" text in the "Settings" screen. */
-"SETTINGS-EXPLAIN"                                              =   "Questa app funziona toccando il pulsante grande al centro della schermata principale. La app ti localizza e ti mostra le riunioni a te più vicine, da qui a domani (puoi visualizzarle come elenco e/o toccarne una per vederne i dettagli.";
+"SETTINGS-EXPLAIN"                                              =   "Questa app funziona toccando il pulsante grande al centro della schermata principale. La app ti localizza e ti mostra le riunioni a te più vicine, da qui a domani (puoi visualizzarle come elenco o toccarne una per vedere i dettagli).";
 
 /* "This app works by simply touching the big button in the middle of the main screen. It then figures out where you are, and finds nearby meetings in the next couple of days (later today and tomorrow). You can look at the meetings in a list, or touch a meeting in the list to examine it individually for further details."*/
 
@@ -116,7 +116,7 @@
 "ABOUT-US"                                                      =   "Su %@"; // "About %@"
 
 /** The MAGSHARE Label Text */
-"GO-ME-GO-ME"                                                   =   "Un altro bel progetto MAGSHARE"; // "Another Fine MAGSHARE Project"
+"GO-ME-GO-ME"                                                   =   "Un altro progetto MAGSHARE"; // "Another Fine MAGSHARE Project"
 
 /** The version label text */
 "VERSION"                                                       =   "Versione %@"; // "Version %@"
