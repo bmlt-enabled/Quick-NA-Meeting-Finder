@@ -87,6 +87,18 @@ class BMLTNAMeetingSearchAboutViewController: UIViewController {
     
     /* ################################################################## */
     /**
+     Called just after the screen appears.
+     We use this to make sure the text is scrolled all the way up.
+     
+     - parameter: animated True, if the transition is animated.
+     */
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.aboutUsTextItem.setContentOffset(CGPoint.zero, animated: true)
+    }
+    
+    /* ################################################################## */
+    /**
      The "Beanie Button" was hit.
      
      - parameter sender: The button object.
