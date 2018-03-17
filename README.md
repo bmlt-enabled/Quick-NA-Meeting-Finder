@@ -9,6 +9,10 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.3.1.2004* ** *- March 17, 2018*
+
+- No changes (but bumped twice to match the other app). iTunes had a meltdown, and I needed to re-up the build.
+
 ***Version 1.3.1.2002* ** *- March 16, 2018*
 
 - Now ensure that the information screen starts off scrolled to the top.
