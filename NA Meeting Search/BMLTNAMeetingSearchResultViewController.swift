@@ -75,7 +75,7 @@ class BMLTNAMeetingSearchResultViewController: UIViewController, UITableViewData
             self._sortSegmentedSwitch.selectedSegmentIndex = 1
         }
         
-        self._sortResults(BMLTNAMeetingSearchPrefs.prefs.sortResultsByDistance)
+        self._sortResults(1 == self._sortSegmentedSwitch.selectedSegmentIndex)
     }
 
     /* ################################################################## */
@@ -91,6 +91,7 @@ class BMLTNAMeetingSearchResultViewController: UIViewController, UITableViewData
             let indexPath = IndexPath(row: row, section: 0)
             self._resultsTable.deselectRow(at: indexPath, animated: true)
         }
+        
         super.viewWillAppear(animated)
     }
     
@@ -128,25 +129,57 @@ class BMLTNAMeetingSearchResultViewController: UIViewController, UITableViewData
      */
     @IBAction func _sortChanged(_ sender: UISegmentedControl) {
         let selectedIndex = sender.selectedSegmentIndex
-        self._sortResults((1 == selectedIndex))
+        self._sortResults(1 == selectedIndex)
     }
     
     /* ################################################################## */
     // MARK: Private Instance Methods
     /* ################################################################## */
     /**
+     This sorts the results, according to the selector switch.
+     
+     - parameter inByDistance: This is true, if the switch is set to "Sort by Distance".
      */
     private func _sortResults(_ inByDistance: Bool) {
         BMLTNAMeetingSearchPrefs.prefs.sortResultsByDistance = inByDistance
-        let resultArray = self.searchResultArray.sorted(by: {
+        self.searchResultArray = self.searchResultArray.sorted(by: {
             if inByDistance {
                 return $0.distanceInKm < $1.distanceInKm
             } else {
-                return $0.timeDayAsInteger < $1.timeDayAsInteger
+                let firstWeekday = Calendar.current.firstWeekday
+                var weekday1 = $0.weekdayIndex - firstWeekday
+                var weekday2 = $1.weekdayIndex - firstWeekday
+                
+                if 0 > weekday1 {
+                    weekday1 += 7
+                }
+                
+                if 0 > weekday2 {
+                    weekday2 += 7
+                }
+                
+                if 0 == weekday1 && 6 == weekday2 {
+                    return false
+                } else {
+                    if 6 == weekday1 && 0 == weekday2 {
+                        return true
+                    } else {
+                        if weekday1 != weekday2 {
+                            return weekday1 < weekday2
+                        } else {
+                            let startTime1 = $0.startTime
+                            let startTime2 = $1.startTime
+                            
+                            let startTimeAsInteger1 = ((startTime1?.hour)! * 100) + (startTime1?.minute)!
+                            let startTimeAsInteger2 = ((startTime2?.hour)! * 100) + (startTime2?.minute)!
+                            
+                            return startTimeAsInteger1 < startTimeAsInteger2
+                        }
+                    }
+                }
             }
         })
         
-        self.searchResultArray = resultArray
         self._resultsTable.reloadData()
     }
     

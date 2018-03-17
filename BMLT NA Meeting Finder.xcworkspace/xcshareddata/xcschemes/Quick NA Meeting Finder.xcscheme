@@ -66,7 +66,7 @@
       <AdditionalOptions>
       </AdditionalOptions>
       <LocationScenarioReference
-         identifier = "../NY Variant/BibbianoItaly.gpx"
+         identifier = "../NY Variant/HuntingtonNY.gpx"
          referenceType = "0">
       </LocationScenarioReference>
       <RoutingCoverageFileReference
