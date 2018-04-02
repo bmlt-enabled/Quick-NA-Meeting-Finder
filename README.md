@@ -9,6 +9,11 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.3.1.2006* ** *- April 2, 2018*
+
+- Added an "invisible" parameter to the server calls, so that TOMATO will know that its being called by BMLTiOSLib apps.
+- Updated to Xcode 9.3/Swift 4.1
+
 ***Version 1.3.1.2005* ** *- March 17, 2018*
 
 - Fixed an issue, where Sunday was displayed before Saturday, when you are in Saturday.
