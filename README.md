@@ -9,6 +9,10 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.3.1.3000* ** *- April 3, 2018*
+
+- No changes. Release to App Store.
+
 ***Version 1.3.1.2006* ** *- April 2, 2018*
 
 - Added an "invisible" parameter to the server calls, so that TOMATO will know that its being called by BMLTiOSLib apps.
