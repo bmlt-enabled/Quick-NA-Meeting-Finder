@@ -121,7 +121,7 @@
 "VERSION"                                                       =   "Version %@";
 
 /** This is the main text for the "About US" screen. */
-"ABOUT-US-TEXT"                                                 =   "This app was originally created as a demonstrator for the BMLTiOSLib project, but has proven to be popular enough to release on its own merits.\nLike all MAGSHARE projects, it is 100% open-source (GPLv3 license), and its source can be found at:\n\nhttps://bitbucket.org/bmltios/bmlt-na-meeting-search\n\nPress the logo button above, to be taken to the support site for this app.\n\nBMLT and MAGSHARE are expressions of Gratitude and Service to NA for gifts beyond price.\n\nConsider this a tiny down payment. It barely covers the interest.";
+"ABOUT-US-TEXT"                                                 =   "This app was originally created as a demonstrator for the BMLTiOSLib project, but has proven to be popular enough to release on its own merits.\nLike all MAGSHARE projects, it is 100% open-source (GPLv3 license), and its source can be found at:\n\nhttps://github.com/bmlt-enabled/Quick-NA-Meeting-Finder\n\nPress the logo button above, to be taken to the support site for this app.\n\nBMLT and MAGSHARE are expressions of Gratitude and Service to NA for gifts beyond price.\n\nConsider this a tiny down payment. It barely covers the interest.";
 
 /* DON'T CHANGE THESE VALUES. */
 
