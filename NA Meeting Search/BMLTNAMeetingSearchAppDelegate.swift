@@ -82,7 +82,7 @@ class BMLTNAMeetingSearchAppDelegate: UIResponder, UIApplicationDelegate {
         if let topController = self.getNavigationController()?.topViewController {
             let alertController = UIAlertController(title: NSLocalizedString(inTitle, comment: ""), message: NSLocalizedString(inMessage, comment: ""), preferredStyle: .alert)
             
-            let okAction = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: UIAlertActionStyle.cancel, handler: nil)
+            let okAction = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: UIAlertAction.Style.cancel, handler: nil)
             
             alertController.addAction(okAction)
             
@@ -93,7 +93,7 @@ class BMLTNAMeetingSearchAppDelegate: UIResponder, UIApplicationDelegate {
     /* ################################################################## */
     /**
      */
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         return true
     }
     

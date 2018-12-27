@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		77E92E081E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */; };
 		77EB4BE31E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */; };
 		CFFE9CC3C98D6F51D164F0C7 /* Pods_Quick_NA_Meeting_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38629FA9C4BF709997FFF1C /* Pods_Quick_NA_Meeting_Finder.framework */; };
+		D47B9D4021D5444C00C1FA19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D47B9D3E21D5444C00C1FA19 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,7 +62,6 @@
 		77D3D3441E30F192001FD28A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77D3D34D1E30F192001FD28A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		77D3D34E1E30F192001FD28A /* HuntingtonNY.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HuntingtonNY.gpx; sourceTree = "<group>"; };
-		77D3D34F1E30F192001FD28A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77D3D35D1E30F208001FD28A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BMLTNAMeetingSearchLaunchScreen.storyboard; sourceTree = "<group>"; };
 		77D3D35F1E30F208001FD28A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BMLTNAMeetingSearchMain.storyboard; sourceTree = "<group>"; };
 		77D3D3611E30F208001FD28A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = BMLTNAMeetingSearchResultsTableCell.xib; sourceTree = "<group>"; };
@@ -71,6 +71,10 @@
 		77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAddressViewController.swift; sourceTree = "<group>"; };
 		77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAboutViewController.swift; sourceTree = "<group>"; };
 		AD66FE3C0AA50D09700337D7 /* Pods-Quick NA Meeting Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick NA Meeting Finder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quick NA Meeting Finder/Pods-Quick NA Meeting Finder.release.xcconfig"; sourceTree = "<group>"; };
+		D47B9D3821D543B100C1FA19 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D47B9D3D21D5440D00C1FA19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D47B9D3F21D5444C00C1FA19 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D47B9D4121D5445800C1FA19 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F38629FA9C4BF709997FFF1C /* Pods_Quick_NA_Meeting_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_NA_Meeting_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -152,10 +156,11 @@
 		77D3D3431E30F192001FD28A /* Main Variant */ = {
 			isa = PBXGroup;
 			children = (
+				D47B9D3D21D5440D00C1FA19 /* Info.plist */,
+				D47B9D3E21D5444C00C1FA19 /* InfoPlist.strings */,
 				77D3D3691E30F221001FD28A /* Localizable.strings */,
 				77D3D3441E30F192001FD28A /* Assets.xcassets */,
 				77D3D34D1E30F192001FD28A /* Default-568h@2x.png */,
-				77D3D34F1E30F192001FD28A /* Info.plist */,
 				77AF47FA1E7EB92D00230F74 /* global.geojson */,
 				77D3D34E1E30F192001FD28A /* HuntingtonNY.gpx */,
 				775EDFC11E9A6C6E007B7DE6 /* NorthportNY.gpx */,
@@ -225,6 +230,7 @@
 				TargetAttributes = {
 					770780AF1DF86B6100D339D6 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -235,7 +241,7 @@
 				};
 			};
 			buildConfigurationList = 770780AB1DF86B6100D339D6 /* Build configuration list for PBXProject "BMLT NA Meeting Finder" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -244,6 +250,7 @@
 				fr,
 				sv,
 				it,
+				da,
 			);
 			mainGroup = 770780A71DF86B6100D339D6;
 			productRefGroup = 770780B11DF86B6100D339D6 /* Products */;
@@ -261,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77D3D3561E30F192001FD28A /* Default-568h@2x.png in Resources */,
+				D47B9D4021D5444C00C1FA19 /* InfoPlist.strings in Resources */,
 				77D3D3621E30F208001FD28A /* BMLTNAMeetingSearchLaunchScreen.storyboard in Resources */,
 				77D3D3511E30F192001FD28A /* Assets.xcassets in Resources */,
 				77D3D3671E30F221001FD28A /* Localizable.strings in Resources */,
@@ -396,8 +404,18 @@
 				7733FE6120029B78008B6E5F /* fr */,
 				7733FE6220029F21008B6E5F /* sv */,
 				77E1DC7A201773DC005F8B3A /* it */,
+				D47B9D3821D543B100C1FA19 /* da */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D47B9D3E21D5444C00C1FA19 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D47B9D3F21D5444C00C1FA19 /* da */,
+				D47B9D4121D5445800C1FA19 /* it */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -523,7 +541,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 4.0;
@@ -543,13 +562,15 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "${PROJECT_DIR}/NY Variant/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.magshare.bmlt.NA-Meeting-Finder";
 				PRODUCT_NAME = "Quick NA Meeting Finder";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -564,13 +585,15 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "${PROJECT_DIR}/NY Variant/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.magshare.bmlt.NA-Meeting-Finder";
 				PRODUCT_NAME = "Quick NA Meeting Finder";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

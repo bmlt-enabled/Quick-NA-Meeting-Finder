@@ -159,7 +159,7 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
         
         let alertController = UIAlertController(title: NSLocalizedString(inTitle, comment: ""), message: NSLocalizedString(inMessage, comment: ""), preferredStyle: .alert)
         
-        let okAction = UIAlertAction(title: NSLocalizedString("BMLTNAMeetingSearchError-OKButtonText", comment: ""), style: UIAlertActionStyle.cancel, handler: nil)
+        let okAction = UIAlertAction(title: NSLocalizedString("BMLTNAMeetingSearchError-OKButtonText", comment: ""), style: UIAlertAction.Style.cancel, handler: nil)
         
         alertController.addAction(okAction)
         

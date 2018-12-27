@@ -221,7 +221,7 @@ class BMLTNAMeetingSearchResultViewController: UIViewController, UITableViewData
         let meeting = self.searchResultArray[indexPath.row]
         let reuseID: String = String(meeting.id)
         
-        let ret = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: reuseID)
+        let ret = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: reuseID)
         if let cell = UINib(nibName: "BMLTNAMeetingSearchResultsTableCell", bundle: nil).instantiate(withOwner: self, options: nil)[0] as? BMLTNAMeetingSearchResultsTableCellView {
             cell.meetingDescriptionTextView.text = meeting.description
             var distance: Double = 0

@@ -120,7 +120,7 @@ class BMLTNAMeetingSearchDirectionsViewController: UIViewController, MKMapViewDe
                     let myCoords = self.searchCenterCoords
                     let mePlacemark = MKPlacemark(coordinate: myCoords)
                     let meetingPlacemark = MKPlacemark(coordinate: meetingCoords)
-                    let directionsRequest = MKDirectionsRequest()
+                    let directionsRequest = MKDirections.Request()
                     directionsRequest.destination = MKMapItem(placemark: meetingPlacemark)
                     directionsRequest.source = MKMapItem(placemark: mePlacemark)
                     
