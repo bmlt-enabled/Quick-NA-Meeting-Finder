@@ -9,6 +9,11 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.3.2.2002* ** *- December 28, 2018*
+
+- Updated the BMLTiOSLib.
+- Added Danish localization.
+
 ***Version 1.3.1.3000* ** *- April 3, 2018*
 
 - No changes. Release to App Store.

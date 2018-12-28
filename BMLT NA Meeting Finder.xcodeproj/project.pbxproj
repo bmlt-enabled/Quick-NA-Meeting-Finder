@@ -207,7 +207,6 @@
 				770780AE1DF86B6100D339D6 /* Resources */,
 				770B04F11F3CB6BA009F0A7C /* Embed BMLTiOSLib */,
 				C480F5F3C9E9C8DCCA8ED7ED /* [CP] Embed Pods Frameworks */,
-				F16821F19ED50504D8B771DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -318,9 +317,9 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Quick NA Meeting Finder/Pods-Quick NA Meeting Finder-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Quick NA Meeting Finder/Pods-Quick NA Meeting Finder-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BMLTiOSLib/BMLTiOSLib.framework",
-				"${PODS_ROOT}/Reveal-SDK/RevealServer-13/iOS/RevealServer.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-20/iOS/RevealServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -329,22 +328,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quick NA Meeting Finder/Pods-Quick NA Meeting Finder-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F16821F19ED50504D8B771DF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quick NA Meeting Finder/Pods-Quick NA Meeting Finder-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quick NA Meeting Finder/Pods-Quick NA Meeting Finder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
