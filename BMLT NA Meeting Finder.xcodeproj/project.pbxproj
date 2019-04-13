@@ -229,7 +229,7 @@
 				TargetAttributes = {
 					770780AF1DF86B6100D339D6 = {
 						CreatedOnToolsVersion = 8.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -241,7 +241,7 @@
 			};
 			buildConfigurationList = 770780AB1DF86B6100D339D6 /* Build configuration list for PBXProject "BMLT NA Meeting Finder" */;
 			compatibilityVersion = "Xcode 10.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -554,7 +554,7 @@
 				PRODUCT_NAME = "Quick NA Meeting Finder";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -577,7 +577,7 @@
 				PRODUCT_NAME = "Quick NA Meeting Finder";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

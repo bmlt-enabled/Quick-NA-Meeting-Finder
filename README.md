@@ -9,6 +9,10 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.3.3.1000* ** *- TBD*
+
+- Updated to Swift 5.
+
 ***Version 1.3.2.2002* ** *- December 28, 2018*
 
 - Updated the BMLTiOSLib.
