@@ -224,6 +224,8 @@ class BMLTNAMeetingSearchInitialViewController: UIViewController, BMLTiOSLibDele
                 
             case .notDetermined, .authorizedAlways, .authorizedWhenInUse:
                 goodLoc = true
+            @unknown default:
+                fatalError("UNKOWN ERROR")
             }
         }
         
