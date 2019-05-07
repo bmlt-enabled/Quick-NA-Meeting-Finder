@@ -71,6 +71,9 @@
 		77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAddressViewController.swift; sourceTree = "<group>"; };
 		77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMLTNAMeetingSearchAboutViewController.swift; sourceTree = "<group>"; };
 		AD66FE3C0AA50D09700337D7 /* Pods-Quick NA Meeting Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick NA Meeting Finder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quick NA Meeting Finder/Pods-Quick NA Meeting Finder.release.xcconfig"; sourceTree = "<group>"; };
+		D4776CF522821A1200AACD2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4776CF622821A2400AACD2C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4776CF722821A3500AACD2C /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D47B9D3821D543B100C1FA19 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D47B9D3D21D5440D00C1FA19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D47B9D3F21D5444C00C1FA19 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -395,6 +398,9 @@
 			children = (
 				D47B9D3F21D5444C00C1FA19 /* da */,
 				D47B9D4121D5445800C1FA19 /* it */,
+				D4776CF522821A1200AACD2C /* Base */,
+				D4776CF622821A2400AACD2C /* fr */,
+				D4776CF722821A3500AACD2C /* sv */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
