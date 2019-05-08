@@ -19,4 +19,4 @@
  You should have received a copy of the GNU General Public License
  along with this code.  If not, see <http://www.gnu.org/licenses/>.
  */
-"NSLocationWhenInUseUsageDescription" = "This app needs to know where you are in order to find nearby meetings.";
+"NSLocationWhenInUseUsageDescription" = "Cette application a besoin de connaître votre position actuelle afin de déterminer les réunions à proximité.";
