@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B5025E9BEE763170FD4EC60 /* Pods_Quick_NA_Meeting_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38629FA9C4BF709997FFF1C /* Pods_Quick_NA_Meeting_Finder.framework */; };
 		7702A0881E25A87600EE6687 /* BMLTNAMeetingSearchPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C4D8871E24494E00CE6783 /* BMLTNAMeetingSearchPrefs.swift */; };
 		770780B41DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770780B31DF86B6100D339D6 /* BMLTNAMeetingSearchAppDelegate.swift */; };
 		770780B61DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770780B51DF86B6100D339D6 /* BMLTNAMeetingSearchInitialViewController.swift */; };
@@ -23,7 +24,6 @@
 		77D692861E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D692851E267FF700785840 /* BMLTNAMeetingSearchResultViewController.swift */; };
 		77E92E081E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E92E071E2912C100BBB961 /* BMLTNAMeetingSearchAddressViewController.swift */; };
 		77EB4BE31E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EB4BE21E2A5A3900E8D283 /* BMLTNAMeetingSearchAboutViewController.swift */; };
-		CFFE9CC3C98D6F51D164F0C7 /* Pods_Quick_NA_Meeting_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38629FA9C4BF709997FFF1C /* Pods_Quick_NA_Meeting_Finder.framework */; };
 		D47B9D4021D5444C00C1FA19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D47B9D3E21D5444C00C1FA19 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFFE9CC3C98D6F51D164F0C7 /* Pods_Quick_NA_Meeting_Finder.framework in Frameworks */,
+				3B5025E9BEE763170FD4EC60 /* Pods_Quick_NA_Meeting_Finder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +209,6 @@
 				770780AD1DF86B6100D339D6 /* Frameworks */,
 				770780AE1DF86B6100D339D6 /* Resources */,
 				770B04F11F3CB6BA009F0A7C /* Embed BMLTiOSLib */,
-				C480F5F3C9E9C8DCCA8ED7ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,23 +311,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C480F5F3C9E9C8DCCA8ED7ED /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Quick NA Meeting Finder/Pods-Quick NA Meeting Finder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Quick NA Meeting Finder/Pods-Quick NA Meeting Finder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quick NA Meeting Finder/Pods-Quick NA Meeting Finder-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

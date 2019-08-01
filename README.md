@@ -9,7 +9,7 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
-***Version 1.3.3.1000* ** *- TBD*
+***Version 1.4.0.1000* ** *- TBD*
 
 - Updated to Swift 5.
 
