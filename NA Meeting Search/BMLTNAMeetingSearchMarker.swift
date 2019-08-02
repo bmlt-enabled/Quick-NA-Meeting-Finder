@@ -34,12 +34,18 @@ typealias BMLTNAMeetingSearchMeetingList = [BMLTiOSLibMeetingNode]
  This handles the marker annotation.
  */
 class BMLTNAMeetingSearchAnnotation: NSObject, MKAnnotation, NSCoding {
+    /// The Dictionary key for the coordinate object.
     let sCoordinateObjectKey: String = "BMLTNAMeetingSearchAnnotation_Coordinate"
+    /// The Dictionary key for the list of meetings.
     let sMeetingsObjectKey: String = "BMLTNAMeetingSearchAnnotation_Meetings"
+    /// The Dictionary key for the annotation title value.
     let sTitleObjectKey: String = "BMLTNAMeetingSearchAnnotation_Title"
     
+    /// The coordinate for this annotation.
     @objc var coordinate: CLLocationCoordinate2D = kCLLocationCoordinate2DInvalid
+    /// The meetings attached to this annotation.
     @objc var meetings: BMLTNAMeetingSearchMeetingList = []
+    /// The title of this annotation's marker.
     @objc var title: String?
     
     /* ################################################################## */

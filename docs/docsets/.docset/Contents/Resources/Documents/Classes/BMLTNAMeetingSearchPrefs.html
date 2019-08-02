@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BMLTNAMeetingSearchPrefs Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/BMLTNAMeetingSearchPrefs" class="dashAnchor"></a>
+
+    <a title="BMLTNAMeetingSearchPrefs Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bmlt-enabled/Quick-NA-Meeting-Finder">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      BMLTNAMeetingSearchPrefs Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchAboutViewController.html">BMLTNAMeetingSearchAboutViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchAddressViewController.html">BMLTNAMeetingSearchAddressViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchAnimatedButtonView.html">BMLTNAMeetingSearchAnimatedButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchAnnotation.html">BMLTNAMeetingSearchAnnotation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchAppDelegate.html">BMLTNAMeetingSearchAppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchDirectionsViewController.html">BMLTNAMeetingSearchDirectionsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchInitialViewController.html">BMLTNAMeetingSearchInitialViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchMarker.html">BMLTNAMeetingSearchMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchPrefs.html">BMLTNAMeetingSearchPrefs</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchPrefs/PrefsKeys.html">– PrefsKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchResultViewController.html">BMLTNAMeetingSearchResultViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchResultsTableCellView.html">BMLTNAMeetingSearchResultsTableCellView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchSettingsViewController.html">BMLTNAMeetingSearchSettingsViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:23Quick_NA_Meeting_Finder019BMLTNAMeetingSearchC4Lista">BMLTNAMeetingSearchMeetingList</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>BMLTNAMeetingSearchPrefs</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BMLTNAMeetingSearchPrefs</span></code></pre>
+
+                </div>
+              </div>
+            <p>This is a very simple <q>persistent user prefs</q> class. It is instantiated as a SINGLETON, and provides a simple, property-oriented gateway
+to the simple persistent user prefs in iOS. It shouldn&rsquo;t be used for really big, important prefs, but is ideal for the basic <q>settings</q>
+type of prefs most users set in their <q>gear</q> screen.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20Static%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Private Static Properties" class="dashAnchor"></a>
+                <a href="#/Private%20Static%20Properties">
+                  <h3 class="section-name">Private Static Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC05_mainG3Key33_4068E1126F6C8D3301AE82341FD0A67CLLSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/_mainPrefsKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC05_mainG3Key33_4068E1126F6C8D3301AE82341FD0A67CLLSSvpZ">_mainPrefsKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is the key for the prefs used by this app.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">_mainPrefsKey</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20Variable%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Private Variable Properties" class="dashAnchor"></a>
+                <a href="#/Private%20Variable%20Properties">
+                  <h3 class="section-name">Private Variable Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC07_loadedG033_4068E1126F6C8D3301AE82341FD0A67CLLSo19NSMutableDictionaryCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/_loadedPrefs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC07_loadedG033_4068E1126F6C8D3301AE82341FD0A67CLLSo19NSMutableDictionaryCSgvp">_loadedPrefs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>We load the user prefs into this Dictionary object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">var</span> <span class="nv">_loadedPrefs</span><span class="p">:</span> <span class="kt">NSMutableDictionary</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC011_sSingletonG033_4068E1126F6C8D3301AE82341FD0A67CLLACSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/_sSingletonPrefs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC011_sSingletonG033_4068E1126F6C8D3301AE82341FD0A67CLLACSgvpZ">_sSingletonPrefs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is how we enforce a SINGLETON pattern.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">_sSingletonPrefs</span><span class="p">:</span> <span class="kt">BMLTNAMeetingSearchPrefs</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20Enums"></a>
+                <a name="//apple_ref/swift/Section/Private Enums" class="dashAnchor"></a>
+                <a href="#/Private%20Enums">
+                  <h3 class="section-name">Private Enums</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC0G4Keys33_4068E1126F6C8D3301AE82341FD0A67CLLO"></a>
+                    <a name="//apple_ref/swift/Enum/PrefsKeys" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC0G4Keys33_4068E1126F6C8D3301AE82341FD0A67CLLO">PrefsKeys</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>These are the keys we use for our persistent prefs dictionary.</p>
+
+                        <a href="../Classes/BMLTNAMeetingSearchPrefs/PrefsKeys.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">enum</span> <span class="kt">PrefsKeys</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20Initializer"></a>
+                <a name="//apple_ref/swift/Section/Private Initializer" class="dashAnchor"></a>
+                <a href="#/Private%20Initializer">
+                  <h3 class="section-name">Private Initializer</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsCACyc33_4068E1126F6C8D3301AE82341FD0A67CLlfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsCACyc33_4068E1126F6C8D3301AE82341FD0A67CLlfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>We do this to prevent the class from being instantiated in a different context than our controlled one.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20Instance%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Private Instance Methods" class="dashAnchor"></a>
+                <a href="#/Private%20Instance%20Methods">
+                  <h3 class="section-name">Private Instance Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC05_saveG033_4068E1126F6C8D3301AE82341FD0A67CLLyyF"></a>
+                    <a name="//apple_ref/swift/Method/_savePrefs()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC05_saveG033_4068E1126F6C8D3301AE82341FD0A67CLLyyF">_savePrefs()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method simply saves the main preferences Dictionary into the standard user defaults.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">_savePrefs</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC05_loadG033_4068E1126F6C8D3301AE82341FD0A67CLLSbyF"></a>
+                    <a name="//apple_ref/swift/Method/_loadPrefs()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC05_loadG033_4068E1126F6C8D3301AE82341FD0A67CLLSbyF">_loadPrefs()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method loads the main prefs into our instance storage.</p>
+
+<p>NOTE: This will overwrite any unsaved changes to the current _loadedPrefs property.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">_loadPrefs</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a Bool. True, if the load was successful.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Class%20Static%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Class Static Properties" class="dashAnchor"></a>
+                <a href="#/Class%20Static%20Properties">
+                  <h3 class="section-name">Class Static Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC5prefsACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/prefs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC5prefsACvpZ">prefs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is how the singleton instance is instantiated and accessed. Always use this variable to capture the prefs object.</p>
+
+<p>The syntax is:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">myPrefs</span> <span class="o">=</span> <span class="kt">BMLTNAMeetingSearchPrefs</span><span class="o">.</span><span class="n">prefs</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">prefs</span><span class="p">:</span> <span class="kt">BMLTNAMeetingSearchPrefs</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC19using12hClockFormatSbvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/using12hClockFormat" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC19using12hClockFormatSbvpZ">using12hClockFormat</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This tells us whether or not the device is set for military time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">using12hClockFormat</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC16usingKilometeresSbvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/usingKilometeres" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC16usingKilometeresSbvpZ">usingKilometeres</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This tells us whether or not the device is set for kilometers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">usingKilometeres</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Static%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Instance Static Methods" class="dashAnchor"></a>
+                <a href="#/Instance%20Static%20Methods">
+                  <h3 class="section-name">Instance Static Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC28weekdayNameFromWeekdayNumberySSSiFZ"></a>
+                    <a name="//apple_ref/swift/Method/weekdayNameFromWeekdayNumber(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC28weekdayNameFromWeekdayNumberySSSiFZ">weekdayNameFromWeekdayNumber(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets a localized version of the weekday name from an index.</p>
+
+<p>Cribbed from Here: <a href="http://stackoverflow.com/questions/7330420/how-do-i-get-the-name-of-a-day-of-the-week-in-the-users-locale#answer-34289913">http://stackoverflow.com/questions/7330420/how-do-i-get-the-name-of-a-day-of-the-week-in-the-users-locale#answer-34289913</a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">weekdayNameFromWeekdayNumber</span><span class="p">(</span><span class="n">_</span> <span class="nv">weekdayNumber</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>weekdayNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>1-based index (1 - 7)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The localized, full-length weekday name.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Instance%20Calculated%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Instance Calculated Properties" class="dashAnchor"></a>
+                <a href="#/Instance%20Calculated%20Properties">
+                  <h3 class="section-name">Instance Calculated Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC7rootURISSvp"></a>
+                    <a name="//apple_ref/swift/Property/rootURI" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC7rootURISSvp">rootURI</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is a read-only property, as the value is read from the plist file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">rootURI</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the selected Root Server URI, as a String.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC13distanceUnitsSSvp"></a>
+                    <a name="//apple_ref/swift/Property/distanceUnits" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC13distanceUnitsSSvp">distanceUnits</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">distanceUnits</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the selected Distance Units, as a String.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC20gracePeriodInMinutesSivp"></a>
+                    <a name="//apple_ref/swift/Property/gracePeriodInMinutes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC20gracePeriodInMinutesSivp">gracePeriodInMinutes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">gracePeriodInMinutes</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the <q>grace period</q> we give meetings (How long they have to already be running before we decide not to attend).</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC21sortResultsByDistanceSbvp"></a>
+                    <a name="//apple_ref/swift/Property/sortResultsByDistance" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC21sortResultsByDistanceSbvp">sortResultsByDistance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Should we sort meetings by distance? If false, we sort by day and time. Default is false.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sortResultsByDistance</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>True, if we are to sort by distance. False, if we are to sort by weekday and time.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC12mapTypeIndexSivp"></a>
+                    <a name="//apple_ref/swift/Property/mapTypeIndex" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder24BMLTNAMeetingSearchPrefsC12mapTypeIndexSivp">mapTypeIndex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is the Map type index.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mapTypeIndex</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>0, for standard, 1 for hybrid, and 2 for satellite. Default is hybrid.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2019 <a class="link" href="https://bmlt.app" target="_blank" rel="external">BMLT-Enabled</a>. All rights reserved. (Last updated: 2019-08-02)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

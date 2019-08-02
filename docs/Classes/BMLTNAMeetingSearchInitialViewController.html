@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BMLTNAMeetingSearchInitialViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/BMLTNAMeetingSearchInitialViewController" class="dashAnchor"></a>
+
+    <a title="BMLTNAMeetingSearchInitialViewController Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+           Docs
+        </a>
+         (100% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bmlt-enabled/Quick-NA-Meeting-Finder">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html"> Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      BMLTNAMeetingSearchInitialViewController Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchAboutViewController.html">BMLTNAMeetingSearchAboutViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchAddressViewController.html">BMLTNAMeetingSearchAddressViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchAnimatedButtonView.html">BMLTNAMeetingSearchAnimatedButtonView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchAnnotation.html">BMLTNAMeetingSearchAnnotation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchAppDelegate.html">BMLTNAMeetingSearchAppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchDirectionsViewController.html">BMLTNAMeetingSearchDirectionsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchInitialViewController.html">BMLTNAMeetingSearchInitialViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchMarker.html">BMLTNAMeetingSearchMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchPrefs.html">BMLTNAMeetingSearchPrefs</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchPrefs/PrefsKeys.html">– PrefsKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchResultViewController.html">BMLTNAMeetingSearchResultViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchResultsTableCellView.html">BMLTNAMeetingSearchResultsTableCellView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/BMLTNAMeetingSearchSettingsViewController.html">BMLTNAMeetingSearchSettingsViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:23Quick_NA_Meeting_Finder019BMLTNAMeetingSearchC4Lista">BMLTNAMeetingSearchMeetingList</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>BMLTNAMeetingSearchInitialViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">BMLTNAMeetingSearchInitialViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="kt">BMLTiOSLibDelegate</span><span class="p">,</span> <span class="kt">CLLocationManagerDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>This is the fundamental instance for the app.</p>
+
+<p>The whole deal with the app, is that it&rsquo;s a <q>one button</q> app. Press the big button, and get a modal set of results presented simply and intuitively.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20Static%20Class%20Constant%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Private Static Class Constant Properties" class="dashAnchor"></a>
+                <a href="#/Private%20Static%20Class%20Constant%20Properties">
+                  <h3 class="section-name">Private Static Class Constant Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC02_sF14ResultsSegueID014_5D9C7E7C92155M17DA3F1226615B4D62BLLSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/_sSearchResultsSegueID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC02_sF14ResultsSegueID014_5D9C7E7C92155M17DA3F1226615B4D62BLLSSvpZ">_sSearchResultsSegueID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Search Results Segue ID</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">_sSearchResultsSegueID</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20Static%20Class%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Private Static Class Properties" class="dashAnchor"></a>
+                <a href="#/Private%20Static%20Class%20Properties">
+                  <h3 class="section-name">Private Static Class Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC22_svCommunicationObject014_5D9C7E7C92155M17DA3F1226615B4D62BLL10BMLTiOSLibAFCSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/_svCommunicationObject" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC22_svCommunicationObject014_5D9C7E7C92155M17DA3F1226615B4D62BLL10BMLTiOSLibAFCSgvpZ">_svCommunicationObject</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is the BMLTiOSLib instance that handles the session with the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">_svCommunicationObject</span><span class="p">:</span> <span class="kt">BMLTiOSLib</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20Class%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Private Class Properties" class="dashAnchor"></a>
+                <a href="#/Private%20Class%20Properties">
+                  <h3 class="section-name">Private Class Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC16_locationManager014_5D9C7E7C92155L17DA3F1226615B4D62BLLSo010CLLocationK0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/_locationManager" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC16_locationManager014_5D9C7E7C92155L17DA3F1226615B4D62BLLSo010CLLocationK0CSgvp">_locationManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This will hold our location manager.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">var</span> <span class="nv">_locationManager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC19_locationFailedOnce014_5D9C7E7C92155M17DA3F1226615B4D62BLLSbvp"></a>
+                    <a name="//apple_ref/swift/Property/_locationFailedOnce" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC19_locationFailedOnce014_5D9C7E7C92155M17DA3F1226615B4D62BLLSbvp">_locationFailedOnce</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>We can do two tries to determine location. This is set to true after the first one.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">var</span> <span class="nv">_locationFailedOnce</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC19_searchCenterCoords014_5D9C7E7C92155M17DA3F1226615B4D62BLLSo22CLLocationCoordinate2DVvp"></a>
+                    <a name="//apple_ref/swift/Property/_searchCenterCoords" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC19_searchCenterCoords014_5D9C7E7C92155M17DA3F1226615B4D62BLLSo22CLLocationCoordinate2DVvp">_searchCenterCoords</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This contains the coordinates we found when we geolocated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">var</span> <span class="nv">_searchCenterCoords</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC10_firstLoad014_5D9C7E7C92155L17DA3F1226615B4D62BLLSbvp"></a>
+                    <a name="//apple_ref/swift/Property/_firstLoad" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC10_firstLoad014_5D9C7E7C92155L17DA3F1226615B4D62BLLSbvp">_firstLoad</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is a flag that tells us to run the app upon first load.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">var</span> <span class="nv">_firstLoad</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC23dontDisplayErrorMessageSbvp"></a>
+                    <a name="//apple_ref/swift/Property/dontDisplayErrorMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC23dontDisplayErrorMessageSbvp">dontDisplayErrorMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is a flag that tells the error display not to yell at us (for now).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">dontDisplayErrorMessage</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Internal%20Instance%20IB%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Internal Instance IB Properties" class="dashAnchor"></a>
+                <a href="#/Internal%20Instance%20IB%20Properties">
+                  <h3 class="section-name">Internal Instance IB Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(py)theBigSearchButton"></a>
+                    <a name="//apple_ref/swift/Property/theBigSearchButton" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(py)theBigSearchButton">theBigSearchButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is the big fat button that the user presses.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">theBigSearchButton</span><span class="p">:</span> <span class="kt"><a href="../Classes/BMLTNAMeetingSearchAnimatedButtonView.html">BMLTNAMeetingSearchAnimatedButtonView</a></span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Internal%20Instance%20Calculated%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Internal Instance Calculated Properties" class="dashAnchor"></a>
+                <a href="#/Internal%20Instance%20Calculated%20Properties">
+                  <h3 class="section-name">Internal Instance Calculated Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC14isSessionValidSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isSessionValid" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC14isSessionValidSbvp">isSessionValid</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells us whether or not we have an active, valid session (read-only)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isSessionValid</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC10commObject10BMLTiOSLibAECSgvp"></a>
+                    <a name="//apple_ref/swift/Property/commObject" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC10commObject10BMLTiOSLibAECSgvp">commObject</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is a quick access to the communication object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">commObject</span><span class="p">:</span> <span class="kt">BMLTiOSLib</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC14criteriaObject10BMLTiOSLib0lmF8CriteriaCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/criteriaObject" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC14criteriaObject10BMLTiOSLib0lmF8CriteriaCSgvp">criteriaObject</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Quick access to the search Criteria (read-only)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">criteriaObject</span><span class="p">:</span> <span class="kt">BMLTiOSLibSearchCriteria</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20Instance%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Private Instance Methods" class="dashAnchor"></a>
+                <a href="#/Private%20Instance%20Methods">
+                  <h3 class="section-name">Private Instance Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC06_startF0014_5D9C7E7C92155K17DA3F1226615B4D62BLLyySo22CLLocationCoordinate2DVF"></a>
+                    <a name="//apple_ref/swift/Method/_startSearch(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC06_startF0014_5D9C7E7C92155K17DA3F1226615B4D62BLLyySo22CLLocationCoordinate2DVF">_startSearch(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles a found location. This starts the process of finding meetings that start today, after our current time.
+We add tomorrow, as well, looping the week if we are at the end.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">_startSearch</span><span class="p">(</span><span class="n">_</span> <span class="nv">coordinate</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>coordinate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The coordinate of the user&rsquo;s location.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC18_displayErrorAlert_9inMessage11presentedByySS_SSSo06UIViewI0CtFZ"></a>
+                    <a name="//apple_ref/swift/Method/_displayErrorAlert(_:inMessage:presentedBy:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC18_displayErrorAlert_9inMessage11presentedByySS_SSSo06UIViewI0CtFZ">_displayErrorAlert(_:inMessage:presentedBy:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Displays the given error in an alert with an <q>OK</q> button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">_displayErrorAlert</span><span class="p">(</span><span class="n">_</span> <span class="nv">inTitle</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">inMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">presentedBy</span> <span class="nv">inPresentingViewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inTitle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a string to be displayed as the title of the alert. It is localized by this method.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a string to be displayed as the message of the alert. It is localized by this method.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Overridden%20Instance%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Overridden Instance Methods" class="dashAnchor"></a>
+                <a href="#/Overridden%20Instance%20Methods">
+                  <h3 class="section-name">Overridden Instance Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)viewWillAppear:"></a>
+                    <a name="//apple_ref/swift/Method/viewWillAppear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)viewWillAppear:">viewWillAppear(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>We simply use this to make sure our NavBar is hidden.</p>
+
+<p>Simplify, simplify, simplify.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillAppear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>animated</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>True, if the appearance is animated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)prepareForSegue:sender:"></a>
+                    <a name="//apple_ref/swift/Method/prepare(for:sender:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)prepareForSegue:sender:">prepare(for:sender:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called as we prepare to bring in the meeting list.
+We take this opportunity to attach the meeting search results to the list controller.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">prepare</span><span class="p">(</span><span class="k">for</span> <span class="nv">segue</span><span class="p">:</span> <span class="kt">UIStoryboardSegue</span><span class="p">,</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>segue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The segue object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The meeting search results Array data we attached to the segue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Internal%20IBAction%20Handlers"></a>
+                <a name="//apple_ref/swift/Section/Internal IBAction Handlers" class="dashAnchor"></a>
+                <a href="#/Internal%20IBAction%20Handlers">
+                  <h3 class="section-name">Internal IBAction Handlers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)bigAssButtonWasHit:"></a>
+                    <a name="//apple_ref/swift/Method/bigAssButtonWasHit(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)bigAssButtonWasHit:">bigAssButtonWasHit(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is called when the large search button is called.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">bigAssButtonWasHit</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt"><a href="../Classes/BMLTNAMeetingSearchAnimatedButtonView.html">BMLTNAMeetingSearchAnimatedButtonView</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The big button of Search.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Internal%20Instance%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Internal Instance Methods" class="dashAnchor"></a>
+                <a href="#/Internal%20Instance%20Methods">
+                  <h3 class="section-name">Internal Instance Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC18startNewConnectionyyF"></a>
+                    <a name="//apple_ref/swift/Method/startNewConnection()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC18startNewConnectionyyF">startNewConnection()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets up a new connection.
+This starts the animation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startNewConnection</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC19terminateConnectionyyF"></a>
+                    <a name="//apple_ref/swift/Method/terminateConnection()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:23Quick_NA_Meeting_Finder40BMLTNAMeetingSearchInitialViewControllerC19terminateConnectionyyF">terminateConnection()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Kills the connection.</p>
+
+<p>When this stops the animation, it does so in a fashion that does not reset the animation to the first frame.
+If you want to reset the animation, you need to subsequently call self.theBigSearchButton.stopAnimation() &lt;- Notice no arguments.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">terminateConnection</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Internal%20BMLTiOSLibDelegate%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Internal BMLTiOSLibDelegate Methods" class="dashAnchor"></a>
+                <a href="#/Internal%20BMLTiOSLibDelegate%20Methods">
+                  <h3 class="section-name">Internal BMLTiOSLibDelegate Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)bmltLibInstance:serverIsValid:"></a>
+                    <a name="//apple_ref/swift/Method/bmltLibInstance(_:serverIsValid:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)bmltLibInstance:serverIsValid:">bmltLibInstance(_:serverIsValid:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether or not the server pointed to via the URI is a valid server (the connection was successful).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">bmltLibInstance</span><span class="p">(</span><span class="n">_</span> <span class="nv">inLibInstance</span><span class="p">:</span> <span class="kt">BMLTiOSLib</span><span class="p">,</span> <span class="nv">serverIsValid</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inLibInstance</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the BMLTiOSLib instance.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inServerIsValid</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A Bool, true, if the server was successfully connected.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)bmltLibInstance:meetingSearchResults:"></a>
+                    <a name="//apple_ref/swift/Method/bmltLibInstance(_:meetingSearchResults:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)bmltLibInstance:meetingSearchResults:">bmltLibInstance(_:meetingSearchResults:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the result of a meeting search.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">bmltLibInstance</span><span class="p">(</span><span class="n">_</span> <span class="nv">inLibInstance</span><span class="p">:</span> <span class="kt">BMLTiOSLib</span><span class="p">,</span> <span class="nv">meetingSearchResults</span><span class="p">:</span> <span class="p">[</span><span class="kt">BMLTiOSLibMeetingNode</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inLibInstance</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the BMLTiOSLib instance.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>meetingSearchResults</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of meeting objects, representing the results of a search.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)bmltLibInstance:errorOccurred:"></a>
+                    <a name="//apple_ref/swift/Method/bmltLibInstance(_:errorOccurred:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)bmltLibInstance:errorOccurred:">bmltLibInstance(_:errorOccurred:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called if there is an error.</p>
+
+<p>The error String will be a key for localization, and will be pretty much worthless on its own.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">bmltLibInstance</span><span class="p">(</span><span class="n">_</span> <span class="nv">inLibInstance</span><span class="p">:</span> <span class="kt">BMLTiOSLib</span><span class="p">,</span> <span class="n">errorOccurred</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inLibInstance</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the BMLTiOSLib instance.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errorOccurred</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error that occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Internal%20CLLocationManagerDelegate%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Internal CLLocationManagerDelegate Methods" class="dashAnchor"></a>
+                <a href="#/Internal%20CLLocationManagerDelegate%20Methods">
+                  <h3 class="section-name">Internal CLLocationManagerDelegate Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)locationManager:didFailWithError:"></a>
+                    <a name="//apple_ref/swift/Method/locationManager(_:didFailWithError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)locationManager:didFailWithError:">locationManager(_:didFailWithError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This is called if the location manager suffers a failure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="p">,</span> <span class="n">didFailWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>manager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Location Manager object that had the error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>didFailWithError</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error in question.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)locationManager:didUpdateLocations:"></a>
+                    <a name="//apple_ref/swift/Method/locationManager(_:didUpdateLocations:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Quick_NA_Meeting_Finder@objc(cs)BMLTNAMeetingSearchInitialViewController(im)locationManager:didUpdateLocations:">locationManager(_:didUpdateLocations:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback to handle found locations.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="p">,</span> <span class="n">didUpdateLocations</span> <span class="nv">locations</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocation</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>manager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Location Manager object that had the event.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>didUpdateLocations</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>an array of updated locations.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2019 <a class="link" href="https://bmlt.app" target="_blank" rel="external">BMLT-Enabled</a>. All rights reserved. (Last updated: 2019-08-02)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

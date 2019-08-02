@@ -29,7 +29,7 @@ import UIKit
  */
 @UIApplicationMain
 class BMLTNAMeetingSearchAppDelegate: UIResponder, UIApplicationDelegate {
-
+    /// The window for the app.
     var window: UIWindow?
     
     // I got these from here: http://stackoverflow.com/questions/24825123/get-the-current-view-controller-from-the-app-delegate#answer-29834852

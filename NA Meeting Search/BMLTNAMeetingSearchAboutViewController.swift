@@ -106,12 +106,7 @@ class BMLTNAMeetingSearchAboutViewController: UIViewController {
     @IBAction func beanieBanged(_ sender: UIButton) {
         if !self.buttonURI.isEmpty {
             let openLink = NSURL(string: self.buttonURI)
-            UIApplication.shared.open(openLink! as URL, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
+            UIApplication.shared.open(openLink! as URL, options: [:], completionHandler: nil)
         }
     }
-}
-
-// Helper function inserted by Swift 4.2 migrator.
-private func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
-	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

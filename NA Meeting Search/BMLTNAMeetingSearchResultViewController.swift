@@ -275,6 +275,8 @@ class BMLTNAMeetingSearchResultViewController: UIViewController, UITableViewData
 /**
  */
 class BMLTNAMeetingSearchResultsTableCellView: UIView {
+    /// The text view for the meeting description.
     @IBOutlet weak var meetingDescriptionTextView: UITextView!
+    /// The label that displays the distance from the search center.
     @IBOutlet weak var distanceLabel: UILabel!
 }

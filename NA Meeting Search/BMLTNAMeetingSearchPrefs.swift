@@ -28,6 +28,7 @@ import Foundation
  From here: https://stackoverflow.com/a/28288340/879365
  */
 extension String {
+    /// This calculated property returns the string with its first letter uppercased.
     var firstUppercased: String {
         guard let first = first else { return "" }
         return String(first).uppercased() + dropFirst()

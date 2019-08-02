@@ -11,5 +11,4 @@ jazzy   --github_url https://github.com/bmlt-enabled/Quick-NA-Meeting-Finder\
         --min-acl private\
         --exclude */Carthage
 cp icon.png docs/icon.png
-cp img/*.* docs/img/
 cd "${CWD}"
