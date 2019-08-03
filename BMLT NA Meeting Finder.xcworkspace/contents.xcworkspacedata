@@ -8,7 +8,7 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
-      location = "group:LICENSE.txt">
+      location = "group:LICENSE">
    </FileRef>
    <FileRef
       location = "group:Cartfile">
