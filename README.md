@@ -9,7 +9,7 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
-***Version 1.4.0.1000* ** *- TBD*
+***Version 1.4.0.2000* ** *- August 24, 2019*
 
 - Switched the BMLTiOSLib to use Carthage.
 - Updated to latest Swift and Xcode versions.
