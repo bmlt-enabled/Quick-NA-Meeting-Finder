@@ -9,6 +9,11 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.4.0.3000* ** *- September 15, 2019*
+
+- Couple of "Code Smell" tweaks.
+- App Store release.
+
 ***Version 1.4.0.2000* ** *- August 24, 2019*
 
 - Switched the BMLTiOSLib to use Carthage.
