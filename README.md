@@ -9,6 +9,10 @@ The whole idea of the app is to remove decision points for the user. Present a s
 
 CHANGELIST
 ----------
+***Version 1.4.0.3001* ** *- September 16, 2019*
+
+- No changes. Apple wants me to resubmit with the newest RC of Xcode.
+
 ***Version 1.4.0.3000* ** *- September 15, 2019*
 
 - Couple of "Code Smell" tweaks.
